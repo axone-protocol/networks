@@ -1,14 +1,17 @@
-# Template project
+# 🌐 OKP4 Networks
 
-> Template for opensource projects [@okp4](https://okp4.com).
+> [OKP4](okp4.network) genesis and node configuration elements for [joining networks](https://docs.okp4.network/docs/nodes/introduction).
 
-[![lint](https://img.shields.io/github/workflow/status/okp4/template-oss/Lint?label=lint&style=for-the-badge&logo=github)](https://github.com/okp4/template-oss/actions/workflows/lint.yml)
+[![lint](https://img.shields.io/github/workflow/status/okp4/networks/Lint?label=lint&style=for-the-badge&logo=github)](https://github.com/okp4/networks/actions/workflows/lint.yml)
 [![conventional commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge&logo=conventionalcommits)](https://conventionalcommits.org)
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=for-the-badge)](https://opensource.org/licenses/BSD-3-Clause)
+[![license](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg?style=for-the-badge)](https://opensource.org/licenses/BSD-3-Clause)
 
-## You want to get involved? 😍
+## Purpose
 
-Please check out OKP4 health files :
+In complement to the nodes and validators [documentation](https://docs.okp4.network/docs/nodes/introduction), this repository should be seen an OKP4 network registry, and brings the necessary configuration elements to join an OKP4 network.
 
-- [Contributing](https://github.com/okp4/.github/blob/main/CONTRIBUTING.md)
-- [Code of conduct](https://github.com/okp4/.github/blob/main/CODE_OF_CONDUCT.md)
+Additionally, you'll find for each network, the intructions to register your validator node in the genesis, if applicable.
+
+## Chains
+
+### testnet-1

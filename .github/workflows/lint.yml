@@ -65,3 +65,18 @@ jobs:
               exit 1
             fi
           ' sh {} +
+
+  lint-genesis:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Check genesis files
+        run: |
+          for network in `ls ./chains`; do
+            echo "🔎 Checking 'okp4-${network}' genesis"
+
+            genesis_path="${PWD}/chains/$network/genesis.json"
+            docker run --rm -v ${genesis_path}:/genesis.json okp4/okp4d:`cat ./chains/${network}/version.txt` validate-genesis /genesis.json
+          done

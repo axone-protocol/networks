@@ -1,0 +1,40 @@
+name: ⚖️ Register Validator
+description: Submit a request to register your validator node in the genesis of an OKP4 network.
+labels: ["register-validator"]
+assignees:
+  - amimart
+  - ccamel
+body:
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network Choice
+      description: Choose the OKP4 network you want to join
+      multiple: false
+      options:
+        - testnet-1
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Who are you?
+      description: Free space to talk a little bit about you, as a Validator.
+  - type: textarea
+    id: gentx
+    attributes:
+      label: gentx
+      description: The gentx transaction to be integrated in the corresponding genesis, in json format.
+      placeholder: |
+        {
+          "type":"auth/StdTx",
+          "value":{
+              ...
+          }
+        }
+      render: json
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        🙏 Thanks for your interest in OKP4, for now we can let [botanik](https://github.com/bot-anik) take care of the technical part of your requests before entering in the review process.

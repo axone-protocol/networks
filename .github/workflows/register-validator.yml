@@ -75,3 +75,14 @@ jobs:
               echo '😢 Register process is closed for this network.'
               exit 1
           fi
+
+          delegationAmount=$(echo "$GENTX" | jq -r '.body.messages[0].value.amount')
+          delegationDenom=$(echo "$GENTX" | jq -r '.body.messages[0].value.denom')
+          if [ "${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }}" != "$delegationAmount" ]; then
+              echo '😢 Invalid delegation amount.'
+              exit 1
+          elif [ "${{ fromJson(needs.resolve-context.outputs.register-config).delegation.denom }}" != "$delegationDenom" ]; then
+              echo '😢 Invalid delegation denom.'
+              exit 1
+          fi
+          echo "👍 gentx seems right."

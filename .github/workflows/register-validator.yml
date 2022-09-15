@@ -5,12 +5,42 @@ on:
     types: [ labeled, unlabeled ]
 
 jobs:
-  dummy:
+  resolve-context:
     if: |
       !github.event.issue.pull_request &&
       contains(github.event.issue.labels.*.name, 'register-validator') &&
       !contains(github.event.issue.labels.*.name, 'invalid')
     runs-on: ubuntu-22.04
+    outputs:
+      network: ${{ fromJson(steps.parse-issue.outputs.jsonString).network }}
+      gentx: ${{ steps.extract-gentx.outputs.gentx }}
+      register-config: ${{ steps.register-config.outputs.config }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
+
+      - name: Setup jq
+        run: |
+          sudo apt install -y jq
+
+      - name: Parse issue form content
+        id: parse-issue
+        uses: stefanbuck/github-issue-parser@v2
+        with:
+          template-path: .github/ISSUE_TEMPLATE/register-validator.yml
+      
+      - name: Extract gentx
+        id: extract-gentx
+        env:
+          GENTX_MD: ${{ fromJson(steps.parse-issue.outputs.jsonString).gentx }}
+        run: |
+          set -e
+          gentx=$(echo "$GENTX_MD" | tail -n +2 | sed '$d' | jq -c '.')
+          echo "::set-output name=gentx::$gentx"
+
+      - name: Get network register config
+        id: register-config
+        run: |
+          set -eo pipefail
+          config=$(cat chains/${{ fromJson(steps.parse-issue.outputs.jsonString).network }}/register-config.json | jq -c '.')
+          echo "::set-output name=config::$config"

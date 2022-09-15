@@ -4,6 +4,10 @@ on:
   issues:
     types: [ labeled, unlabeled ]
 
+concurrency:
+  group: register-validator-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
 jobs:
   resolve-context:
     if: |

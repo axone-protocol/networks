@@ -32,7 +32,7 @@ jobs:
         uses: stefanbuck/github-issue-parser@v2
         with:
           template-path: .github/ISSUE_TEMPLATE/register-validator.yml
-      
+
       - name: Extract gentx
         id: extract-gentx
         env:

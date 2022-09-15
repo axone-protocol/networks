@@ -69,20 +69,29 @@ jobs:
           now=$(date +%s)
 
           if [[ $now < $startTime ]]; then
-              echo '😢 Register process is not open yet for this network.'
+              echo '::set-output name=error::Register process is not open yet for this network.'
               exit 1
           elif [[ $now > $endTime ]]; then
-              echo '😢 Register process is closed for this network.'
+              echo '::set-output name=error::Register process is closed for this network.'
               exit 1
           fi
 
           delegationAmount=$(echo "$GENTX" | jq -r '.body.messages[0].value.amount')
           delegationDenom=$(echo "$GENTX" | jq -r '.body.messages[0].value.denom')
           if [ "${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }}" != "$delegationAmount" ]; then
-              echo '😢 Invalid delegation amount.'
+              echo '::set-output name=error::Invalid delegation amount.'
               exit 1
           elif [ "${{ fromJson(needs.resolve-context.outputs.register-config).delegation.denom }}" != "$delegationDenom" ]; then
-              echo '😢 Invalid delegation denom.'
+              echo '::set-output name=error::Invalid delegation denom.'
               exit 1
           fi
           echo "👍 gentx seems right."
+
+      - name: Add failure comment
+        if: ${{ failure() }}
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            😢 I couldn't process your request: `${{ steps.check-gentx.outputs.error }}`

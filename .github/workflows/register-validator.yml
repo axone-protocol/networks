@@ -44,3 +44,34 @@ jobs:
           set -eo pipefail
           config=$(cat chains/${{ fromJson(steps.parse-issue.outputs.jsonString).network }}/register-config.json | jq -c '.')
           echo "::set-output name=config::$config"
+
+  check:
+    needs:
+      - resolve-context
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup jq
+        run: |
+          sudo apt install -y jq
+
+      - name: Check gentx
+        id: check-gentx
+        env:
+          GENTX: ${{ needs.resolve-context.outputs.gentx }}
+        run: |
+          set -e
+          echo "🧐 Checking gentx"
+          startTime=$(date --date="${{ fromJson(needs.resolve-context.outputs.register-config).start-date }}" +%s)
+          endTime=$(date --date="${{ fromJson(needs.resolve-context.outputs.register-config).end-date }}" +%s)
+          now=$(date +%s)
+
+          if [[ $now < $startTime ]]; then
+              echo '😢 Register process is not open yet for this network.'
+              exit 1
+          elif [[ $now > $endTime ]]; then
+              echo '😢 Register process is closed for this network.'
+              exit 1
+          fi

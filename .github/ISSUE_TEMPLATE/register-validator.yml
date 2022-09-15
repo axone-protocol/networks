@@ -4,6 +4,7 @@ labels: ["register-validator"]
 assignees:
   - amimart
   - ccamel
+  - botanik
 body:
   - type: dropdown
     id: network

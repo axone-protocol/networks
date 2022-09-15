@@ -1,0 +1,16 @@
+name: Register validator
+
+on:
+  issues:
+    types: [ labeled, unlabeled ]
+
+jobs:
+  dummy:
+    if: |
+      !github.event.issue.pull_request &&
+      contains(github.event.issue.labels.*.name, 'register-validator') &&
+      !contains(github.event.issue.labels.*.name, 'invalid')
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3

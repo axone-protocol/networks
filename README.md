@@ -17,3 +17,5 @@ For a complete description about nodes and validators, check out the [OKP4 Docum
 ## Chains
 
 ### testnet-1
+
+The first OKP4 testnet network, please find more details to join the network [here](chains/testnet-1/).

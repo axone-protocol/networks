@@ -174,3 +174,18 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             😉 Here is the corresponding PR: ${{ steps.open-pr.outputs.pull-request-url }}
+
+      - name: Mark issue invalid
+        if: ${{ failure() }}
+        uses: andymckay/labeler@master
+        with:
+          repo-token: ${{ secrets.OKP4_TOKEN }}
+          add-labels: "invalid"
+
+      - name: Add failure comment
+        if: ${{ failure() }}
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: 😢 I couldn't process your request...

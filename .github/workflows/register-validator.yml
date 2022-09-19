@@ -148,7 +148,7 @@ jobs:
 
           docker run --rm -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.fetch-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.fetch-context.outputs.network }}/version.txt` collect-gentxs --home $NODE_HOME --gentx-dir /gentx
           cp $NODE_HOME/config/genesis.json chains/${{ needs.fetch-context.outputs.network }}/genesis.json
-      
+
       - name: Create Pull Request
         id: open-pr
         uses: peter-evans/create-pull-request@v4

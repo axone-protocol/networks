@@ -10,7 +10,7 @@
 
 ## Purpose
 
-This repository contains the official genesis files and network information for the various [OKP4](https://okp4.network) networks. Additionally, you'll find for each network, the intructions to register your validator node in the genesis, if applicable.
+This repository contains the official genesis files and network information for the various [OKP4](https://okp4.network) networks. Additionally, you'll find for each network, the instructions to register your validator node in the genesis, if applicable.
 
 For a complete description about nodes and validators, check out the [OKP4 Documentation site](https://docs.okp4.network/docs/nodes/introduction).
 

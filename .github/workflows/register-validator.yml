@@ -18,6 +18,7 @@ jobs:
     outputs:
       network: ${{ fromJson(steps.parse-issue.outputs.jsonString).network }}
       gentx: ${{ steps.extract-gentx.outputs.gentx }}
+      moniker: ${{ steps.extract-gentx.outputs.moniker }}
       register-config: ${{ steps.register-config.outputs.config }}
     steps:
       - name: Check out repository
@@ -40,6 +41,8 @@ jobs:
         run: |
           set -e
           gentx=$(echo "$GENTX_MD" | tail -n +2 | sed '$d' | jq -c '.')
+          moniker=$(echo "$gentx" | jq -r '.body.messages[0].description.moniker')
+          echo "::set-output name=moniker::$moniker"
           echo "::set-output name=gentx::$gentx"
 
       - name: Get network register config
@@ -65,6 +68,7 @@ jobs:
         id: check-gentx
         env:
           GENTX: ${{ needs.resolve-context.outputs.gentx }}
+          MONIKER: ${{ needs.fetch-context.outputs.moniker }}
         run: |
           set -e
           echo "🧐 Checking gentx"
@@ -80,9 +84,8 @@ jobs:
               exit 1
           fi
 
-          moniker=$(echo "$GENTX" | jq -r '.body.messages[0].description.moniker')
           for gentx_file in $(ls chains/${{ needs.fetch-context.outputs.network }}/gentx); do
-            if [ "gentx-${moniker}.json" = "$gentx_file" ]; then
+            if [ "gentx-${MONIKER}.json" = "$gentx_file" ]; then
               echo '::set-output name=error::Invalid moniker, already exists.'
               exit 1
             fi
@@ -103,6 +106,7 @@ jobs:
         if: ${{ failure() }}
         uses: andymckay/labeler@master
         with:
+          repo-token: ${{ secrets.OKP4_TOKEN }}
           add-labels: "invalid"
 
       - name: Add failure comment

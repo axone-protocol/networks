@@ -80,6 +80,14 @@ jobs:
               exit 1
           fi
 
+          moniker=$(echo "$GENTX" | jq -r '.body.messages[0].description.moniker')
+          for gentx_file in $(ls chains/${{ needs.fetch-context.outputs.network }}/gentx); do
+            if [ "gentx-${moniker}.json" = "$gentx_file" ]; then
+              echo '::set-output name=error::Invalid moniker, already exists.'
+              exit 1
+            fi
+          done
+
           delegationAmount=$(echo "$GENTX" | jq -r '.body.messages[0].value.amount')
           delegationDenom=$(echo "$GENTX" | jq -r '.body.messages[0].value.denom')
           if [ "${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }}" != "$delegationAmount" ]; then

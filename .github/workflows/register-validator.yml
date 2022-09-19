@@ -37,9 +37,10 @@ jobs:
       - name: Extract gentx
         id: extract-gentx
         env:
+          # GENTX_MD needs some sorcery as it is not well extracted from the form issue.
           GENTX_MD: ${{ fromJson(steps.parse-issue.outputs.jsonString).gentx }}
         run: |
-          set -e
+          set -eo pipefail
           gentx=$(echo "$GENTX_MD" | tail -n +2 | sed '$d' | jq -c '.')
           moniker=$(echo "$gentx" | jq -r '.body.messages[0].description.moniker')
           echo "::set-output name=moniker::$moniker"
@@ -165,7 +166,7 @@ jobs:
             Register [new validator](${{ github.event.issue.html_url }}) gentx on the ${{ needs.fetch-context.outputs.network }} network.
           labels: register-validator
           assignees: amimart,ccamel
-          reviewers: amimart,ccamel
+          reviewers: amimart,ccamel,tpelliet
 
       - name: Link PR
         uses: peter-evans/create-or-update-comment@v2

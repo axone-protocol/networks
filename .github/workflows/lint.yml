@@ -12,6 +12,38 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  prepare:
+    name: Create build context
+    runs-on: ubuntu-20.04
+    outputs:
+      matrix-genesis: ${{ steps.matrix-genesis.outputs.config }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Find changed genesis files
+        id: changed-genesis
+        uses: tj-actions/changed-files@v29.0.7
+        with:
+          files: |
+            chains/*/genesis.json
+
+      - name: Setup matrix (for changed genesis)
+        id: matrix-genesis
+        run: |
+          CONFIG=""
+          ALL_MODIFIED_FILES=${{ steps.changed-genesis.outputs.all_modified_files }}
+          IFS=',' read -r -a GENESISFILES <<< "$ALL_MODIFIED_FILES"
+          for GENESISFILE in "${GENESISFILES[@]}"; do
+              APATH=$(dirname ${GENESISFILE})
+              NETWORK=$(basename ${APATH})
+              NAME=$(basename ${GENESISFILE})
+              CONFIG="${CONFIG:+${CONFIG}, }{\"path\": \"${APATH}\", \"network\": \"${NETWORK}\", \"name\": \"${NAME}\"}"
+          done
+          echo "::set-output name=config::[${CONFIG}]"
+
   lint-commits:
     runs-on: ubuntu-22.04
     steps:
@@ -68,15 +100,16 @@ jobs:
 
   lint-genesis:
     runs-on: ubuntu-22.04
+    needs: prepare
+    strategy:
+      matrix:
+        context: ${{ fromJson(needs.prepare.outputs.matrix-genesis) }}
+      fail-fast: false
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
 
       - name: Check genesis files
         run: |
-          for network in `ls ./chains`; do
-            echo "🔎 Checking 'okp4-${network}' genesis"
-
-            genesis_path="${PWD}/chains/$network/genesis.json"
-            docker run --rm -v ${genesis_path}:/genesis.json okp4/okp4d:`cat ./chains/${network}/version.txt` validate-genesis /genesis.json
-          done
+          echo "🔎 Checking 'okp4-${{ matrix.context.network }}' genesis"
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/genesis.json okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` validate-genesis /genesis.json

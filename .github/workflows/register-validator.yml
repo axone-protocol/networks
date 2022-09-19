@@ -117,3 +117,33 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             😢 I couldn't process your request: `${{ steps.check-gentx.outputs.error }}`
+
+  process:
+    needs:
+      - fetch-context
+      - check
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Process gentx
+        id: add-gentx
+        env:
+          GENTX: ${{ needs.fetch-context.outputs.gentx }}
+          MONIKER: ${{ needs.fetch-context.outputs.moniker }}
+          NODE_HOME: /tmp/node
+        run: |
+          mkdir -p chains/${{ needs.fetch-context.outputs.network }}/gentx
+          echo "$GENTX" > chains/${{ needs.fetch-context.outputs.network }}/gentx/gentx-${MONIKER}.json
+
+          mkdir -p $NODE_HOME
+          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.fetch-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
+          sudo cp chains/${{ needs.fetch-context.outputs.network }}/genesis.json $NODE_HOME/config/genesis.json
+
+          delegator_addr=$(echo "$GENTX" | jq -r '.body.messages[0].delegator_address')
+          delegator_balance="`expr ${{ fromJson(needs.fetch-context.outputs.register-config).delegation.amount }} + 200000`${{ fromJson(needs.fetch-context.outputs.register-config).delegation.denom }}"
+          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.fetch-context.outputs.network }}/version.txt` add-genesis-account --home $NODE_HOME $delegator_addr $delegator_balance
+
+          docker run --rm -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.fetch-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.fetch-context.outputs.network }}/version.txt` collect-gentxs --home $NODE_HOME --gentx-dir /gentx
+          cp $NODE_HOME/config/genesis.json chains/${{ needs.fetch-context.outputs.network }}/genesis.json

@@ -4,6 +4,7 @@ labels: ["register-validator"]
 assignees:
   - amimart
   - ccamel
+  - tpelliet
   - botanik
 body:
   - type: dropdown

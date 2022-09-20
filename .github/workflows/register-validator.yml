@@ -69,7 +69,7 @@ jobs:
         id: check-gentx
         env:
           GENTX: ${{ needs.resolve-context.outputs.gentx }}
-          MONIKER: ${{ needs.fetch-context.outputs.moniker }}
+          MONIKER: ${{ needs.resolve-context.outputs.moniker }}
         run: |
           set -e
           echo "🧐 Checking gentx"
@@ -85,7 +85,7 @@ jobs:
               exit 1
           fi
 
-          for gentx_file in $(ls chains/${{ needs.fetch-context.outputs.network }}/gentx); do
+          for gentx_file in $(ls chains/${{ needs.resolve-context.outputs.network }}/gentx); do
             if [ "gentx-${MONIKER}.json" = "$gentx_file" ]; then
               echo '::set-output name=error::Invalid moniker, already exists.'
               exit 1
@@ -121,7 +121,7 @@ jobs:
 
   process:
     needs:
-      - fetch-context
+      - resolve-context
       - check
     runs-on: ubuntu-22.04
     steps:
@@ -131,39 +131,39 @@ jobs:
       - name: Process gentx
         id: add-gentx
         env:
-          GENTX: ${{ needs.fetch-context.outputs.gentx }}
-          MONIKER: ${{ needs.fetch-context.outputs.moniker }}
+          GENTX: ${{ needs.resolve-context.outputs.gentx }}
+          MONIKER: ${{ needs.resolve-context.outputs.moniker }}
           NODE_HOME: /tmp/node
         run: |
-          mkdir -p chains/${{ needs.fetch-context.outputs.network }}/gentx
-          echo "$GENTX" > chains/${{ needs.fetch-context.outputs.network }}/gentx/gentx-${MONIKER}.json
+          mkdir -p chains/${{ needs.resolve-context.outputs.network }}/gentx
+          echo "$GENTX" > chains/${{ needs.resolve-context.outputs.network }}/gentx/gentx-${MONIKER}.json
 
           mkdir -p $NODE_HOME
-          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.fetch-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
-          sudo cp chains/${{ needs.fetch-context.outputs.network }}/genesis.json $NODE_HOME/config/genesis.json
+          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
+          sudo cp chains/${{ needs.resolve-context.outputs.network }}/genesis.json $NODE_HOME/config/genesis.json
 
           delegator_addr=$(echo "$GENTX" | jq -r '.body.messages[0].delegator_address')
-          delegator_balance="`expr ${{ fromJson(needs.fetch-context.outputs.register-config).delegation.amount }} + 200000`${{ fromJson(needs.fetch-context.outputs.register-config).delegation.denom }}"
-          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.fetch-context.outputs.network }}/version.txt` add-genesis-account --home $NODE_HOME $delegator_addr $delegator_balance
+          delegator_balance="`expr ${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }} + 200000`${{ fromJson(needs.resolve-context.outputs.register-config).delegation.denom }}"
+          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` add-genesis-account --home $NODE_HOME $delegator_addr $delegator_balance
 
-          docker run --rm -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.fetch-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.fetch-context.outputs.network }}/version.txt` collect-gentxs --home $NODE_HOME --gentx-dir /gentx
-          cp $NODE_HOME/config/genesis.json chains/${{ needs.fetch-context.outputs.network }}/genesis.json
+          docker run --rm -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.resolve-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` collect-gentxs --home $NODE_HOME --gentx-dir /gentx
+          cp $NODE_HOME/config/genesis.json chains/${{ needs.resolve-context.outputs.network }}/genesis.json
 
       - name: Create Pull Request
         id: open-pr
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: |
-            feat(${{ needs.fetch-context.outputs.network }}): register ${{ needs.fetch-context.outputs.moniker }} validator gentx
+            feat(${{ needs.resolve-context.outputs.network }}): register ${{ needs.resolve-context.outputs.moniker }} validator gentx
 
             Closes #${{ github.event.issue.number }}
           committer: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }} <${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}>
           author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
           token: ${{ secrets.OKP4_TOKEN }}
-          branch: feat/register-${{ needs.fetch-context.outputs.network }}-${{ github.event.issue.number }}
-          title: '⚖️ Register `${{ needs.fetch-context.outputs.moniker }}` Validator'
+          branch: feat/register-${{ needs.resolve-context.outputs.network }}-${{ github.event.issue.number }}
+          title: '⚖️ Register `${{ needs.resolve-context.outputs.moniker }}` Validator'
           body: |
-            Register [new validator](${{ github.event.issue.html_url }}) gentx on the ${{ needs.fetch-context.outputs.network }} network.
+            Register [new validator](${{ github.event.issue.html_url }}) gentx on the ${{ needs.resolve-context.outputs.network }} network.
           labels: register-validator
           assignees: amimart,ccamel
           reviewers: amimart,ccamel,tpelliet

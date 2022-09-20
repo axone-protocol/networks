@@ -27,6 +27,7 @@ jobs:
         id: changed-genesis
         uses: tj-actions/changed-files@v29.0.7
         with:
+          separator: ","
           files: |
             chains/*/genesis.json
 
@@ -34,7 +35,7 @@ jobs:
         id: matrix-genesis
         run: |
           CONFIG=""
-          ALL_MODIFIED_FILES=${{ steps.changed-genesis.outputs.all_modified_files }}
+          ALL_MODIFIED_FILES="${{ steps.changed-genesis.outputs.all_modified_files }}"
           IFS=',' read -r -a GENESISFILES <<< "$ALL_MODIFIED_FILES"
           for GENESISFILE in "${GENESISFILES[@]}"; do
               APATH=$(dirname ${GENESISFILE})

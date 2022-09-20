@@ -100,6 +100,7 @@ jobs:
           ' sh {} +
 
   lint-genesis:
+    if: needs.prepare.outputs.matrix-genesis != '[]'
     runs-on: ubuntu-22.04
     needs: prepare
     strategy:

@@ -1,10 +1,12 @@
-# testnet-1
+# 🔗 `testnet-1`
 
 ## Register in the Genesis
 
-To register your validator node in the `genesis.json` you'll need to provide a signed gentx in a [⚖️ Register Validator issue](https://github.com/okp4/networks/issues). You'll **not** need to fork the project and make the changes in the genesis yourself, this will be managed by the CI.
+To register your validator node in the `genesis.json` you'll need to provide a signed `gentx` in a [⚖️ Register Validator issue](https://github.com/okp4/networks/issues).
 
-The gentx generation can be achieve as follow (this is an example script, adapt it to your needs) with the `okp4d` binary matching the [network's version](/chains/testnet-1/version.txt):
+You'll **not** need to fork the project and make the changes in the genesis yourself, this will be managed by the CI.
+
+The gentx generation can be done as follow (this is an example script, adapt it to your needs) with the [okp4d](https://github.com/okp4/okp4d/releases) binary matching the [network's version](/chains/testnet-1/version.txt):
 
 ```sh
 # Init node

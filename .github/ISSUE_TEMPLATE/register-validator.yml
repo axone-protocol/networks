@@ -1,5 +1,6 @@
 name: ⚖️ Register Validator
 description: Submit a request to register your validator node in the genesis of an OKP4 network.
+title: "⚖️ Register Validator: "
 labels: ["register-validator"]
 assignees:
   - amimart

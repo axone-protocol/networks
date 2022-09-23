@@ -256,6 +256,11 @@
         }
       }
     },
+    "logic": {
+      "params": {
+        "foo": "foo"
+      }
+    },
     "mint": {
       "minter": {
         "inflation": "0.130000000000000000",
@@ -308,6 +313,20 @@
       }
     },
     "upgrade": {},
-    "vesting": {}
+    "vesting": {},
+    "wasm": {
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody",
+          "address": "",
+          "addresses": []
+        },
+        "instantiate_default_permission": "Everybody"
+      },
+      "codes": [],
+      "contracts": [],
+      "sequences": [],
+      "gen_msgs": []
+    }
   }
 }

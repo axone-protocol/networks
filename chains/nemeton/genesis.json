@@ -211,6 +211,13 @@
     "feegrant": {
       "allowances": []
     },
+    "feeibc": {
+      "identified_fees": [],
+      "fee_enabled_channels": [],
+      "registered_payees": [],
+      "registered_counterparty_payees": [],
+      "forward_relayers": []
+    },
     "genutil": {
       "gen_txs": []
     },

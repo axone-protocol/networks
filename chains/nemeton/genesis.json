@@ -80,6 +80,26 @@
             "end_time": "1728907200"
           },
           "start_time": "1665748800"
+        },
+        {
+          "@type": "/vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "okp41htjlyu4z5833zzkrw4hlaaqvd2je3w9zg50e86",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "uknow",
+                "amount": "10000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1681473600"
+          }
         }
       ]
     },
@@ -107,6 +127,15 @@
             {
               "denom": "uknow",
               "amount": "80000000000000"
+            }
+          ]
+        },
+        {
+          "address": "okp41htjlyu4z5833zzkrw4hlaaqvd2je3w9zg50e86",
+          "coins": [
+            {
+              "denom": "uknow",
+              "amount": "20000000000000"
             }
           ]
         },

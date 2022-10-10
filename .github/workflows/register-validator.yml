@@ -69,7 +69,6 @@ jobs:
         id: check-gentx
         env:
           GENTX: ${{ needs.resolve-context.outputs.gentx }}
-          MONIKER: ${{ needs.resolve-context.outputs.moniker }}
         run: |
           set -e
           echo "🧐 Checking gentx"
@@ -84,13 +83,6 @@ jobs:
               echo '::set-output name=error::Register process is closed for this network.'
               exit 1
           fi
-
-          for gentx_file in $(ls chains/${{ needs.resolve-context.outputs.network }}/gentx); do
-            if [ "gentx-${MONIKER}.json" = "$gentx_file" ]; then
-              echo '::set-output name=error::Invalid moniker, already exists.'
-              exit 1
-            fi
-          done
 
           delegationAmount=$(echo "$GENTX" | jq -r '.body.messages[0].value.amount')
           delegationDenom=$(echo "$GENTX" | jq -r '.body.messages[0].value.denom')
@@ -132,11 +124,10 @@ jobs:
         id: add-gentx
         env:
           GENTX: ${{ needs.resolve-context.outputs.gentx }}
-          MONIKER: ${{ needs.resolve-context.outputs.moniker }}
           NODE_HOME: /tmp/node
         run: |
           mkdir -p chains/${{ needs.resolve-context.outputs.network }}/gentx
-          echo "$GENTX" > chains/${{ needs.resolve-context.outputs.network }}/gentx/gentx-${MONIKER}.json
+          echo "$GENTX" > chains/${{ needs.resolve-context.outputs.network }}/gentx/gentx-${{ github.event.issue.number }}.json
 
           mkdir -p $NODE_HOME
           docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever

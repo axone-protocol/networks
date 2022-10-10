@@ -1,0 +1,8 @@
+{
+  "start-date": "2022-10-10 00:00:00Z",
+  "end-date": "2022-11-01 00:00:00Z",
+  "delegation": {
+    "amount": "1000000",
+    "denom": "uknow"
+  }
+}

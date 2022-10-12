@@ -17,7 +17,21 @@ okp4d --home mynode keys add your-key-name
 
 # Set account necessary balance
 okp4d --home mynode add-genesis-account your-key-name 1200000uknow
+```
 
+Then create your own genesis transaction (`gentx`). You will have to choose the following parameters for your validator: `commission-rate`, `commission-max-rate`, `commission-max-change-rate`, `min-self-delegation` (>=1), `website` (optional), `details` (optional), `identity` ([keybase](https://keybase.io) key hash, used to get validator logos in block explorers - optional), `security-contact` (email - optional).
+
+```sh
 # Create the gentx
-okp4d --home mynode gentx your-key-name 1000000uknow --node-id $(okp4d --home mynode tendermint show-node-id) --chain-id okp4-nemeton
+okp4d --home mynode gentx your-key-name 1000000uknow \
+  --node-id $(okp4d --home mynode tendermint show-node-id) \
+  --chain-id okp4-nemeton \
+  --commission-rate 0.05 \
+  --commission-max-rate 0.2 \
+  --commission-max-change-rate 0.01 \
+  --min-self-delegation 1
+  --website "https://foo.network" \
+  --details "My validator" \
+  --identity "6C36E7C076BFDCE4" \
+  --security-contact "validator@foo.network"
 ```

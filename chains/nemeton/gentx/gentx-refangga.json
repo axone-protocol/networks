@@ -1,0 +1,15 @@
+{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator","description
+":{"moniker":"refangga","identity":"C649700F2222C56D","website":"https://twitter.com/re
+fangga0x","security_contact":"","details":"Hello World! Nice to see you"},"commission":
+{"rate":"0.050000000000000000","max_rate":"1.000000000000000000","max_change_rate":"0.0
+10000000000000000"},"min_self_delegation":"1","delegator_address":"okp41nqwv5vmpwpst60g
+vydx8gvnhta9ykyuzgr388n","validator_address":"okp4valoper1nqwv5vmpwpst60gvydx8gvnhta9yk
+yuzaypwej","pubkey":{"@type":"/cosmos.crypto.ed25519.PubKey","key":"rmcCo/sYCOeThEdKV6I
+xcBKQz9CESjs7//wbfojHvmY="},"value":{"denom":"uknow","amount":"1000000"}}],"memo":"2c26
+77bbb3f0300e15f72c8abac61681f2519809@194.163.133.221:26656","timeout_height":"0","exten
+sion_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[{"pu
+blic_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A+wZ9/+zthrF0jaWu8RsFEACHVX
+tBKpYY6z0bBI2RiHp"},"mode_info":{"single":{"mode":"SIGN_MODE_DIRECT"}},"sequence":"0"}]
+,"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""},"tip":null},"signatur
+es":["ukuf9UqgYJaN97e69bQpslExNPcN+C02sX5NnE1xEY5FJwYtw7oL1sJkpaYb94jcj1cQ/qxA8MK72khbr
+Dp/8A=="]}

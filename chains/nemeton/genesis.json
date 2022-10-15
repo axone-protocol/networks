@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-09-19T11:54:54.769429Z",
+  "genesis_time": "2022-10-17T13:00:00Z",
   "chain_id": "okp4-nemeton",
   "initial_height": "1",
   "consensus_params": {
@@ -1109,8 +1109,8 @@
     "params": null,
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
+        "signed_blocks_window": "10000",
+        "min_signed_per_window": "0.050000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"

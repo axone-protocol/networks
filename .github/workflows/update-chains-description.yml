@@ -41,7 +41,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-  
+
       - name: Install gomplate
         run: |
           curl -s -L -o /usr/local/bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/v3.11.3/gomplate_linux-amd64 &&
@@ -55,9 +55,10 @@ jobs:
           usersInfo="${TMPDIR}$(uuidgen).json"
           echo "{" >> "$usersInfo"
           first="true"
-          for row in $(cat "./chains/nemeton/genesis.json" | jq -r '.app_state.genutil.gen_txs[].body.messages[].description.identity | select(. != "") | @base64'); do
+          for row in $(cat "./chains/nemeton/genesis.json" \
+            | jq -r '.app_state.genutil.gen_txs[].body.messages[].description.identity | select(. != "") | @base64'); do
               userId=$(echo "$row" | base64 --decode)
-              
+
               echo "🪪 retrieve identity for $userId"
 
               if [ "$first" = "true" ]; then
@@ -66,7 +67,8 @@ jobs:
                   echo "," >> "$usersInfo"
               fi
               echo "\"$userId\": " >> "$usersInfo"
-              curl --silent "https://keybase.io/_/api/1.0/user/user_search.json?q=${userId}&num_wanted=1" | jq ".list[0]" >> "$usersInfo"
+              curl --silent "https://keybase.io/_/api/1.0/user/user_search.json?q=${userId}&num_wanted=1" \
+                | jq ".list[0]" >> "$usersInfo"
           done
           echo "}" >> "$usersInfo"
 

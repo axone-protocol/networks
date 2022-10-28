@@ -81,4 +81,4 @@ jobs:
           commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
           commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
           commit_author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
-          commit_message: "docs: update documentation"
+          commit_message: "docs(networks): update documentation (according to genesis)"

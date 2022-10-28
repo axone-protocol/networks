@@ -73,7 +73,7 @@ jobs:
           echo "}" >> "$usersInfo"
 
           echo "🖨 generate readme from $genesis"
-          gomplate -d genesis="$genesis" -d usersInfo="$usersInfo" -f "$path/README.md.tmpl" -o "$path/README.md"
+          gomplate -d genesis="$genesis" -d usersInfo="$usersInfo" -f "$path/README.md.gtpl" -o "$path/README.md"
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4

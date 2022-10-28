@@ -41,6 +41,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
 
       - name: Install gomplate
         run: |
@@ -75,10 +77,13 @@ jobs:
           echo "🖨 generate readme from $genesis"
           gomplate -d genesis="$genesis" -d usersInfo="$usersInfo" -f "$path/README.md.gtpl" -o "$path/README.md"
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Add & Commit changes
+        uses: EndBug/add-and-commit@v9
         with:
-          commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
-          commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
-          commit_author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
-          commit_message: "docs(networks): update documentation (according to genesis)"
+          message: "docs(networks): update documentation (according to genesis)"
+          author_name: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
+          author_email: ${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}
+          committer_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
+          committer_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}

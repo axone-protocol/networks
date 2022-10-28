@@ -52,7 +52,7 @@ jobs:
           genesis="${{ matrix.context }}"
           path=$(dirname "$genesis")
 
-          usersInfo="${TMPDIR}$(uuidgen).json"
+          usersInfo="${RUNNER_TEMP}$(uuidgen).json"
           echo "{" >> "$usersInfo"
           first="true"
           for row in $(cat "./chains/nemeton/genesis.json" \

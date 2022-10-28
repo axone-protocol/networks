@@ -1,0 +1,84 @@
+name: Update chains description
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+concurrency:
+  group: update-chains-description-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  get-genesis:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.get-genesis.outputs.matrix }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Find genesis files
+        id: get-genesis
+        run: |
+          files=""
+          for file in $(find . -name "genesis.json"); do
+              files="${files:+${files}, }\"${file}\""
+          done
+          echo "matrix={\"context\":[$files]}" >> "$GITHUB_OUTPUT"
+
+  generate-description:
+    name: Run Matrix Job
+    runs-on: ubuntu-22.04
+    needs: [get-genesis]
+    strategy:
+      matrix: ${{ fromJSON(needs.get-genesis.outputs.matrix) }}
+      max-parallel: 2
+      fail-fast: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install gomplate
+        run: |
+          curl -s -L -o /usr/local/bin/gomplate https://github.com/hairyhenderson/gomplate/releases/download/v3.11.3/gomplate_linux-amd64 &&
+          chmod +x /usr/local/bin/gomplate
+
+      - name: Generate template
+        run: |
+          genesis="${{ matrix.context }}"
+          path=$(dirname "$genesis")
+
+          usersInfo="${TMPDIR}$(uuidgen).json"
+          echo "{" >> "$usersInfo"
+          first="true"
+          for row in $(cat "./chains/nemeton/genesis.json" \
+            | jq -r '.app_state.genutil.gen_txs[].body.messages[].description.identity | select(. != "") | @base64'); do
+              userId=$(echo "$row" | base64 --decode)
+
+              echo "🪪 retrieve identity for $userId"
+
+              if [ "$first" = "true" ]; then
+                  first="false"
+              else
+                  echo "," >> "$usersInfo"
+              fi
+              echo "\"$userId\": " >> "$usersInfo"
+              curl --silent "https://keybase.io/_/api/1.0/user/user_search.json?q=${userId}&num_wanted=1" \
+                | jq ".list[0]" >> "$usersInfo"
+          done
+          echo "}" >> "$usersInfo"
+
+          echo "🖨 generate readme from $genesis"
+          gomplate -d genesis="$genesis" -d usersInfo="$usersInfo" -f "$path/README.md.tmpl" -o "$path/README.md"
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_user_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
+          commit_user_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
+          commit_author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
+          commit_message: "docs: update documentation"

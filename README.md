@@ -14,13 +14,13 @@ For a complete description about nodes and validators, check out the [OKP4 Docum
 
 ## 🔗 Networks
 
-### `nemeton`
+### [`nemeton`](./chains/nemeton/README.md)
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) ![audience](https://img.shields.io/badge/audience-public-white.svg)
 
 `Nemeton` is the main OKP4 testnet. Please find more details to join the network [here](chains/nemeton/).
 
-### `devnet-1`
+### [`devnet-1`](./chains/devnet-1/README.md)
 
 ![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg) ![audience](https://img.shields.io/badge/audience-restricted-orange.svg)
 

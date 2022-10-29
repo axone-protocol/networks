@@ -51,19 +51,19 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
     <th>Site</th>
   </tr>
 {{- $txs := (datasource "genesis") | jsonpath "$..messages[?(@.min_self_delegation)]" -}}
-{{- range $key, $value := $txs -}}
+{{- range $key, $value := $txs }}
 {{- $url := "" -}}
 {{- if $value.description.website | strings.HasPrefix "http" -}}
 {{- $url = $value.description.website -}}
 {{- else if $value.description.website -}}
 {{- $url = printf "%s%s" "https://" $value.description.website -}}
 {{- end -}}
-{{- $userInfo := $value.description.identity | index (datasource "usersInfo") }} 
+{{- $userInfo := $value.description.identity | index (datasource "usersInfo") }}
   <tr>
    <td><pre>{{ $value.description.moniker | html }}</pre></td>
    <td>{{ $value.description.details | html }}</td>
    <td>{{ if $value.description.identity }}<img src="{{ $userInfo.keybase.picture_url }}"/><a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
-   <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end }}
+   <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end -}}
   </tr>
-{{- end -}}
+{{- end }}
 </table>

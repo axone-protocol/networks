@@ -1,13 +1,27 @@
 # ℹ Freely based on: https://gist.github.com/thomaspoignant/5b72d579bd5f311904d973652180c705
 
-# Constants
+# Colors
 COLOR_GREEN  = $(shell tput -Txterm setaf 2)
 COLOR_YELLOW = $(shell tput -Txterm setaf 3)
 COLOR_WHITE  = $(shell tput -Txterm setaf 7)
 COLOR_CYAN   = $(shell tput -Txterm setaf 6)
 COLOR_RESET  = $(shell tput -Txterm sgr0)
 
+# Images
+DOCKER_IMAGE_MARKDOWNLINT_CLI = thegeeklab/markdownlint-cli:0.32.2
+
 .PHONY: all help
+
+## Lint:
+lint: lint-markdown ## Lint with all available linters
+
+lint-markdown: ## Lint Markdown files
+	@echo "${COLOR_CYAN}🔍 Inspecting markdown files${COLOR_RESET}"
+	@docker run --rm \
+  		-v `pwd`:/app:ro \
+  		-w /app \
+  		${DOCKER_IMAGE_MARKDOWNLINT_CLI} \
+  		'**/*.md'
 
 ## Help:
 help: ## Show this help.

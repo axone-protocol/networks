@@ -2,6 +2,8 @@
 # 🔗 `{{ (datasource "genesis").chain_id }}`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-{{ (datasource "genesis").chain_id | urlquery | strings.ReplaceAll "-" "--" }}-blue?style=for-the-badge)
+![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
+![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/{{ "⏰" | urlquery }}%20genesis%20time-{{ (datasource "genesis").genesis_time | urlquery | strings.ReplaceAll "-" "--" }}-red?style=for-the-badge)
 ![nb-validators](https://img.shields.io/badge/{{ "🧑‍⚖️" | urlquery }}%20core%20validators-{{ (datasource "genesis") | jsonpath "$..messages[?(@.min_self_delegation)]" | len }}-brightgreen?style=for-the-badge)
 

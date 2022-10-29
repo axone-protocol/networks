@@ -36,7 +36,7 @@ jobs:
     needs: [get-genesis]
     strategy:
       matrix: ${{ fromJSON(needs.get-genesis.outputs.matrix) }}
-      max-parallel: 2
+      max-parallel: 1
       fail-fast: false
     steps:
       - name: Checkout

@@ -64,7 +64,9 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
   <tr>
    <td><pre>{{ $value.description.moniker | html }}</pre></td>
    <td>{{ $value.description.details | html }}</td>
-   <td>{{ if $value.description.identity }}<img src="{{ $userInfo.keybase.picture_url }}"/><a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
+   <td>{{ if $value.description.identity }}
+     <p align="center"><img width="80px" src="{{ $userInfo.keybase.picture_url }}"/></p>
+     <a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
    <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end -}}
   </tr>
 {{- end }}

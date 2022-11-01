@@ -13,6 +13,7 @@ concurrency:
 jobs:
   get-genesis:
     runs-on: ubuntu-22.04
+    if: github.actor != 'dependabot[bot]'
     outputs:
       matrix: ${{ steps.get-genesis.outputs.matrix }}
     steps:
@@ -33,6 +34,7 @@ jobs:
   generate-description:
     name: Run Matrix Job
     runs-on: ubuntu-22.04
+    if: github.actor != 'dependabot[bot]'
     needs: [get-genesis]
     strategy:
       matrix: ${{ fromJSON(needs.get-genesis.outputs.matrix) }}

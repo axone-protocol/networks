@@ -1,0 +1,89 @@
+name: Update peers
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 0 * * MON"
+
+concurrency:
+  group: update-peers-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  update-peers:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        target:
+          - node: "https://okp4-testnet.nodejumper.io"
+            chain: "nemeton"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.OKP4_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+
+      - name: Install requests
+        run: |
+          pip install requests
+
+      - name: Display the path
+        shell: python
+        run: |
+          import requests
+          import json
+          import re
+          import os
+          from ipaddress import ip_address, IPv4Address
+          from enum import Enum
+
+          class IPClass(Enum):
+              IPv4 = 1
+              IPv6 = 2
+              Unknown = 3
+
+          def ip_class(IP: str) -> IPClass:
+              try:
+                  return IPClass.IPv4 if type(ip_address(IP)) is IPv4Address else IPClass.IPv6
+              except ValueError:
+                  return IPClass.Unknown
+
+          def get_peer_address(peer):
+              peerId = peer['node_info']['id']
+              _, _, listen_addr, listen_port, _ = re.split("(.+:\/\/)?(.+):(\d+)", peer['node_info']['listen_addr'])
+              remoteIp = peer['remote_ip']
+
+              match ip_class(remoteIp):
+                  case IPClass.IPv4:
+                      return f"{peerId}@{remoteIp}:{listen_port}"
+                  case IPClass.IPv6:
+                      return f"{peerId}[@{remoteIp}]:{listen_port}"
+                  case _:
+                      raise ValueError
+
+          response = requests.get('${{ matrix.target.node }}/net_info?')
+          json_response = json.loads(response.text)
+          peers = map(
+              get_peer_address,
+              json_response['result']['peers'])
+
+          os.makedirs(os.path.dirname("./chains/${{ matrix.target.chain }}/"), exist_ok=True)
+          with open("./chains/${{ matrix.target.chain }}/peers.txt", 'w') as f:
+              for value in peers:
+                  f.write(value)
+                  f.write('\n')
+
+      - name: Add & Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "feat(networks): update peers list"
+          author_name: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
+          author_email: ${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}
+          committer_name: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }}
+          committer_email: ${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}

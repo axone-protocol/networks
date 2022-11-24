@@ -43,7 +43,7 @@ jobs:
               NAME=$(basename ${GENESISFILE})
               CONFIG="${CONFIG:+${CONFIG}, }{\"path\": \"${APATH}\", \"network\": \"${NETWORK}\", \"name\": \"${NAME}\"}"
           done
-          echo "::set-output name=config::[${CONFIG}]"
+          echo "config=[${CONFIG}]" >> $GITHUB_OUTPUT
 
   lint-commits:
     runs-on: ubuntu-22.04

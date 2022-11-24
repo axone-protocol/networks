@@ -39,15 +39,15 @@ jobs:
           set -eo pipefail
           gentx=$(echo "$GENTX_MD" | tail -n +2 | sed '$d' | jq -c '.')
           moniker=$(echo "$gentx" | jq -r '.body.messages[0].description.moniker')
-          echo "::set-output name=moniker::$moniker"
-          echo "::set-output name=gentx::$gentx"
+          echo "moniker=${moniker}" >> $GITHUB_OUTPUT
+          echo "gentx=${gentx}" >> $GITHUB_OUTPUT
 
       - name: Get network register config
         id: register-config
         run: |
           set -eo pipefail
           config=$(cat chains/${{ fromJson(steps.parse-issue.outputs.jsonString).network }}/register-config.json | jq -c '.')
-          echo "::set-output name=config::$config"
+          echo "config=${config}" >> $GITHUB_OUTPUT
 
   check:
     needs:
@@ -73,20 +73,20 @@ jobs:
           now=$(date +%s)
 
           if [[ $now < $startTime ]]; then
-              echo '::set-output name=error::Register process is not open yet for this network.'
+              echo error='Register process is not open yet for this network.' >> $GITHUB_OUTPUT
               exit 1
           elif [[ $now > $endTime ]]; then
-              echo '::set-output name=error::Register process is closed for this network.'
+              echo error='Register process is closed for this network.' >> $GITHUB_OUTPUT
               exit 1
           fi
 
           delegationAmount=$(echo "$GENTX" | jq -r '.body.messages[0].value.amount')
           delegationDenom=$(echo "$GENTX" | jq -r '.body.messages[0].value.denom')
           if [ "${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }}" != "$delegationAmount" ]; then
-              echo '::set-output name=error::Invalid delegation amount.'
+              echo error='Invalid delegation amount.' >> $GITHUB_OUTPUT
               exit 1
           elif [ "${{ fromJson(needs.resolve-context.outputs.register-config).delegation.denom }}" != "$delegationDenom" ]; then
-              echo '::set-output name=error::Invalid delegation denom.'
+              echo error='Invalid delegation denom.' >> $GITHUB_OUTPUT
               exit 1
           fi
           echo "👍 gentx seems right."
@@ -152,7 +152,7 @@ jobs:
           message="${message//'%'/'%25'}"
           message="${message//$'\n'/'%0A'}"
           message="${message//$'\r'/'%0D'}"
-          echo "::set-output name=message::$message"
+          echo "message=${message}" >> $GITHUB_OUTPUT
 
       - name: Create Pull Request
         id: open-pr

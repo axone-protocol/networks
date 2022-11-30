@@ -473,16 +473,14 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0.075000000000000000",
-        "annual_provisions": "0.000000000000000000"
+        "inflation": "0.150000000000000000",
+        "annual_provisions": "0.000000000000000000",
+        "target_supply": "230000000000000"
       },
       "params": {
         "mint_denom": "uknow",
-        "inflation_rate_change": "0.800000000000000000",
-        "inflation_max": "0.000000000000000000",
-        "inflation_min": "0.000000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "438300"
+        "annual_reduction_factor": "0.200000000000000000",
+        "blocks_per_year": "6311520"
       }
     },
     "params": null,

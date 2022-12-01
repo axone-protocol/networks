@@ -41,4 +41,3 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   --identity "6C36E7C076BFDCE4" \
   --security-contact "validator@foo.network"
 ```
-

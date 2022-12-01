@@ -65,37 +65,31 @@ jobs:
       - name: Initialize blockchain
         run: |
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
-              init \
-              --chain-id=okp4-${{ matrix.context.network }} \
-              --home /.okp4d
-
-          rm -r ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}/config/genesis.json
-          cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}/genesis.json ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}/config/genesis.json
-
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               keys add validator \
               --home /.okp4d \
               --keyring-backend test
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          sudo cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }} ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/genesis.json
+
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               add-genesis-account validator 1000000000uknow \
               --home /.okp4d \
               --keyring-backend test
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               gentx validator 1000000uknow \
               --home /.okp4d \
               --chain-id=okp4-${{ matrix.context.network }} \
               --keyring-backend test
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               collect-gentxs \
               --home /.okp4d
 
       - name: Start the blockchain
         run: |
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --network host --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               start \
               --home /.okp4d \
               --moniker okp4-node &

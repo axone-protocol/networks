@@ -14,7 +14,7 @@ For a complete description about nodes and validators, check out the [OKP4 Docum
 
 ## 🔗 Networks
 
-### [`nemeton-1`](./chains/nemeton/README.md)
+### [`nemeton-1`](./chains/nemeton-1/README.md)
 
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg) ![audience](https://img.shields.io/badge/audience-public-white.svg)
 

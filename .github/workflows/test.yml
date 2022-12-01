@@ -70,7 +70,8 @@ jobs:
               --home /.okp4d \
               --keyring-backend test
 
-          sudo cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }} ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/genesis.json
+          jq --arg date "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" '.genesis_time = $date' ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }} > ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}-tmp
+          sudo cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}-tmp  ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/genesis.json
 
           docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               add-genesis-account validator 1000000000uknow \

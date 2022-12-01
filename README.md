@@ -22,9 +22,11 @@ For a complete description about nodes and validators, check out the [OKP4 Docum
 
 ### [`nemeton`](./chains/nemeton/README.md)
 
-![stability-deprecated](https://img.shields.io/badge/stability-deprecated-red.svg) ![audience](https://img.shields.io/badge/audience-public-white.svg)
+![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg) ![audience](https://img.shields.io/badge/audience-public-white.svg)
 
-This was the first OKP4 testnet but it is now deprecated, we thus invite all the validators to shutdown their nodes. Youcan still find more details on the network [here](chains/nemeton/).
+This was the first OKP4 `testnet` but it is now discontinued.
+
+We invite all the validators to shutdown their nodes. You can still find more details on the network [here](chains/nemeton/).
 
 ### [`devnet-1`](./chains/devnet-1/README.md)
 

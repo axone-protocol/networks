@@ -89,7 +89,7 @@ jobs:
 
       - name: Start the blockchain
         run: |
-          docker run --network host --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --network host --rm --name okp4-node -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               start \
               --home /.okp4d \
               --moniker okp4-node &
@@ -113,4 +113,4 @@ jobs:
 
       - name: Stop the blockchain
         run: |
-          ps -ef | grep 'okp4d' | grep -v grep | awk '{print $2}' | xargs -r kill -9
+          docker stop okp4-node

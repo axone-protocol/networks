@@ -1,0 +1,122 @@
+name: Test
+
+on:
+  workflow_call:
+
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    name: Create build context
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix-genesis: ${{ steps.matrix-genesis.outputs.config }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Find changed genesis files
+        id: changed-genesis
+        uses: tj-actions/changed-files@v34.4.4
+        with:
+          separator: ","
+          files: |
+            chains/*/genesis.json
+
+      - name: Setup matrix (for changed genesis)
+        id: matrix-genesis
+        run: |
+          CONFIG=""
+          ALL_MODIFIED_FILES="${{ steps.changed-genesis.outputs.all_modified_files }}"
+          IFS=',' read -r -a GENESISFILES <<< "$ALL_MODIFIED_FILES"
+          for GENESISFILE in "${GENESISFILES[@]}"; do
+              APATH=$(dirname ${GENESISFILE})
+              NETWORK=$(basename ${APATH})
+              NAME=$(basename ${GENESISFILE})
+              CONFIG="${CONFIG:+${CONFIG}, }{\"path\": \"${APATH}\", \"network\": \"${NETWORK}\", \"name\": \"${NAME}\"}"
+          done
+          echo "config=[${CONFIG}]" >> $GITHUB_OUTPUT
+
+  test-blockchain:
+    if: needs.prepare.outputs.matrix-genesis != '[]'
+    runs-on: ubuntu-22.04
+    needs: prepare
+    strategy:
+      matrix:
+        context: ${{ fromJson(needs.prepare.outputs.matrix-genesis) }}
+      fail-fast: false
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Initialize blockchain
+        run: |
+
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+              init \
+              --chain-id=okp4-${{ matrix.context.network }} \
+              --home /.okp4d
+
+          rm -r ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}/config/genesis.json
+          cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}/genesis.json ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}/config/genesis.json
+
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+              keys add validator \
+              --home /.okp4d \
+              --keyring-backend test
+
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+              add-genesis-account validator 1000000000uknow \
+              --home /.okp4d \
+              --keyring-backend test
+
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+              gentx validator 1000000uknow \
+              --home /.okp4d \
+              --chain-id=okp4-${{ matrix.context.network }} \
+              --keyring-backend test
+
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+              collect-gentxs \
+              --home /.okp4d
+
+      - name: Start the blockchain
+        run: |
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+              start \
+              --home /.okp4d \
+              --moniker okp4-node &
+
+      - name: Wait for blockchain to start
+        uses: ifaxity/wait-on-action@v1
+        with:
+          resource: http://0.0.0.0:26657/status
+          timeout: 10000 # ms
+
+      - name: Verify blockchain startup
+        run: |
+          STATUS=$(curl http://0.0.0.0:26657/status)
+          CHECK=$(echo $STATUS | jq '.result.validator_info | has("address")')
+
+          if [ $CHECK != "true" ]; then
+            echo "❌ Blockchain test failed"
+            echo "$STATUS"
+            exit -1
+          fi
+
+      - name: Stop the blockchain
+        run: |
+          ps -ef | grep 'okp4d' | grep -v grep | awk '{print $2}' | xargs -r kill -9

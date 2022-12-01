@@ -2,10 +2,12 @@
 # 🔗 `okp4-nemeton`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-okp4--nemeton-blue?style=for-the-badge)
-![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
+![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg?style=for-the-badge)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2022--10--17T13%3A00%3A00Z-red?style=for-the-badge)
 ![nb-validators](https://img.shields.io/badge/%F0%9F%A7%91%E2%80%8D%E2%9A%96%EF%B8%8F%20core%20validators-10-brightgreen?style=for-the-badge)
+
+> :warning: **This chain was stopped on 30/12/22**. The active testnet is: [nemeton-1](../nemeton-1/README.md).
 
 ## Register in the Genesis
 

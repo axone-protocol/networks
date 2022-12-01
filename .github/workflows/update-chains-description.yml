@@ -68,7 +68,7 @@ jobs:
           usersInfo="${RUNNER_TEMP}$(uuidgen).json"
           echo "{" >> "$usersInfo"
           first="true"
-          for row in $(cat "./chains/nemeton/genesis.json" \
+          for row in $(cat "$genesis" \
             | jq -r '.app_state.genutil.gen_txs[].body.messages[].description.identity | select(. != "") | @base64'); do
               userId=$(echo "$row" | base64 --decode)
 

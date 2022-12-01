@@ -10,7 +10,7 @@
 
 > ℹ️ **Registration is only open for Druids 🧙‍♂️**. See [Nemeton program](https://nemeton.okp4.network/).
 
-To register your validator node in the `genesis.json` you just need to provide a signed `gentx` in a [⚖️ Register Validator issue](https://github.com/okp4/networks/issues).
+To register your validator node in the `genesis.json` you just need to provide a signed `gentx` with an initial delegation of `10000000000uknow` in a [⚖️ Register Validator issue](https://github.com/okp4/networks/issues).
 
 The gentx generation can be done as follow (this is an example script, adapt it to your needs) with the [okp4d](https://github.com/okp4/okp4d/releases) binary matching the [network's version](/chains/nemeton-1/version.txt):
 

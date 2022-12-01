@@ -15,7 +15,7 @@ body:
       description: Choose the OKP4 network you want to join
       multiple: false
       options:
-        - nemeton
+        - nemeton-1
     validations:
       required: true
   - type: textarea

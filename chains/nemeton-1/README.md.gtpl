@@ -5,7 +5,6 @@
 ![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/{{ "⏰" | urlquery }}%20genesis%20time-{{ (datasource "genesis").genesis_time | urlquery | strings.ReplaceAll "-" "--" }}-red?style=for-the-badge)
-![nb-validators](https://img.shields.io/badge/{{ "🧑‍⚖️" | urlquery }}%20core%20validators-{{ (datasource "genesis") | jsonpath "$..messages[?(@.min_self_delegation)]" | len }}-brightgreen?style=for-the-badge)
 
 ## Register in the Genesis
 
@@ -43,33 +42,3 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   --security-contact "validator@foo.network"
 ```
 
-## Genesis validators
-
-Here's the list of the current 
-
-<table>
-  <tr>
-    <th>Moniker</th>
-    <th>Details</th>
-    <th>Identity</th>
-    <th>Site</th>
-  </tr>
-{{- $txs := (datasource "genesis") | jsonpath "$..messages[?(@.min_self_delegation)]" -}}
-{{- range $key, $value := $txs }}
-{{- $url := "" -}}
-{{- if $value.description.website | strings.HasPrefix "http" -}}
-{{- $url = $value.description.website -}}
-{{- else if $value.description.website -}}
-{{- $url = printf "%s%s" "https://" $value.description.website -}}
-{{- end -}}
-{{- $userInfo := $value.description.identity | index (datasource "usersInfo") }}
-  <tr>
-   <td><pre>{{ $value.description.moniker | html }}</pre></td>
-   <td>{{ $value.description.details | html }}</td>
-   <td>{{ if $value.description.identity }}
-     <p align="center"><img width="80px" src="{{ $userInfo.keybase.picture_url }}"/></p>
-     <a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
-   <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end -}}
-  </tr>
-{{- end }}
-</table>

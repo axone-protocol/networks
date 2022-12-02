@@ -1,11 +1,11 @@
 {
-  "genesis_time": "2022-12-14T15:00:00Z",
-  "chain_id": "okp4-nemeton-1",
+  "genesis_time": "2022-12-01T20:43:33.646538732Z",
+  "chain_id": "okp4-testnet-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
-      "max_gas": "10000000",
+      "max_gas": "-1",
       "time_iota_ms": "1000"
     },
     "evidence": {
@@ -30,7 +30,15 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "okp41hzcar26aqp4u5mkaanyxxwatn6qtpce475wxag",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
     },
     "authz": {
       "authorization": []
@@ -40,33 +48,19 @@
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [],
-      "supply": [],
-      "denom_metadata": [
+      "balances": [
         {
-          "description": "The native token of ØKP4",
-          "denom_units": [
+          "address": "okp41hzcar26aqp4u5mkaanyxxwatn6qtpce475wxag",
+          "coins": [
             {
               "denom": "uknow",
-              "exponent": 0,
-              "aliases": [
-                "microknow"
-              ]
-            },
-            {
-              "denom": "know",
-              "exponent": 6,
-              "aliases": []
+              "amount": "10000200000"
             }
-          ],
-          "base": "uknow",
-          "display": "know",
-          "name": "OKP4 Network",
-          "symbol": "KNOW",
-          "uri": "",
-          "uri_hash": ""
+          ]
         }
-      ]
+      ],
+      "supply": [],
+      "denom_metadata": []
     },
     "capability": {
       "index": "1",
@@ -74,7 +68,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "uknow",
+        "denom": "stake",
         "amount": "1000"
       }
     },
@@ -121,14 +115,14 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "uknow",
+            "denom": "stake",
             "amount": "10000000"
           }
         ],
         "max_deposit_period": "172800s"
       },
       "voting_params": {
-        "voting_period": "1209600s"
+        "voting_period": "172800s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
@@ -198,6 +192,7 @@
         }
       }
     },
+    "intertx": null,
     "logic": {
       "params": {
         "foo": "foo"
@@ -210,7 +205,7 @@
         "target_supply": "230000000000000"
       },
       "params": {
-        "mint_denom": "uknow",
+        "mint_denom": "stake",
         "annual_reduction_factor": "0.200000000000000000",
         "blocks_per_year": "6311520"
       }
@@ -218,8 +213,8 @@
     "params": null,
     "slashing": {
       "params": {
-        "signed_blocks_window": "10000",
-        "min_signed_per_window": "0.050000000000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"
@@ -230,10 +225,10 @@
     "staking": {
       "params": {
         "unbonding_time": "1814400s",
-        "max_validators": 150,
+        "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "uknow",
+        "bond_denom": "stake",
         "min_commission_rate": "0.000000000000000000"
       },
       "last_total_power": "0",
@@ -257,7 +252,7 @@
     "wasm": {
       "params": {
         "code_upload_access": {
-          "permission": "Nobody",
+          "permission": "Everybody",
           "address": "",
           "addresses": []
         },

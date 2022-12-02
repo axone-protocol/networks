@@ -35,7 +35,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   --commission-rate 0.05 \
   --commission-max-rate 0.2 \
   --commission-max-change-rate 0.01 \
-  --min-self-delegation 1
+  --min-self-delegation 1 \
   --website "https://foo.network" \
   --details "My validator" \
   --identity "6C36E7C076BFDCE4" \

@@ -1,0 +1,76 @@
+name: Resolve Register validator conflicts
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+concurrency:
+  group: resolve-conflict
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    runs-on: ubuntu-22.04
+    outputs:
+      pr-matrix: ${{ steps.pr-matrix.outputs.pr-list }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: prepare branch list
+        id: pr-matrix
+        # TODO should be updated before PR
+        run: |
+          PR_LIST=$(gh pr list --json title,headRefName --search "user:ad2ien repo:ad2ien/networks state:open ⚖ Register in:title mergeable:false")
+          echo "pr-list=${PR_LIST}" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
+
+  resolve-conflicts:
+    if: needs.prepare.outputs.pr-matrix != '[]'
+    runs-on: ubuntu-22.04
+    needs: prepare
+    strategy:
+      matrix:
+        context: ${{ fromJson(needs.prepare.outputs.pr-matrix) }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          ref: matrix.context.headRefName
+
+      - name: resolve conflicts
+        run: |
+          set -eo pipefail
+          CHAIN_ID=${BRANCH##*register-}
+
+          git diff @~ @ -- chains/$CHAIN_ID/genesis.json > temp-diff.patch
+
+          TEMP=$(grep ^\+ temp-diff.patch | cut -c2-)
+
+          ACCOUNT_ELT=$(echo $TEMP | grep -o -P '(?<="accounts": \[ ).*(?= \] "balances)')
+          BALANCE_ELT=$(echo $TEMP | grep -o -P '(?<="balances": \[ ).*(?= \], "gen_txs)')
+          GENTX_ELT=$(echo $TEMP | grep -o -P '(?<="gen_txs": \[ ).*(?= \] })')
+
+          # TODO Validate stuff
+
+          git show main:chains/$CHAIN_ID/genesis.json \
+          | jq ".app_state.auth.accounts += [$ACCOUNT_ELT]" \
+          | jq ".app_state.bank.balances += [$BALANCE_ELT]" \
+          | jq ".app_state.genutil.gen_txs += [$GENTX_ELT]" \
+            > genesis-temp.json
+
+          mv genesis-temp.json chains/$CHAIN_ID/genesis.json
+        env:
+          BRANCH: matrix.context.headRefName
+
+      - name: amend commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_options: "--amend --no-edit"
+          push_options: "--force"
+          file_pattern: "chains/*/genesis.json"
+          token: ${{ secrets.OKP4_TOKEN }}

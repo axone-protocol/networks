@@ -1,0 +1,97 @@
+name: Auto resolve register validator conflicts
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: resolve-conflict
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    runs-on: ubuntu-22.04
+    outputs:
+      pr-matrix: ${{ steps.pr-matrix.outputs.pr-list }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: prepare branch list
+        id: pr-matrix
+        run: |
+          PR_LIST=$(gh pr list --json title,headRefName,mergeStateStatus --search "org:okp4 repo:okp4/networks state:open ⚖ Register in:title author:bot-anik")
+          echo "pr-list=${PR_LIST}" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
+
+  resolve-conflicts:
+    if: needs.prepare.outputs.pr-matrix != '[]'
+    runs-on: ubuntu-22.04
+    needs: prepare
+    strategy:
+      matrix:
+        context: ${{ fromJson(needs.prepare.outputs.pr-matrix) }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: rebase and resolve genesis conflicts
+        if: ${{ matrix.context.mergeStateStatus }} == 'DIRTY'
+        run: |
+          set -eo pipefail
+          CHAIN_ID=${BRANCH##*register-}
+
+          git switch ${{ matrix.context.headRefName }}
+
+          git diff @~ @ -- chains/$CHAIN_ID/genesis.json > temp-diff.patch
+
+          PATCH=$(grep ^\+ temp-diff.patch | cut -c2-)
+
+          ACCOUNT_ELT=$(echo $PATCH | grep -o -P '(?<="accounts": \[ ).*(?= \] "balances)')
+          BALANCE_ELT=$(echo $PATCH | grep -o -P '(?<="balances": \[ ).*(?= \], "gen_txs)')
+          GENTX_ELT=$(echo $PATCH | grep -o -P '(?<="gen_txs": \[ ).*(?= \] })')
+
+          if [ "$(echo $ACCOUNT_ELT | jq .address)" = 'null' ]; then
+            exit 1
+          fi
+
+          if [ "$(echo $BALANCE_ELT | jq .address)" = 'null' ]; then
+            exit 1
+          fi
+
+          if [ "$(echo $GENTX_ELT | jq .body.messages[0].description.moniker)" = 'null' ]; then
+            exit 1
+          fi
+
+          git show main:chains/$CHAIN_ID/genesis.json \
+          | jq ".app_state.auth.accounts += [$ACCOUNT_ELT]" \
+          | jq ".app_state.bank.balances += [$BALANCE_ELT]" \
+          | jq ".app_state.genutil.gen_txs += [$GENTX_ELT]" \
+            > genesis-temp.json
+
+          git config user.name "$GIT_USER_NAME"
+          git config user.email "$GIT_USER_MAIL"
+          git rebase -X ours main
+          mv genesis-temp.json chains/$CHAIN_ID/genesis.json
+        env:
+          BRANCH: ${{ matrix.context.headRefName }}
+          GIT_USER_NAME: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
+          GIT_USER_MAIL: ${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}
+
+      - name: Get last commit message
+        id: last-commit-message
+        run: |
+          echo "msg=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
+
+      - name: amend commit and force push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: ${{ steps.last-commit-message.outputs.msg }}
+          commit_options: "--amend --no-edit"
+          push_options: "--force"
+          file_pattern: "chains/*/genesis.json"
+          skip_fetch: true

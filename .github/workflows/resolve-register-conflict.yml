@@ -43,6 +43,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.OKP4_TOKEN }}
 
+      - name: Get network register config
+        id: register-config
+        run: |
+          set -eo pipefail
+          config=$(cat chains/${{ steps.next-pr.outputs.chain-id }}/register-config.json | jq -c '.')
+          echo "config=${config}" >> $GITHUB_OUTPUT
+
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v5
         with:
@@ -57,49 +64,43 @@ jobs:
         run: |
           set -eo pipefail
           CHAIN_ID=${{ steps.next-pr.outputs.chain-id }}
+          BRANCH=${{ steps.next-pr.outputs.headRefName }}
+          ISSUE_NUM=$(echo "$BRANCH" | sed 's/feat\///' | cut -c1-3)
 
-          git switch ${{ steps.next-pr.outputs.headRefName }}
+          git switch $BRANCH
 
-          if [ -z "$(git diff --check  main)" ]; then
+          MERGE_BASE=$(git merge-base $BRANCH main)
+          git merge-tree $MERGE_BASE $BRANCH main | xargs |
+          if grep -oe '<<<<<<<.*=======.*>>>>>>>';then
+              echo "conflict-exists=true" >> $GITHUB_OUTPUT
+          else
             echo No merge conflicts
             echo "conflict-exists=false" >> $GITHUB_OUTPUT
             exit 0
-          else
-            echo "conflict-exists=true" >> $GITHUB_OUTPUT
           fi
-
-          git diff @~ @ -- chains/$CHAIN_ID/genesis.json > temp-diff.patch
-          PATCH=$(grep ^\+ temp-diff.patch | cut -c2-)
-          ACCOUNT_ELT=$(echo $PATCH | grep -o -E '(\{ "@type": "/cosmos.auth.v1beta1.BaseAccount"[^}]*})')
-          BALANCE_ELT=$(echo $PATCH | grep -o -E '(\{ "address": [^}]*} ] })')
-          GENTX_ELT=$(echo $PATCH | grep -o -E '(\{ "body".*)')
-          if [[ $GENTX_ELT != *} ]]; then
-            GENTX_ELT=$(echo $GENTX_ELT"}")
-          fi
-          if [ "$(echo $ACCOUNT_ELT | jq .address)" = 'null' ]; then
-            echo wrong account elt >&2
-            exit 1
-          fi
-          if [ "$(echo $BALANCE_ELT | jq .address)" = 'null' ]; then
-            echo wrong balance elt >&2
-            exit 1
-          fi
-          if [ "$(echo $GENTX_ELT | jq .body.messages[0].description.moniker)" = 'null' ]; then
-            echo wrong gentx elt >&2
-            exit 1
-          fi
-
-          git show main:chains/$CHAIN_ID/genesis.json \
-          | jq ".app_state.auth.accounts += [$ACCOUNT_ELT]" \
-          | jq ".app_state.bank.balances += [$BALANCE_ELT]" \
-          | jq ".app_state.genutil.gen_txs += [$GENTX_ELT]" \
-            > genesis-temp.json
 
           git config user.name "$GIT_USER_NAME"
           git config user.email "$GIT_USER_MAIL"
+
           git rebase -X ours main
-          mv genesis-temp.json chains/$CHAIN_ID/genesis.json
+
+          git show main:chains/$CHAIN_ID/genesis.json > ./chains/$CHAIN_ID/genesis.json
+
+          GENTX=$(cat chains/$CHAIN_ID/gentx/gentx-$ISSUE_NUM.json)
+          OKP4D_VERSION=$(cat ./chains/$CHAIN_ID/version.txt)
+
+          mkdir -p $NODE_HOME
+          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:$OKP4D_VERSION init --home $NODE_HOME whatever
+          sudo cp chains/$CHAIN_ID/genesis.json $NODE_HOME/config/genesis.json
+
+          delegator_addr=$(echo "$GENTX" | jq -r '.body.messages[0].delegator_address')
+          delegator_balance="`expr ${{ fromJson(steps.register-config.outputs.config).delegation.amount }} + 200000`${{ fromJson(steps.register-config.outputs.config).delegation.denom }}"
+          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:$OKP4D_VERSION add-genesis-account --home $NODE_HOME $delegator_addr $delegator_balance
+
+          docker run --rm -v $NODE_HOME:$NODE_HOME -v $PWD/chains/$CHAIN_ID/gentx:/gentx okp4/okp4d:$OKP4D_VERSION collect-gentxs --home $NODE_HOME --gentx-dir /gentx
+          cp $NODE_HOME/config/genesis.json chains/$CHAIN_ID/genesis.json
         env:
+          NODE_HOME: /tmp/node
           BRANCH: ${{ steps.next-pr.outputs.headRefName }}
           GIT_USER_NAME: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }}
           GIT_USER_MAIL: ${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}

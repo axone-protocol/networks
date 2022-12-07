@@ -24,7 +24,7 @@ jobs:
         run: |
           set -eo pipefail
           LABEL_PREFIX="chain: ⛓️"
-          PR_LIST=$(gh pr list --json headRefName,mergeStateStatus,labels --search "org:okp4 repo:okp4/networks state:open label:register-validator author:bot-anik sort:created-asc")
+          PR_LIST=$(gh pr list --json headRefName,labels --search "org:okp4 repo:okp4/networks state:open label:register-validator author:bot-anik sort:created-asc")
           NUM_OF_PR=$(echo $PR_LIST | jq '. | length')
           if [[ $NUM_OF_PR = 0 ]]; then
             echo No PR waiting
@@ -34,14 +34,10 @@ jobs:
           CHAIN_LABEL=$(echo $OLDEST_PR | jq .labels | jq -r ".[] | select(.name | startswith(\"${LABEL_PREFIX}\"))" | jq .name)
           CHAIN_ID=$(echo ${CHAIN_LABEL/${LABEL_PREFIX}/} | tr -d ' ')
           if [ -z "$CHAIN_ID" ]; then
-            echo "No chain id on label" >&2
+            echo "No chain id on label"
             exit
           fi
-          echo "mergeStateStatus=$(echo $OLDEST_PR | jq .mergeStateStatus )"
-          echo "chain-id=${CHAIN_ID}"
-          echo "headRefName=$(echo $OLDEST_PR | jq .headRefName )"
 
-          echo "mergeStateStatus=$(echo $OLDEST_PR | jq .mergeStateStatus )" >> $GITHUB_OUTPUT
           echo "chain-id=${CHAIN_ID}" >> $GITHUB_OUTPUT
           echo "headRefName=$(echo $OLDEST_PR | jq .headRefName )" >> $GITHUB_OUTPUT
         env:
@@ -57,12 +53,20 @@ jobs:
           git_commit_gpgsign: true
 
       - name: rebase and resolve genesis conflicts
-        if: contains( steps.next-pr.outputs.mergeStateStatus, 'DIRTY')
+        id: resolve-conflict
         run: |
           set -eo pipefail
           CHAIN_ID=${{ steps.next-pr.outputs.chain-id }}
 
           git switch ${{ steps.next-pr.outputs.headRefName }}
+
+          if [ -z "$(git diff --check  main)" ]; then
+            echo No merge conflicts
+            echo "conflict-exists=false" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            echo "conflict-exists=true" >> $GITHUB_OUTPUT
+          fi
 
           git diff @~ @ -- chains/$CHAIN_ID/genesis.json > temp-diff.patch
           PATCH=$(grep ^\+ temp-diff.patch | cut -c2-)
@@ -101,13 +105,13 @@ jobs:
           GIT_USER_MAIL: ${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}
 
       - name: Get last commit message
-        if: contains( steps.next-pr.outputs.mergeStateStatus, 'DIRTY')
+        if: steps.resolve-conflict.outputs.conflict-exists == 'true'
         id: last-commit-message
         run: |
           echo "msg=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
 
       - name: amend commit and force push
-        if: contains( steps.next-pr.outputs.mergeStateStatus, 'DIRTY')
+        if: steps.resolve-conflict.outputs.conflict-exists == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: ${{ steps.last-commit-message.outputs.msg }}

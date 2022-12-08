@@ -16,7 +16,7 @@ The gentx generation can be done as follow (this is an example script, adapt it 
 
 ```sh
 # Init node
-okp4d --home mynode init your-moniker
+okp4d --home mynode init your-moniker --chain-id {{ (datasource "genesis").chain_id }}
 
 # Create keys, be careful with the mnemonic 👀
 okp4d --home mynode keys add your-key-name

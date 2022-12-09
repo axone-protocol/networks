@@ -1028,25 +1028,7 @@
           ]
         },
         {
-          "address": "okp418lpcac8p6w0yqx5d2g2deteh007zpjl4ec7swe",
-          "coins": [
-            {
-              "denom": "uknow",
-              "amount": "10000200000"
-            }
-          ]
-        },
-        {
           "address": "okp41grwa78d90afqxws8xmmsajkwre6d380p0thw4r",
-          "coins": [
-            {
-              "denom": "uknow",
-              "amount": "10000200000"
-            }
-          ]
-        },
-        {
-          "address": "okp41g20kmwn8djqjk2lgyfasmutd8g3m2vx2u8w38s",
           "coins": [
             {
               "denom": "uknow",
@@ -1155,15 +1137,6 @@
         },
         {
           "address": "okp41tm74m0nqnff20e384u6qn0vjes2px6mvgs8ry8",
-          "coins": [
-            {
-              "denom": "uknow",
-              "amount": "10000200000"
-            }
-          ]
-        },
-        {
-          "address": "okp41t7d0s0t046w2ttjktp7m7d3kkjgzwu3mw3ky8u",
           "coins": [
             {
               "denom": "uknow",
@@ -1325,15 +1298,6 @@
           ]
         },
         {
-          "address": "okp41snvtv4vwefqvmhy0sgcq2sknl92lxpqruausk8",
-          "coins": [
-            {
-              "denom": "uknow",
-              "amount": "10000200000"
-            }
-          ]
-        },
-        {
           "address": "okp41s788w9qjzqruv58c44p4dfcmnkx0xk2q0qc3m8",
           "coins": [
             {
@@ -1452,15 +1416,6 @@
         },
         {
           "address": "okp41jd6fdfacur78jhnwzervf3r9z4qu6tm23y59xn",
-          "coins": [
-            {
-              "denom": "uknow",
-              "amount": "10000200000"
-            }
-          ]
-        },
-        {
-          "address": "okp41jn9ycc8898lmhl749ng2q58fnum82pj4fzl3pd",
           "coins": [
             {
               "denom": "uknow",
@@ -1622,25 +1577,7 @@
           ]
         },
         {
-          "address": "okp41kshv0fqh5w042k6xlpyps6sl3vv0l89ertfxgt",
-          "coins": [
-            {
-              "denom": "uknow",
-              "amount": "10000200000"
-            }
-          ]
-        },
-        {
           "address": "okp41hqrzdz39un44kykvan58j9hfeygtgql8q5ztqy",
-          "coins": [
-            {
-              "denom": "uknow",
-              "amount": "10000200000"
-            }
-          ]
-        },
-        {
-          "address": "okp41hpf9q9u4g0qmnl4qcumxcu0g8uqtmvg027e0ad",
           "coins": [
             {
               "denom": "uknow",

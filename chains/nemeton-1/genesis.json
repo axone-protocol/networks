@@ -835,6 +835,13 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "okp41mnrrkfaymm5wh520s6fqx77yfc78wnla39t9nm",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -1803,6 +1810,15 @@
         },
         {
           "address": "okp41m9k2c44hqvwta764fmpgs50y02ps74pzr9xxv6",
+          "coins": [
+            {
+              "denom": "uknow",
+              "amount": "10000200000"
+            }
+          ]
+        },
+        {
+          "address": "okp41mnrrkfaymm5wh520s6fqx77yfc78wnla39t9nm",
           "coins": [
             {
               "denom": "uknow",
@@ -9145,6 +9161,68 @@
           },
           "signatures": [
             "aM9RB64Jb4IMvTa8hauFtzxTw3RY5mdDNZBBTqKI175yJOiqfslzqFgdQfe5xEzUxs5+GT24A29+NLCFJzO0OQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "AmberGroup",
+                  "identity": "6C36E7C076BFDCE4",
+                  "website": "https://www.ambergroup.io",
+                  "security_contact": "jieming.li@ambergroup.io",
+                  "details": "Amber is building the future of digital assets"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okp41mnrrkfaymm5wh520s6fqx77yfc78wnla39t9nm",
+                "validator_address": "okp4valoper1mnrrkfaymm5wh520s6fqx77yfc78wnlayzmvd6",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "KzafQgmVAbEGfeU6wXn0yyNn87Fe0uhu9Z0qA+A+6Kc="
+                },
+                "value": {
+                  "denom": "uknow",
+                  "amount": "10000000000"
+                }
+              }
+            ],
+            "memo": "283bb9bc036e9a66d827d806f467c585ec7e474f@10.136.49.124:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A2wglq5FDQtI6TzXb7Ag/mRF74OXwJ1hiT09KOyJOKsp"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "zXzcAHceGJ0gfy8QW41Yll0cMRXtvy0Y6eKMVrMMJqRAtY0JfP53W/F8+vwMmC1tAscY1h2acswOkDCS/7OHJA=="
           ]
         }
       ]

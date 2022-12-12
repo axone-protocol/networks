@@ -982,6 +982,13 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "okp41uthjh4d884mrmy8jnwwsvsxg8lt3hl77kgt3x6",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -2067,6 +2074,15 @@
         },
         {
           "address": "okp41muc3xr5nafa3fey56sw46mfhdfmp7nsz9qljgu",
+          "coins": [
+            {
+              "denom": "uknow",
+              "amount": "10000200000"
+            }
+          ]
+        },
+        {
+          "address": "okp41uthjh4d884mrmy8jnwwsvsxg8lt3hl77kgt3x6",
           "coins": [
             {
               "denom": "uknow",
@@ -10720,6 +10736,68 @@
           },
           "signatures": [
             "BLoXU1F/W1lDSFQaEO7hWOTAa2ucvHt8s0crHBSv6qd2NWtYPAEJZfbpNngTOx6soJ/HoL+DKyPwNsMviIitGw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "your-moniker",
+                  "identity": "6C36E7C076BFDCE4",
+                  "website": "https://foo.network",
+                  "security_contact": "validator@foo.network",
+                  "details": "My validator"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okp41uthjh4d884mrmy8jnwwsvsxg8lt3hl77kgt3x6",
+                "validator_address": "okp4valoper1uthjh4d884mrmy8jnwwsvsxg8lt3hl77r0mccm",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "1EEs9cthDJpY1pHOOffGW3mXYF7ZhoMlkj0+7xbUZvE="
+                },
+                "value": {
+                  "denom": "uknow",
+                  "amount": "10000000000"
+                }
+              }
+            ],
+            "memo": "d2b2b0794d9600aac5fd272d59d9ffe5e9e91348@82.165.248.226:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AqtEzPsLsb1Rr9o5CMAqKgkQpcXCtlZ9ytkqjK/RIQ9o"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "AvCc/c2Db5QUMJLkK3OoYRzxqC48pHTGA9sDbaZFKklrDWrpzrpgsnMzS2VRc5ngX9R0eLLxN8Px8mnr6rXMrg=="
           ]
         }
       ]

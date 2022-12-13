@@ -167,7 +167,7 @@ jobs:
           title: '⚖️ Register `${{ needs.resolve-context.outputs.moniker }}` Validator'
           body: |
             Register [new validator](${{ github.event.issue.html_url }}) gentx on the ${{ needs.resolve-context.outputs.network }} network.
-          labels: register-validator
+          labels: "register-validator,chain: ⛓️ ${{ needs.resolve-context.outputs.network }}"
           assignees: amimart,ccamel
           reviewers: amimart,ccamel,tpelliet
 

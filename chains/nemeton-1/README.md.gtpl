@@ -16,7 +16,7 @@ The gentx generation can be done as follow (this is an example script, adapt it 
 
 ```sh
 # Init node
-okp4d --home mynode init your-moniker
+okp4d --home mynode init your-moniker --chain-id {{ (datasource "genesis").chain_id }}
 
 # Create keys, be careful with the mnemonic 👀
 okp4d --home mynode keys add your-key-name
@@ -35,7 +35,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   --commission-rate 0.05 \
   --commission-max-rate 0.2 \
   --commission-max-change-rate 0.01 \
-  --min-self-delegation 1
+  --min-self-delegation 1 \
   --website "https://foo.network" \
   --details "My validator" \
   --identity "6C36E7C076BFDCE4" \

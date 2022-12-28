@@ -10,11 +10,11 @@ COLOR_RESET  = $(shell tput -Txterm sgr0)
 # Images
 DOCKER_IMAGE_MARKDOWNLINT_CLI = thegeeklab/markdownlint-cli:0.32.2
 
-.PHONY: all help
-
 ## Lint:
+.PHONY: lint
 lint: lint-markdown ## Lint with all available linters
 
+.PHONY: lint-markdown
 lint-markdown: ## Lint Markdown files
 	@echo "${COLOR_CYAN}🔍 Inspecting markdown files${COLOR_RESET}"
 	@docker run --rm \
@@ -24,6 +24,7 @@ lint-markdown: ## Lint Markdown files
   		'**/*.md'
 
 ## Help:
+.PHONY: help
 help: ## Show this help.
 	@echo ''
 	@echo 'Usage:'

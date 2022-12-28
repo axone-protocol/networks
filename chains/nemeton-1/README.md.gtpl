@@ -61,12 +61,12 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
 {{- end -}}
 {{- $userInfo := $value.description.identity | index (datasource "usersInfo") }}
   <tr>
-   <td><pre>{{ $value.description.moniker | html }}</pre></td>
-   <td>{{ $value.description.details | html }}</td>
-   <td>{{ if $value.description.identity }}
-     <p align="center"><img width="80px" src="{{ $userInfo.keybase.picture_url }}"/></p>
-     <a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
-   <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end -}}
+    <td><pre>{{ $value.description.moniker | html }}</pre></td>
+    <td>{{ $value.description.details | html }}</td>
+    <td>{{ if (and $value.description.identity $userInfo) }}
+      <p align="center"><img width="80px" src="{{ $userInfo.keybase.picture_url }}"/></p>
+      <a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
+    <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end -}}
   </tr>
 {{- end }}
 </table>

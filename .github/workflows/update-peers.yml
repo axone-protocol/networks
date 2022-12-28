@@ -13,11 +13,10 @@ concurrency:
 jobs:
   update-peers:
     runs-on: ubuntu-22.04
-    if: "false" # disabled for now - waiting for nemeton-1 chain to be up and running.
     strategy:
       matrix:
         target:
-          - node: "https://okp4-testnet.nodejumper.io"
+          - node: "http://rpc.okp.ppnv.space:36657"
             chain: "nemeton-1"
     steps:
       - name: Checkout

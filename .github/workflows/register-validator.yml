@@ -28,6 +28,7 @@ jobs:
         id: parse-issue
         uses: stefanbuck/github-issue-parser@v3
         with:
+          issue-body: ${{ github.event.issue.body }}
           template-path: .github/ISSUE_TEMPLATE/register-validator.yml
 
       - name: Extract gentx

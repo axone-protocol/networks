@@ -287,9 +287,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Stigga</pre></td>
     <td>Individual PoS validator in Cosmos Hub Ecosystem chains, Discord:alexmed#5188</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/bb1c3c178a032e6fdac7a4bab139f905_200_200.jpg"/></p>
-      <a href="https://keybase.io/alexmed911">8A41E5318619A3ED</a></td>
+    <td></td>
     <td><a href="https://stigga.org/">https://stigga.org/</a></tr>
   <tr>
     <td><pre>UbiquitousNodes</pre></td>

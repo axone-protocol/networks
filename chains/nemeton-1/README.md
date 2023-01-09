@@ -264,7 +264,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Nodejumper 🚀</pre></td>
     <td>Professional POS Validator services, Cosmos contributors and supporters, RESTAKE APP compatible</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/97ab91a3e21bc18e31cea07d771ae705_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8506223c573a1bee45e9182de7684805_200_200.jpg"/></p>
       <a href="https://keybase.io/nodejumper">FFB0AA51A2DF5954</a></td>
     <td><a href="https://nodejumper.io">https://nodejumper.io</a></tr>
   <tr>
@@ -754,7 +754,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Informal Systems</pre></td>
     <td>Informal Systems x Cephalopod Equipment - infrastructure for decentralized intelligence</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/26e17a7d3d180ad4207ce2440aeec105_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/3a6087c347a6ee0d02f82b4fe2081f05_200_200.jpg"/></p>
       <a href="https://keybase.io/cephalopod_equip">6408AA029ADBE364</a></td>
     <td><a href="https://informal.systems">https://informal.systems</a></tr>
   <tr>
@@ -903,7 +903,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>StakeLab</pre></td>
     <td>Staking and Relaying Hub for Cosmos ecosystem</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4d12b6e7fabda98926eca792d0d68a05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/63585765d299338807f158d6aadd2e05_200_200.jpg"/></p>
       <a href="https://keybase.io/stakelab">F12B081334CBE0C6</a></td>
     <td><a href="https://www.stakelab.fr">https://www.stakelab.fr</a></tr>
   <tr>

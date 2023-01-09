@@ -84,7 +84,7 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
    <td><pre>StakeLab</pre></td>
    <td>Staking Hub for Cosmos ecosystem</td>
    <td>
-     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4d12b6e7fabda98926eca792d0d68a05_200_200.jpg"/></p>
+     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/63585765d299338807f158d6aadd2e05_200_200.jpg"/></p>
      <a href="https://keybase.io/stakelab">F12B081334CBE0C6</a></td>
    <td><a href="https://www.stakelab.fr">https://www.stakelab.fr</a></tr>
   <tr>

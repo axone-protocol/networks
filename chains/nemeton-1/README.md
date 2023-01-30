@@ -312,7 +312,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>stanislove</pre></td>
     <td>Available and reliable validator</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/c41ed20ec39eeb0dce88410055e08005_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5eaec55e16538f2ecf801b402a02e405_200_200.jpg"/></p>
       <a href="https://keybase.io/stanisla">8E102EA8D78D6769</a></td>
     <td><a href="https://github.com/stasjara">https://github.com/stasjara</a></tr>
   <tr>

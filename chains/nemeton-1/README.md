@@ -318,9 +318,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>NodeXCapital</pre></td>
     <td>Hi, NodeX Capital is here! secure and reliable nodes validator. Discord : https://discord.gg/nodexcapital</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/cb353a4553244a9a5c77e73af2911405_200_200.jpg"/></p>
-      <a href="https://keybase.io/nodex_capital">BC531C55249AA253</a></td>
+    <td></td>
     <td><a href="https://nodexcapital.com">https://nodexcapital.com</a></tr>
   <tr>
     <td><pre>punq</pre></td>
@@ -615,7 +613,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Decloud Nodes Lab</pre></td>
     <td>Powered on Akash Network!</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/b800fc997bbf0f653d237758c053ba05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7a1e4d5ab3fb4392601881a96f8b4d05_200_200.jpg"/></p>
       <a href="https://keybase.io/dimokus">86C945B6D5F526E6</a></td>
     <td><a href="https://akash.network/">https://akash.network/</a></tr>
   <tr>

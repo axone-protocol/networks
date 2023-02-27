@@ -179,7 +179,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Nodes Squad</pre></td>
     <td>Validator by Nodes Squad Team</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/6855245f2b82d82d656f805e861a2905_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5f3e892877baaa2f1996c60408515905_200_200.jpg"/></p>
       <a href="https://keybase.io/id577">2CBCDC74B2FF41C7</a></td>
     <td><a href="https://nodessquad.com">https://nodessquad.com</a></tr>
   <tr>
@@ -438,7 +438,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>tRDM</pre></td>
     <td>In Web3 we trust</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/9dfa30f032df3419d886a20aad1efc05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/b4a56371bddef54ac5f9184d90a30a05_200_200.jpg"/></p>
       <a href="https://keybase.io/trdm">A736F5012E6F594D</a></td>
     <td><a href="https://nodera.org">https://nodera.org</a></tr>
   <tr>

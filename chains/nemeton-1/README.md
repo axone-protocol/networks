@@ -488,7 +488,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre> AutoStake 🛡️ Slash Protected</pre></td>
     <td>Earn higher Yields with AutoStake.net 🛡️ 100% Refund on ALL forms of slashing backed by a SAFU fund 🛡️ IBC Relayer: ibc.autostake.net &amp; 💸Auto-REStake: wallet.autostake.net/evmos 💸 &amp; twitter.com/AutoStake_ &amp; telegram.me/AutoStake_net</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/766cc67618315081208647bdceb42605_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e287b7b8c76a0960efc90a454f52ac05_200_200.jpg"/></p>
       <a href="https://keybase.io/autostake">4D3303E20A4D2C32</a></td>
     <td></tr>
   <tr>
@@ -693,7 +693,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>kallen</pre></td>
     <td>I��m Binance Angel and former software engineer with a focus on analytics</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/af1fe9c8b67772956b13ff51b4e38b05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7aed74c3f026858df81aa2d4d9fc5c05_200_200.jpg"/></p>
       <a href="https://keybase.io/kallenn">CBDB7BD6F3C7A207</a></td>
     <td><a href="https://kallen.cc/">https://kallen.cc/</a></tr>
   <tr>

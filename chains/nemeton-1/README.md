@@ -381,7 +381,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>𝐫𝐨𝐦𝐚𝐧✔︎𝟏𝟖𝟏𝟐</pre></td>
     <td>Individual staking service</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0dc55f468ae7d1df070f03ec30303705_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e99f51f2c692312a85dda3a99bc60a05_200_200.jpg"/></p>
       <a href="https://keybase.io/romanv1812">12151B2C705E9865</a></td>
     <td><a href="https://github.com/romanv1812">https://github.com/romanv1812</a></tr>
   <tr>
@@ -488,7 +488,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre> AutoStake 🛡️ Slash Protected</pre></td>
     <td>Earn higher Yields with AutoStake.net 🛡️ 100% Refund on ALL forms of slashing backed by a SAFU fund 🛡️ IBC Relayer: ibc.autostake.net &amp; 💸Auto-REStake: wallet.autostake.net/evmos 💸 &amp; twitter.com/AutoStake_ &amp; telegram.me/AutoStake_net</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e287b7b8c76a0960efc90a454f52ac05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/051cdbd6d051d3cafcdb45377c6b5c05_200_200.jpg"/></p>
       <a href="https://keybase.io/autostake">4D3303E20A4D2C32</a></td>
     <td></tr>
   <tr>

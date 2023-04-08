@@ -367,7 +367,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Anonstake</pre></td>
     <td>Our robust infrastructure helps to secure the networks we support</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/42bb6fb5c032f2288e9537a067124505_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/368df8f627654fe47838039f26060905_200_200.jpg"/></p>
       <a href="https://keybase.io/anonstake">FCAD12142E878B17</a></td>
     <td><a href="https://anonstake.com">https://anonstake.com</a></tr>
   <tr>

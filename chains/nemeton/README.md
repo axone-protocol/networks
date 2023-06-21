@@ -98,7 +98,7 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
    <td><pre>NodeStake</pre></td>
    <td>NodeStake is the professional Validator and IBC Relayer.⚛️7*24h | https://twitter.com/Nodestake_top</td>
    <td>
-     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/d241523eafbfcaa21dc776309f329205_200_200.jpg"/></p>
+     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5912a329316356b98611c807d0c11e05_200_200.jpg"/></p>
      <a href="https://keybase.io/nodestake">94EFE192B2C52424</a></td>
    <td><a href="https://nodestake.top">https://nodestake.top</a></tr>
   <tr>

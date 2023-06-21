@@ -400,7 +400,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>STAKECRAFT</pre></td>
     <td>Trustworthy Validator</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/77cdc425f747d8ea1e4111d72624ce05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/610d0216baa9890a212948ffb6592505_200_200.jpg"/></p>
       <a href="https://keybase.io/stakecraft">42BBD6183544D905</a></td>
     <td><a href="https://stakecraft.com">https://stakecraft.com</a></tr>
   <tr>
@@ -667,7 +667,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>BwareLabs</pre></td>
     <td>Guaranteed availability and up-time backed by a professional blockchain infrastructure team.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/b07b901b1942204617b3bd5df154c105_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a7d03c9b2155a6821070eeecb4c24705_200_200.jpg"/></p>
       <a href="https://keybase.io/bwarelabs">E83A08BEEE7A70BD</a></td>
     <td><a href="https://bwarelabs.com">https://bwarelabs.com</a></tr>
   <tr>
@@ -728,7 +728,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>NodeStake</pre></td>
     <td>NodeStake is the professional Validator and IBC Relayer.⚛️7*24h | https://twitter.com/Nodestake_top</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/d241523eafbfcaa21dc776309f329205_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5912a329316356b98611c807d0c11e05_200_200.jpg"/></p>
       <a href="https://keybase.io/nodestake">94EFE192B2C52424</a></td>
     <td><a href="https://nodestake.top">https://nodestake.top</a></tr>
   <tr>

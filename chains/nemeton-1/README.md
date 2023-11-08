@@ -62,14 +62,14 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>BccNodes</pre></td>
     <td>Professionally managed institutional grade blockchain infrastructure provider.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/17dcb22c6934748b6d4ea234af921b05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/cb1991a04b12a85b7988cad86c351e05_200_200.jpg"/></p>
       <a href="https://keybase.io/berkcan1">C5337EB8B55DFA0C</a></td>
     <td><a href="https://bccnodes.net/">https://bccnodes.net/</a></tr>
   <tr>
     <td><pre>kjnodes</pre></td>
     <td>Providing professional staking services with high performance and availability.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/637706e0a9bc5f8dcdacb1cf967c2605_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/d6f1e63ac25d855dad5d1d5915988205_200_200.jpg"/></p>
       <a href="https://keybase.io/kjnodes">1C5ACD2EEF363C3A</a></td>
     <td><a href="http://kjnodes.com">http://kjnodes.com</a></tr>
   <tr>
@@ -104,7 +104,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Cros-nest</pre></td>
     <td>We operate state-of-the-art distributed and redundant validator and relayer infrastructure for Proof of Stake Blockchains.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/febce068a5aebf84e640079467e88e05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4e8a6ee78ed698828e6c2baec569d305_200_200.jpg"/></p>
       <a href="https://keybase.io/cros_nest">5F1D6AC7EA588676</a></td>
     <td><a href="https://www.cros-nest.com">https://www.cros-nest.com</a></tr>
   <tr>
@@ -226,7 +226,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>stakingcabin</pre></td>
     <td>StakingCabin</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/f794faefb3f984a71f720e63cc774d05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8640a01e358b50a04de28f41f4707f05_200_200.jpg"/></p>
       <a href="https://keybase.io/stakingcabin">C0522DF992B0C407</a></td>
     <td><a href="https://stakingcabin.com">https://stakingcabin.com</a></tr>
   <tr>
@@ -393,7 +393,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>✅ CryptoCrew Validators #IBCgang</pre></td>
     <td>CryptoCrew validator &amp; multi-chain IBC-relayer service for OKP4-TESTNET. Based in Europe. t.me/cryptocrew_validators</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a88e5e584409d84bca5d8fedcbf84b05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7f4b384472efeccffd7685227f698405_200_200.jpg"/></p>
       <a href="https://keybase.io/clemenscc">9AE70F9E3EDA8956</a></td>
     <td><a href="https://ccvalidators.com">https://ccvalidators.com</a></tr>
   <tr>
@@ -495,7 +495,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Swiss Staking</pre></td>
     <td>Never jailed. Perfect uptime. Airdrop eligibility. IBC relayer. Community contributor. Backing p-chains. High security approach.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e7aca2c60e1b658db8cc8f175ce9aa05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/ff6f58998b7612c5ff3c808aed1af005_200_200.jpg"/></p>
       <a href="https://keybase.io/swissstaking">165F85FC0194320D</a></td>
     <td><a href="https://swiss-staking.ch">https://swiss-staking.ch</a></tr>
   <tr>
@@ -792,7 +792,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Huginn</pre></td>
     <td>Professional staking service. 7/24 monitoring and best uptime. Huginn is an organization that aims to teach its community about Cosmos SDK and Blockchain</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/1002d5d457bac2a09c43ab4689f4b405_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/c20e27856787fd5d28af6fbed15f4305_200_200.jpg"/></p>
       <a href="https://keybase.io/huginn_academy">D27EE330254D4F6A</a></td>
     <td><a href="https://huginn.tech">https://huginn.tech</a></tr>
   <tr>
@@ -837,7 +837,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Vixello</pre></td>
     <td>Validating The Trustless</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/f6ecbf0649137a619b99b24f4e8db905_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8f0c38c2d3636b891e2ae181baa39505_200_200.jpg"/></p>
       <a href="https://keybase.io/vixello">042979AB37056663</a></td>
     <td><a href="https://vixello.com">https://vixello.com</a></tr>
   <tr>

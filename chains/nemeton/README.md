@@ -58,7 +58,7 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
    <td><pre>✅ CryptoCrew Validators #IBCgang</pre></td>
    <td>CryptoCrew validator &amp; multi-chain IBC-relayer service for OKP4. Based in Europe. t.me/cryptocrew_validators</td>
    <td>
-     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a88e5e584409d84bca5d8fedcbf84b05_200_200.jpg"/></p>
+     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7f4b384472efeccffd7685227f698405_200_200.jpg"/></p>
      <a href="https://keybase.io/clemenscc">9AE70F9E3EDA8956</a></td>
    <td><a href="https://ccvalidators.com">https://ccvalidators.com</a></tr>
   <tr>
@@ -77,7 +77,7 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
    <td><pre>Cros-nest</pre></td>
    <td>We operate state-of-the-art distributed and redundant validator and relayer infrastructure for Proof of Stake Blockchains.</td>
    <td>
-     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/febce068a5aebf84e640079467e88e05_200_200.jpg"/></p>
+     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4e8a6ee78ed698828e6c2baec569d305_200_200.jpg"/></p>
      <a href="https://keybase.io/cros_nest">5F1D6AC7EA588676</a></td>
    <td><a href="https://www.cros-nest.com">https://www.cros-nest.com</a></tr>
   <tr>

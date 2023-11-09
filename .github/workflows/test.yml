@@ -27,7 +27,7 @@ jobs:
 
       - name: Find changed genesis files
         id: changed-genesis
-        uses: tj-actions/changed-files@v40.0.2
+        uses: tj-actions/changed-files@v40.1.1
         with:
           separator: ","
           files: |

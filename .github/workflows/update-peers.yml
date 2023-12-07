@@ -25,7 +25,7 @@ jobs:
           token: ${{ secrets.OKP4_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v6

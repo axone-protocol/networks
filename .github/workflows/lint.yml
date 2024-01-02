@@ -27,6 +27,7 @@ jobs:
         id: changed-genesis
         uses: tj-actions/changed-files@v41.0.1
         with:
+          safe_output: false
           separator: ","
           files: |
             chains/*/genesis.json

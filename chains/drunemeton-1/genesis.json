@@ -316,7 +316,7 @@
         "limits": {
           "max_gas": "2000000",
           "max_size": "5000",
-          "max_result_count": "1",
+          "max_result_count": "3",
           "max_user_output_size": null
         },
         "gas_policy": {

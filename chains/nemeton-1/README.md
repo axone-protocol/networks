@@ -653,7 +653,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>HashQuark</pre></td>
     <td>Staking Made Easier</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/eb44422b288e72460f30bf5bc6d6e805_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/36e51828eb0e4e238000673c635d8b05_200_200.jpg"/></p>
       <a href="https://keybase.io/hashquark">31AFBBE0A52FA1ED</a></td>
     <td><a href="https://www.hashquark.io">https://www.hashquark.io</a></tr>
   <tr>
@@ -714,7 +714,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Syd</pre></td>
     <td>Just a learning Cat</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/6bacf672412da92f585d79dadc148605_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/b820729e68de3e100c8ea72818183005_200_200.jpg"/></p>
       <a href="https://keybase.io/sydy">974A77A1D5936626</a></td>
     <td></tr>
   <tr>

@@ -129,13 +129,13 @@ jobs:
           echo "$GENTX" > chains/${{ needs.resolve-context.outputs.network }}/gentx/gentx-${{ github.event.issue.number }}.json
 
           mkdir -p $NODE_HOME
-          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
-          sudo cp chains/${{ needs.resolve-context.outputs.network }}/genesis.json $NODE_HOME/config/genesis.json
+          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
+          cp chains/${{ needs.resolve-context.outputs.network }}/genesis.json $NODE_HOME/config/genesis.json
 
           delegator_balance="`expr ${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }} + 200000`${{ fromJson(needs.resolve-context.outputs.register-config).delegation.denom }}"
-          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis add-genesis-account --home $NODE_HOME $DELEGATOR_ADDR $delegator_balance
+          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis add-genesis-account --home $NODE_HOME $DELEGATOR_ADDR $delegator_balance
 
-          docker run --rm -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.resolve-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis collect-gentxs --home $NODE_HOME --gentx-dir /gentx
+          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.resolve-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis collect-gentxs --home $NODE_HOME --gentx-dir /gentx
           cp $NODE_HOME/config/genesis.json chains/${{ needs.resolve-context.outputs.network }}/genesis.json
 
       - name: Prepare commit message

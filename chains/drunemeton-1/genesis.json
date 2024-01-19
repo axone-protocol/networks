@@ -119,14 +119,14 @@
           }
         ],
         "max_deposit_period": "172800s",
-        "voting_period": "86400",
+        "voting_period": "86400s",
         "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
         "veto_threshold": "0.334000000000000000",
         "min_initial_deposit_ratio": "0.000000000000000000",
         "proposal_cancel_ratio": "0.500000000000000000",
         "proposal_cancel_dest": "",
-        "expedited_voting_period": "43200",
+        "expedited_voting_period": "43200s",
         "expedited_threshold": "0.667000000000000000",
         "expedited_min_deposit": [
           {

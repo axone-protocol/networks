@@ -2,7 +2,7 @@
 # 🔗 `okp4-nemeton-1`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-okp4--nemeton--1-blue?style=for-the-badge)
-![stability-stable](https://img.shields.io/badge/stability-stable-green.svg?style=for-the-badge)
+![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg?style=for-the-badge)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2022--12--14T15%3A00%3A00Z-red?style=for-the-badge)
 

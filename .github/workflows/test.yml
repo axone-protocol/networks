@@ -77,18 +77,18 @@ jobs:
           sudo cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/gentx/*  ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/gentx
 
           docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
-              add-genesis-account validator 1000000000uknow \
+              genesis add-genesis-account validator 1000000000uknow \
               --home /.okp4d \
               --keyring-backend test
 
           docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
-              gentx validator 1000000uknow \
+              genesis gentx validator 1000000uknow \
               --home /.okp4d \
               --chain-id=okp4-${{ matrix.context.network }} \
               --keyring-backend test
 
           docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
-              collect-gentxs \
+              genesis collect-gentxs \
               --home /.okp4d
 
       - name: Start the blockchain

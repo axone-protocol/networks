@@ -116,4 +116,4 @@ jobs:
       - name: Check genesis files
         run: |
           echo "🔎 Checking 'okp4-${{ matrix.context.network }}' genesis"
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/genesis.json okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` validate-genesis /genesis.json
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}:/genesis.json okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` genesis validate /genesis.json

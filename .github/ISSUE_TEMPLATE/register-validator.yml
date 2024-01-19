@@ -23,6 +23,13 @@ body:
       label: Who are you?
       description: Free space to talk a little bit about you, as a Validator.
   - type: textarea
+    id: delegator_addr
+    attributes:
+      label: Delegator address
+      description: Your delegator address, the one you used to sign the gentx.
+    validations:
+      required: true
+  - type: textarea
     id: gentx
     attributes:
       label: gentx

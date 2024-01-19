@@ -18,6 +18,7 @@ jobs:
     outputs:
       network: ${{ fromJson(steps.parse-issue.outputs.jsonString).network }}
       gentx: ${{ steps.extract-gentx.outputs.gentx }}
+      delegator_addr: ${{ fromJson(steps.parse-issue.outputs.jsonString).delegator_addr }}
       moniker: ${{ steps.extract-gentx.outputs.moniker }}
       register-config: ${{ steps.register-config.outputs.config }}
     steps:
@@ -121,6 +122,7 @@ jobs:
         id: add-gentx
         env:
           GENTX: ${{ needs.resolve-context.outputs.gentx }}
+          DELEGATOR_ADDR: ${{ needs.resolve-context.outputs.delegator_addr }}
           NODE_HOME: /tmp/node
         run: |
           mkdir -p chains/${{ needs.resolve-context.outputs.network }}/gentx
@@ -130,9 +132,8 @@ jobs:
           docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
           sudo cp chains/${{ needs.resolve-context.outputs.network }}/genesis.json $NODE_HOME/config/genesis.json
 
-          delegator_addr=$(echo "$GENTX" | jq -r '.body.messages[0].delegator_address')
           delegator_balance="`expr ${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }} + 200000`${{ fromJson(needs.resolve-context.outputs.register-config).delegation.denom }}"
-          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis add-genesis-account --home $NODE_HOME $delegator_addr $delegator_balance
+          docker run --rm -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis add-genesis-account --home $NODE_HOME $DELEGATOR_ADDR $delegator_balance
 
           docker run --rm -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.resolve-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis collect-gentxs --home $NODE_HOME --gentx-dir /gentx
           cp $NODE_HOME/config/genesis.json chains/${{ needs.resolve-context.outputs.network }}/genesis.json

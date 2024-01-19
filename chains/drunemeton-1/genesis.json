@@ -381,9 +381,7 @@
       "params": {
         "code_upload_access": {
           "permission": "AnyOfAddresses",
-          "addresses": [
-            "okp41cdeqjxuycwn64hjzegl9pu9udx5c36nhcasdn6"
-          ]
+          "addresses": ["okp41cdeqjxuycwn64hjzegl9pu9udx5c36nhcasdn6"]
         },
         "instantiate_default_permission": "Everybody"
       },

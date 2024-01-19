@@ -16,6 +16,9 @@ The gentx generation can be done as follow (this is an example script, adapt it 
 # Init node
 okp4d --home mynode init your-moniker --chain-id okp4-drunemeton-1
 
+# Replace the genesis
+cp chains/drunemeton-1/genesis.json mynode/config/genesis.json
+
 # Create keys, be careful with the mnemonic 👀
 okp4d --home mynode keys add your-key-name
 
@@ -28,7 +31,7 @@ Then create your own genesis transaction (`gentx`). You will have to choose the 
 ```sh
 # Create the gentx
 okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
-  --node-id $(okp4d --home mynode tendermint show-node-id) \
+  --node-id $(okp4d --home mynode comet show-node-id) \
   --chain-id okp4-drunemeton-1 \
   --commission-rate 0.05 \
   --commission-max-rate 0.2 \

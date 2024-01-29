@@ -77,4 +77,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/521c38ac16cf63f7cd1f6506398dd005_200_200.jpg"/></p>
       <a href="https://keybase.io/cumulo">77158D6796D16CD0</a></td>
     <td><a href="http://cumulo.pro">http://cumulo.pro</a></tr>
+  <tr>
+    <td><pre>NodeStake</pre></td>
+    <td>NodeStake is the professional validator, infrastructure provider and IBC relayer. ⚛️7*24h Services | https://twitter.com/Nodestake_top</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5912a329316356b98611c807d0c11e05_200_200.jpg"/></p>
+      <a href="https://keybase.io/nodestake">94EFE192B2C52424</a></td>
+    <td><a href="https://nodestake.org">https://nodestake.org</a></tr>
 </table>

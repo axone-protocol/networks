@@ -98,4 +98,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2826e38259411adafb416505fb948c05_200_200.jpg"/></p>
       <a href="https://keybase.io/citadeldao">EBB03EB4BB4CFCA7</a></td>
     <td><a href="https://citadel.one">https://citadel.one</a></tr>
+  <tr>
+    <td><pre>HSS</pre></td>
+    <td></td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/53b008f12f37e3ffa0dec3676d375a05_200_200.jpg"/></p>
+      <a href="https://keybase.io/highstakes">2CB281A714F6133B</a></td>
+    <td><a href="https://highstakes.ch">https://highstakes.ch</a></tr>
 </table>

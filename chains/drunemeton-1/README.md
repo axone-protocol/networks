@@ -119,4 +119,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/64e2ff0c8b5bc90725be9acb11564705_200_200.jpg"/></p>
       <a href="https://keybase.io/easy2stake">2C877AC873132C91</a></td>
     <td><a href="https://www.easy2stake.com/">https://www.easy2stake.com/</a></tr>
+  <tr>
+    <td><pre> Lavender.Five Nodes 🐝</pre></td>
+    <td>Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/831756ce9a9a9e938788b766d3cc5305_200_200.jpg"/></p>
+      <a href="https://keybase.io/lavenderfive">F87ADDB700C0CC94</a></td>
+    <td><a href="https://www.lavenderfive.com/">https://www.lavenderfive.com/</a></tr>
 </table>

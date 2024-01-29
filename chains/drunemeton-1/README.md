@@ -91,4 +91,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8506223c573a1bee45e9182de7684805_200_200.jpg"/></p>
       <a href="https://keybase.io/nodejumper">FFB0AA51A2DF5954</a></td>
     <td><a href="https://nodejumper.io">https://nodejumper.io</a></tr>
+  <tr>
+    <td><pre>Citadel.one</pre></td>
+    <td>Citadel.one is a multi-asset non-custodial staking platform that lets anyone become a part of decentralized infrastructure and earn passive income. Stake with our nodes or any other validator across multiple networks in a few clicks</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2826e38259411adafb416505fb948c05_200_200.jpg"/></p>
+      <a href="https://keybase.io/citadeldao">EBB03EB4BB4CFCA7</a></td>
+    <td><a href="https://citadel.one">https://citadel.one</a></tr>
 </table>

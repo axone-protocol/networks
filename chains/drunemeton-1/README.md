@@ -161,4 +161,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a57832ea25adc993ce911f8e80acc805_200_200.jpg"/></p>
       <a href="https://keybase.io/nodersteam">220491ADDD660741</a></td>
     <td><a href="https://nodersteam.com">https://nodersteam.com</a></tr>
+  <tr>
+    <td><pre>Enigma</pre></td>
+    <td>Highly secure professional validator across 35+ chains - offering a full refund for any downtime slashing - Reach out to us at contact@enigma-validator.com</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/b2bfc1afcfa172367bb858b2e50e6b05_200_200.jpg"/></p>
+      <a href="https://keybase.io/enigmastaking">6223697ACA24A4FF</a></td>
+    <td><a href="https://enigma-validator.com/">https://enigma-validator.com/</a></tr>
 </table>

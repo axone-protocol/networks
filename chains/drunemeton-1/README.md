@@ -70,4 +70,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/63585765d299338807f158d6aadd2e05_200_200.jpg"/></p>
       <a href="https://keybase.io/stakelab">F12B081334CBE0C6</a></td>
     <td><a href="https://www.stakelab.zone">https://www.stakelab.zone</a></tr>
+  <tr>
+    <td><pre>Cumulo</pre></td>
+    <td>feeding your flame</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/521c38ac16cf63f7cd1f6506398dd005_200_200.jpg"/></p>
+      <a href="https://keybase.io/cumulo">77158D6796D16CD0</a></td>
+    <td><a href="http://cumulo.pro">http://cumulo.pro</a></tr>
 </table>

@@ -105,4 +105,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/53b008f12f37e3ffa0dec3676d375a05_200_200.jpg"/></p>
       <a href="https://keybase.io/highstakes">2CB281A714F6133B</a></td>
     <td><a href="https://highstakes.ch">https://highstakes.ch</a></tr>
+  <tr>
+    <td><pre>AVIAONE.com 🟢</pre></td>
+    <td>Staking with Aviaone 🟢 generate a yield and your tokens stays on your wallet 🔑 🔒. NO TRANSFER REQUIRED 👍</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/26cb2814f06d1832f49787f5ecb3d605_200_200.jpg"/></p>
+      <a href="https://keybase.io/aviaone">DCD3D6C0BF61C200</a></td>
+    <td><a href="https://aviaone.com">https://aviaone.com</a></tr>
 </table>

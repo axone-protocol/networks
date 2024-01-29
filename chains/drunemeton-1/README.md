@@ -140,4 +140,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5eaec55e16538f2ecf801b402a02e405_200_200.jpg"/></p>
       <a href="https://keybase.io/stanisla">8E102EA8D78D6769</a></td>
     <td><a href="https://2pilot.dev">https://2pilot.dev</a></tr>
+  <tr>
+    <td><pre>waynewayner</pre></td>
+    <td></td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/dcbcf762cf976ffe7535176c6ca3c905_200_200.jpg"/></p>
+      <a href="https://keybase.io/waynewayner">3D726987CB38C0D2</a></td>
+    <td><a href="https://waynewayner.de">https://waynewayner.de</a></tr>
 </table>

@@ -133,4 +133,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a1600c5650b26f850982dac401912305_200_200.jpg"/></p>
       <a href="https://keybase.io/hoodrun">D7F99CBB63FFFD9E</a></td>
     <td><a href="https://hoodrun.io">https://hoodrun.io</a></tr>
+  <tr>
+    <td><pre>2pilot</pre></td>
+    <td>Your trusted staking co-pilot</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5eaec55e16538f2ecf801b402a02e405_200_200.jpg"/></p>
+      <a href="https://keybase.io/stanisla">8E102EA8D78D6769</a></td>
+    <td><a href="https://2pilot.dev">https://2pilot.dev</a></tr>
 </table>

@@ -147,4 +147,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/dcbcf762cf976ffe7535176c6ca3c905_200_200.jpg"/></p>
       <a href="https://keybase.io/waynewayner">3D726987CB38C0D2</a></td>
     <td><a href="https://waynewayner.de">https://waynewayner.de</a></tr>
+  <tr>
+    <td><pre>Stake&amp;Relax 🦥</pre></td>
+    <td>StakeandRelax to get Stake🥩&amp;Rolex⌚️Twitter:@StakeandRelax</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/90eb578503e113288eba22d396544f05_200_200.jpg"/></p>
+      <a href="https://keybase.io/cryptocakir">BD90F7F27099E9E3</a></td>
+    <td><a href="https://linktr.ee/stakeandrelax">https://linktr.ee/stakeandrelax</a></tr>
 </table>

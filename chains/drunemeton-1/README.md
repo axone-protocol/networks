@@ -99,6 +99,13 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <a href="https://keybase.io/citadeldao">EBB03EB4BB4CFCA7</a></td>
     <td><a href="https://citadel.one">https://citadel.one</a></tr>
   <tr>
+    <td><pre>Nodes.Guru</pre></td>
+    <td>Guru of non-custodial staking. Professional node running, low fees, best uptime and 24/7 customer support.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/25738b36b7972b94112bc8dc0df13b05_200_200.jpg"/></p>
+      <a href="https://keybase.io/nodesguru">28B672FCE6BBD562</a></td>
+    <td><a href="https://stake.nodes.guru">https://stake.nodes.guru</a></tr>
+  <tr>
     <td><pre>HSS</pre></td>
     <td></td>
     <td>

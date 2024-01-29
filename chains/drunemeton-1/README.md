@@ -154,4 +154,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/90eb578503e113288eba22d396544f05_200_200.jpg"/></p>
       <a href="https://keybase.io/cryptocakir">BD90F7F27099E9E3</a></td>
     <td><a href="https://linktr.ee/stakeandrelax">https://linktr.ee/stakeandrelax</a></tr>
+  <tr>
+    <td><pre>[NODERS]TEAM</pre></td>
+    <td>Trusted blockchain validator and web3 developer team</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a57832ea25adc993ce911f8e80acc805_200_200.jpg"/></p>
+      <a href="https://keybase.io/nodersteam">220491ADDD660741</a></td>
+    <td><a href="https://nodersteam.com">https://nodersteam.com</a></tr>
 </table>

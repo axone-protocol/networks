@@ -112,4 +112,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/26cb2814f06d1832f49787f5ecb3d605_200_200.jpg"/></p>
       <a href="https://keybase.io/aviaone">DCD3D6C0BF61C200</a></td>
     <td><a href="https://aviaone.com">https://aviaone.com</a></tr>
+  <tr>
+    <td><pre>Easy2Stake</pre></td>
+    <td>Easy.Stake.Trust</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/64e2ff0c8b5bc90725be9acb11564705_200_200.jpg"/></p>
+      <a href="https://keybase.io/easy2stake">2C877AC873132C91</a></td>
+    <td><a href="https://www.easy2stake.com/">https://www.easy2stake.com/</a></tr>
 </table>

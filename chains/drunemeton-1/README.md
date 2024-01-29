@@ -63,4 +63,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/273625e88af0407ae3a1134eca418a05_200_200.jpg"/></p>
       <a href="https://keybase.io/jayjayone">34589DAF06970635</a></td>
     <td><a href="https://twitter.com/javalry1">https://twitter.com/javalry1</a></tr>
+  <tr>
+    <td><pre>StakeLab</pre></td>
+    <td>Grow your assets - Staking &amp; Relaying Hub for Cosmos ecosystem</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/63585765d299338807f158d6aadd2e05_200_200.jpg"/></p>
+      <a href="https://keybase.io/stakelab">F12B081334CBE0C6</a></td>
+    <td><a href="https://www.stakelab.zone">https://www.stakelab.zone</a></tr>
 </table>

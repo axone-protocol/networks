@@ -182,4 +182,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/b2bfc1afcfa172367bb858b2e50e6b05_200_200.jpg"/></p>
       <a href="https://keybase.io/enigmastaking">6223697ACA24A4FF</a></td>
     <td><a href="https://enigma-validator.com/">https://enigma-validator.com/</a></tr>
+  <tr>
+    <td><pre>Stakin</pre></td>
+    <td>Reliable and Secure Staking Services Trusted by Institutions. ISO27001 certified, Cosmos ecosystem contributor, IBC relayer provider. Visit our website to know more about Stakin and for T&amp;Cs.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/132ec63525222ec6c6c289eea10f9805_200_200.jpg"/></p>
+      <a href="https://keybase.io/stakin">83D300CB42D06962</a></td>
+    <td><a href="https://stakin.com">https://stakin.com</a></tr>
 </table>

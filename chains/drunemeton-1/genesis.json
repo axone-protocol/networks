@@ -169,6 +169,13 @@
           "pub_key": null,
           "account_number": "21",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "okp41jgj3razf5pafcfxwu30epu77c4d62ewgz692cd",
+          "pub_key": null,
+          "account_number": "22",
+          "sequence": "0"
         }
       ]
     },
@@ -299,6 +306,15 @@
           ]
         },
         {
+          "address": "okp41jgj3razf5pafcfxwu30epu77c4d62ewgz692cd",
+          "coins": [
+            {
+              "denom": "uknow",
+              "amount": "10000200000"
+            }
+          ]
+        },
+        {
           "address": "okp41jt9w26mpxxjsk63mvd4m2ynj0af09cslwamw42",
           "coins": [
             {
@@ -383,7 +399,7 @@
       "supply": [
         {
           "denom": "uknow",
-          "amount": "200210004200000"
+          "amount": "200220004400000"
         }
       ],
       "denom_metadata": [],
@@ -1738,6 +1754,68 @@
           },
           "signatures": [
             "pHDbqCEkAyRZ8wkYSAoZvdd9/E/MF+HRBy/1VG+qUuA5NXHQb83ny9uTXwgBeuPVT0DEw0IiO8AHPw00c4xeSg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "p2p-org",
+                  "identity": "E12F4695036D8072",
+                  "website": "https://p2p.org",
+                  "security_contact": "cosmos-security@p2p.org",
+                  "details": "P2P Validator (P2P.org) - an early OKP4 contributor \u0026 long-time Cosmos Ecosystem participant. Stake with us for a secure, reliable and simple service"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "okp4valoper1jgj3razf5pafcfxwu30epu77c4d62ewgha4rxv",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "szNxUW/xNG0a7ewbWR3SWQn6UXbDpZKDTKESmZOcLrk="
+                },
+                "value": {
+                  "denom": "uknow",
+                  "amount": "10000000000"
+                }
+              }
+            ],
+            "memo": "c7aa28e62cf98d6d957d970b99b330ce1cee87d8@192.168.100.6:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Av55rT0rYz108Xfyy4ZpkRGlgido7GoKdDtR5cWs/GzM"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "nIl/BnJqwU8QdA1w/T9EKzyXOwOXNGabGyeeBwCjTGdsuZCNq5UlmoPLR8Jz/FfV4OWIBHCfQ2PTYzZ8N/h1ug=="
           ]
         }
       ]

@@ -189,4 +189,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/132ec63525222ec6c6c289eea10f9805_200_200.jpg"/></p>
       <a href="https://keybase.io/stakin">83D300CB42D06962</a></td>
     <td><a href="https://stakin.com">https://stakin.com</a></tr>
+  <tr>
+    <td><pre>Meria</pre></td>
+    <td>Meria</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/3fcc4caebb2c8e949829a7b090be3805_200_200.jpg"/></p>
+      <a href="https://keybase.io/meria">9A516A1CD4116BBF</a></td>
+    <td><a href="https://meria.com">https://meria.com</a></tr>
 </table>

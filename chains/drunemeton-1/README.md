@@ -196,4 +196,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/3fcc4caebb2c8e949829a7b090be3805_200_200.jpg"/></p>
       <a href="https://keybase.io/meria">9A516A1CD4116BBF</a></td>
     <td><a href="https://meria.com">https://meria.com</a></tr>
+  <tr>
+    <td><pre>p2p-org</pre></td>
+    <td>P2P Validator (P2P.org) - an early OKP4 contributor &amp; long-time Cosmos Ecosystem participant. Stake with us for a secure, reliable and simple service</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0e54d989cbe0b1eed716e222bf2cdd05_200_200.jpg"/></p>
+      <a href="https://keybase.io/p2p_org_">E12F4695036D8072</a></td>
+    <td><a href="https://p2p.org">https://p2p.org</a></tr>
 </table>

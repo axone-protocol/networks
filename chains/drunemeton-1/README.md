@@ -134,6 +134,13 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <a href="https://keybase.io/lavenderfive">F87ADDB700C0CC94</a></td>
     <td><a href="https://www.lavenderfive.com/">https://www.lavenderfive.com/</a></tr>
   <tr>
+    <td><pre>HashKey Cloud</pre></td>
+    <td>Cloud for WEB3 More Than Staking</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0a30469c4d49aa836b58cab6a59b9005_200_200.jpg"/></p>
+      <a href="https://keybase.io/hashkeycloud">CB79CF86DBD56A19</a></td>
+    <td><a href="https://www.hashkey.cloud/">https://www.hashkey.cloud/</a></tr>
+  <tr>
     <td><pre>HoodRun</pre></td>
     <td>Discover and Unlock the HoodRun Advantage; We make the Staking Experience the fastest and safest</td>
     <td>

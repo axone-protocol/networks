@@ -203,4 +203,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0e54d989cbe0b1eed716e222bf2cdd05_200_200.jpg"/></p>
       <a href="https://keybase.io/p2p_org_">E12F4695036D8072</a></td>
     <td><a href="https://p2p.org">https://p2p.org</a></tr>
+  <tr>
+    <td><pre>Cros-nest</pre></td>
+    <td>We operate state-of-the-art distributed and redundant validator and relayer infrastructure for Proof of Stake Blockchains.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4e8a6ee78ed698828e6c2baec569d305_200_200.jpg"/></p>
+      <a href="https://keybase.io/cros_nest">5F1D6AC7EA588676</a></td>
+    <td><a href="https://cros-nest.com">https://cros-nest.com</a></tr>
 </table>

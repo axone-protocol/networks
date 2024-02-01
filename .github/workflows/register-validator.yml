@@ -158,7 +158,7 @@ jobs:
 
       - name: Create Pull Request
         id: open-pr
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           commit-message: |
             ${{ steps.commit-message.outputs.message }}

@@ -210,4 +210,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4e8a6ee78ed698828e6c2baec569d305_200_200.jpg"/></p>
       <a href="https://keybase.io/cros_nest">5F1D6AC7EA588676</a></td>
     <td><a href="https://cros-nest.com">https://cros-nest.com</a></tr>
+  <tr>
+    <td><pre>nysa.network</pre></td>
+    <td></td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2d9056551af97b92f6c759c6af125905_200_200.jpg"/></p>
+      <a href="https://keybase.io/nysa_network">F7E5A47BC1D9F95B</a></td>
+    <td><a href="https://nysa.network">https://nysa.network</a></tr>
 </table>

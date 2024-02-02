@@ -217,4 +217,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2d9056551af97b92f6c759c6af125905_200_200.jpg"/></p>
       <a href="https://keybase.io/nysa_network">F7E5A47BC1D9F95B</a></td>
     <td><a href="https://nysa.network">https://nysa.network</a></tr>
+  <tr>
+    <td><pre>Kahuna</pre></td>
+    <td>We are Kahuna, we invest in and run Blockchain Infrastructure</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/561072998cfed9fbbed287cb762a1f05_200_200.jpg"/></p>
+      <a href="https://keybase.io/kahunahq">496198D003A5A717</a></td>
+    <td><a href="https://kahuna.network">https://kahuna.network</a></tr>
 </table>

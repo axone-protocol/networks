@@ -224,4 +224,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/561072998cfed9fbbed287cb762a1f05_200_200.jpg"/></p>
       <a href="https://keybase.io/kahunahq">496198D003A5A717</a></td>
     <td><a href="https://kahuna.network">https://kahuna.network</a></tr>
+  <tr>
+    <td><pre>Saxon</pre></td>
+    <td>Saxon is a technology-driven advisory and investment firm that serves start-ups and institutions that operate within the Web3 &amp; cryptocurrency ecosystem</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a39fb82dc80c1f3bca19c7b3e49c8005_200_200.jpg"/></p>
+      <a href="https://keybase.io/saxonxyz">d358f6bf2e1b525d</a></td>
+    <td><a href="https://saxon.xyz/">https://saxon.xyz/</a></tr>
 </table>

@@ -231,4 +231,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a39fb82dc80c1f3bca19c7b3e49c8005_200_200.jpg"/></p>
       <a href="https://keybase.io/saxonxyz">d358f6bf2e1b525d</a></td>
     <td><a href="https://saxon.xyz/">https://saxon.xyz/</a></tr>
+  <tr>
+    <td><pre>✅ CryptoCrew Validators</pre></td>
+    <td>We power the interchain | ccvalidators.com</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7f4b384472efeccffd7685227f698405_200_200.jpg"/></p>
+      <a href="https://keybase.io/clemenscc">9AE70F9E3EDA8956</a></td>
+    <td><a href="https://ccvalidators.com">https://ccvalidators.com</a></tr>
 </table>

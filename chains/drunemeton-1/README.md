@@ -238,4 +238,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7f4b384472efeccffd7685227f698405_200_200.jpg"/></p>
       <a href="https://keybase.io/clemenscc">9AE70F9E3EDA8956</a></td>
     <td><a href="https://ccvalidators.com">https://ccvalidators.com</a></tr>
+  <tr>
+    <td><pre>TrustedPoint</pre></td>
+    <td>TrustedPoint is a a staking provider for PoS blockchains. We do ensure reliability, security and decentralisation that are successfully backed by an experienced team, technically advanced community from all over the world as well as dependable hosting providers</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4740fd90d19b2151dc001dbfea356b05_200_200.jpg"/></p>
+      <a href="https://keybase.io/testnet_pride">D116AD27764E8C4E</a></td>
+    <td><a href="https://trusted-point.com/">https://trusted-point.com/</a></tr>
 </table>

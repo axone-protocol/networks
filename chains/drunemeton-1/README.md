@@ -245,4 +245,11 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/4740fd90d19b2151dc001dbfea356b05_200_200.jpg"/></p>
       <a href="https://keybase.io/testnet_pride">D116AD27764E8C4E</a></td>
     <td><a href="https://trusted-point.com/">https://trusted-point.com/</a></tr>
+  <tr>
+    <td><pre>SG-1</pre></td>
+    <td>SG-1</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/cd2a41a8df34c773128fa394f2acda05_200_200.jpg"/></p>
+      <a href="https://keybase.io/sg_1">48608633F99D1B60</a></td>
+    <td><a href="https://sg-1.online">https://sg-1.online</a></tr>
 </table>

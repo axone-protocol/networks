@@ -1,1 +1,2 @@
 a7f1dcf7441761b0e0e1f8c6fdc79d3904c22c01@seeds.cros-nest.com:36656
+20e1000e88125698264454a884812746c2eb4807@testnet-seeds.lavenderfive.com:17656

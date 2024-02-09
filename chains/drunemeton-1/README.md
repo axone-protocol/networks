@@ -130,7 +130,7 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
     <td><pre> Lavender.Five Nodes 🐝</pre></td>
     <td>Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/831756ce9a9a9e938788b766d3cc5305_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/aaa92d520fee634bb0d7c32436d10005_200_200.jpg"/></p>
       <a href="https://keybase.io/lavenderfive">F87ADDB700C0CC94</a></td>
     <td><a href="https://www.lavenderfive.com/">https://www.lavenderfive.com/</a></tr>
   <tr>

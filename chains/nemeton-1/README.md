@@ -2,7 +2,7 @@
 # 🔗 `okp4-nemeton-1`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-okp4--nemeton--1-blue?style=for-the-badge)
-![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg?style=for-the-badge)
+[![stability-deprecated](https://img.shields.io/badge/stability-deprecated-922b21.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#deprecated)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2022--12--14T15%3A00%3A00Z-red?style=for-the-badge)
 
@@ -566,7 +566,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>CroutonDigital</pre></td>
     <td>CroutonDigital</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0044c421a1346cd129363786cedb3405_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/17e6b64da0509eeb4dca8d00c4922a05_200_200.jpg"/></p>
       <a href="https://keybase.io/croutonnodes">47B453B80ECFA342</a></td>
     <td><a href="https://t.me/croutoncrypto">https://t.me/croutoncrypto</a></tr>
   <tr>

@@ -2,7 +2,7 @@
 # 🔗 `okp4-drunemeton-1`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-okp4--drunemeton--1-blue?style=for-the-badge)
-[![stability-wip](https://img.shields.io/badge/stability-wip-lightgrey.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#work-in-progress)
+[![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#beta)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--02--06T15%3A00%3A00Z-red?style=for-the-badge)
 

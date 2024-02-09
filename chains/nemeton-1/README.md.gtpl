@@ -2,7 +2,7 @@
 # 🔗 `{{ (datasource "genesis").chain_id }}`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-{{ (datasource "genesis").chain_id | urlquery | strings.ReplaceAll "-" "--" }}-blue?style=for-the-badge)
-![stability-discontinued](https://img.shields.io/badge/stability-discontinued%20🔚-lightgray.svg?style=for-the-badge)
+[![stability-deprecated](https://img.shields.io/badge/stability-deprecated-922b21.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#deprecated)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/{{ "⏰" | urlquery }}%20genesis%20time-{{ (datasource "genesis").genesis_time | urlquery | strings.ReplaceAll "-" "--" }}-red?style=for-the-badge)
 

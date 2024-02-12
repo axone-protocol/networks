@@ -4,6 +4,7 @@
 ![chain-id](https://img.shields.io/badge/chain%20id-okp4--nemeton--1-blue?style=for-the-badge)
 [![stability-deprecated](https://img.shields.io/badge/stability-deprecated-922b21.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#deprecated)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
+[![incentivized-💰](https://img.shields.io/badge/incentivized-💰-29220A.svg?style=for-the-badge)](https://nemeton.okp4.network/)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2022--12--14T15%3A00%3A00Z-red?style=for-the-badge)
 
 ## Register in the Genesis

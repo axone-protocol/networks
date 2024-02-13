@@ -382,7 +382,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>𝐫𝐨𝐦𝐚𝐧✔︎𝟏𝟖𝟏𝟐</pre></td>
     <td>Individual staking service</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e99f51f2c692312a85dda3a99bc60a05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/3a0501ed7c5bfb2779caed068a2a3705_200_200.jpg"/></p>
       <a href="https://keybase.io/romanv1812">12151B2C705E9865</a></td>
     <td><a href="https://github.com/romanv1812">https://github.com/romanv1812</a></tr>
   <tr>

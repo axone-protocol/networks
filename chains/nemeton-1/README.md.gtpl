@@ -4,6 +4,7 @@
 ![chain-id](https://img.shields.io/badge/chain%20id-{{ (datasource "genesis").chain_id | urlquery | strings.ReplaceAll "-" "--" }}-blue?style=for-the-badge)
 [![stability-deprecated](https://img.shields.io/badge/stability-deprecated-922b21.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#deprecated)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
+[![incentivized-💰](https://img.shields.io/badge/incentivized-💰-29220A.svg?style=for-the-badge)](https://nemeton.okp4.network/)
 ![genesis-time](https://img.shields.io/badge/{{ "⏰" | urlquery }}%20genesis%20time-{{ (datasource "genesis").genesis_time | urlquery | strings.ReplaceAll "-" "--" }}-red?style=for-the-badge)
 
 ## Register in the Genesis

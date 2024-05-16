@@ -1,5 +1,5 @@
 name: ⚖️ Register Validator
-description: Submit a request to register your validator node in the genesis of an OKP4 network.
+description: Submit a request to register your validator node in the genesis of an Axone network.
 title: "⚖️ Register Validator: "
 labels: ["register-validator"]
 assignees:
@@ -12,7 +12,7 @@ body:
     id: network
     attributes:
       label: Network Choice
-      description: Choose the OKP4 network you want to join
+      description: Choose the Axone network you want to join
       multiple: false
       options:
         - drunemeton-1
@@ -47,4 +47,4 @@ body:
   - type: markdown
     attributes:
       value: |
-        🙏 Thanks for your interest in OKP4, for now we can let [botanik](https://github.com/bot-anik) take care of the technical part of your request before entering the review process.
+        🙏 Thanks for your interest in Axone, for now we can let [botanik](https://github.com/bot-anik) take care of the technical part of your request before entering the review process.

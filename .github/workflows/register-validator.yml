@@ -97,14 +97,14 @@ jobs:
         if: ${{ failure() }}
         uses: andymckay/labeler@master
         with:
-          repo-token: ${{ secrets.OKP4_TOKEN }}
+          repo-token: ${{ secrets.OPS_TOKEN }}
           add-labels: "invalid"
 
       - name: Add failure comment
         if: ${{ failure() }}
         uses: peter-evans/create-or-update-comment@v4
         with:
-          token: ${{ secrets.OKP4_TOKEN }}
+          token: ${{ secrets.OPS_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: |
             😢 I couldn't process your request: `${{ steps.check-gentx.outputs.error }}`
@@ -118,6 +118,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.BOT_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.BOT_GPG_PASSPHRASE }}
+          git_config_global: true
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+
       - name: Process gentx
         id: add-gentx
         env:
@@ -129,13 +138,13 @@ jobs:
           echo "$GENTX" > chains/${{ needs.resolve-context.outputs.network }}/gentx/gentx-${{ github.event.issue.number }}.json
 
           mkdir -p $NODE_HOME
-          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
+          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME axone-protocol/axoned:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` init --home $NODE_HOME whatever
           cp chains/${{ needs.resolve-context.outputs.network }}/genesis.json $NODE_HOME/config/genesis.json
 
           delegator_balance="`expr ${{ fromJson(needs.resolve-context.outputs.register-config).delegation.amount }} + 200000`${{ fromJson(needs.resolve-context.outputs.register-config).delegation.denom }}"
-          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis add-genesis-account --home $NODE_HOME $DELEGATOR_ADDR $delegator_balance
+          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME axone-protocol/axoned:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis add-genesis-account --home $NODE_HOME $DELEGATOR_ADDR $delegator_balance
 
-          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.resolve-context.outputs.network }}/gentx:/gentx okp4/okp4d:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis collect-gentxs --home $NODE_HOME --gentx-dir /gentx
+          docker run --rm --user $(id -u):$(id -g) -v $NODE_HOME:$NODE_HOME -v $PWD/chains/${{ needs.resolve-context.outputs.network }}/gentx:/gentx axone-protocol/axoned:`cat ./chains/${{ needs.resolve-context.outputs.network }}/version.txt` genesis collect-gentxs --home $NODE_HOME --gentx-dir /gentx
           cp $NODE_HOME/config/genesis.json chains/${{ needs.resolve-context.outputs.network }}/genesis.json
 
       - name: Prepare commit message
@@ -162,9 +171,9 @@ jobs:
         with:
           commit-message: |
             ${{ steps.commit-message.outputs.message }}
-          committer: ${{ secrets.OKP4_BOT_GIT_COMMITTER_NAME }} <${{ secrets.OKP4_BOT_GIT_COMMITTER_EMAIL }}>
-          author: ${{ secrets.OKP4_BOT_GIT_AUTHOR_NAME }} <${{ secrets.OKP4_BOT_GIT_AUTHOR_EMAIL }}>
-          token: ${{ secrets.OKP4_TOKEN }}
+          committer: ${{ vars.BOT_GIT_COMMITTER_NAME }} <${{ vars.BOT_GIT_COMMITTER_EMAIL }}>
+          author: ${{ vars.BOT_GIT_AUTHOR_NAME }} <${{ vars.BOT_GIT_AUTHOR_EMAIL }}>
+          token: ${{ secrets.OPS_TOKEN }}
           branch: feat/${{ github.event.issue.number }}-register-${{ needs.resolve-context.outputs.network }}
           title: '⚖️ Register `${{ needs.resolve-context.outputs.moniker }}` Validator'
           body: |
@@ -176,7 +185,7 @@ jobs:
       - name: Link PR
         uses: peter-evans/create-or-update-comment@v4
         with:
-          token: ${{ secrets.OKP4_TOKEN }}
+          token: ${{ secrets.OPS_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: |
             😉 Here is the corresponding PR: ${{ steps.open-pr.outputs.pull-request-url }}
@@ -185,13 +194,13 @@ jobs:
         if: ${{ failure() }}
         uses: andymckay/labeler@master
         with:
-          repo-token: ${{ secrets.OKP4_TOKEN }}
+          repo-token: ${{ secrets.OPS_TOKEN }}
           add-labels: "invalid"
 
       - name: Add failure comment
         if: ${{ failure() }}
         uses: peter-evans/create-or-update-comment@v4
         with:
-          token: ${{ secrets.OKP4_TOKEN }}
+          token: ${{ secrets.OPS_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
           body: 😢 I couldn't process your request...

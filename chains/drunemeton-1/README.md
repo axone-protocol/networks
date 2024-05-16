@@ -131,7 +131,7 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
     <td><pre> Lavender.Five Nodes 🐝</pre></td>
     <td>Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/aaa92d520fee634bb0d7c32436d10005_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/c5f0e5c3c88a6194da5277d3eb297805_200_200.jpg"/></p>
       <a href="https://keybase.io/lavenderfive">F87ADDB700C0CC94</a></td>
     <td><a href="https://www.lavenderfive.com/">https://www.lavenderfive.com/</a></tr>
   <tr>
@@ -200,9 +200,7 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>p2p-org</pre></td>
     <td>P2P Validator (P2P.org) - an early OKP4 contributor &amp; long-time Cosmos Ecosystem participant. Stake with us for a secure, reliable and simple service</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0e54d989cbe0b1eed716e222bf2cdd05_200_200.jpg"/></p>
-      <a href="https://keybase.io/p2p_org_">E12F4695036D8072</a></td>
+    <td></td>
     <td><a href="https://p2p.org">https://p2p.org</a></tr>
   <tr>
     <td><pre>Cros-nest</pre></td>

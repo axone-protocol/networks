@@ -66,9 +66,9 @@ jobs:
       - name: Initialize blockchain
         run: |
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               keys add validator \
-              --home /.okp4d \
+              --home /.axoned \
               --keyring-backend test
 
           jq --arg date "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" '.genesis_time = $date' ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }} > ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/${{ matrix.context.name }}-tmp
@@ -76,27 +76,27 @@ jobs:
           sudo mkdir -p ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/gentx
           sudo cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/gentx/*  ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/gentx
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               genesis add-genesis-account validator 1000000000uknow \
-              --home /.okp4d \
+              --home /.axoned \
               --keyring-backend test
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               genesis gentx validator 1000000uknow \
-              --home /.okp4d \
-              --chain-id=okp4-${{ matrix.context.network }} \
+              --home /.axoned \
+              --chain-id=axone-${{ matrix.context.network }} \
               --keyring-backend test
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               genesis collect-gentxs \
-              --home /.okp4d
+              --home /.axoned
 
       - name: Start the blockchain
         run: |
-          docker run --network host --rm --name okp4-node -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.okp4d okp4/okp4d:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --network host --rm --name axone-node -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               start \
-              --home /.okp4d \
-              --moniker okp4-node &
+              --home /.axoned \
+              --moniker axone-node &
 
       - name: Wait for blockchain to start
         uses: ifaxity/wait-on-action@v1
@@ -117,4 +117,4 @@ jobs:
 
       - name: Stop the blockchain
         run: |
-          docker stop okp4-node
+          docker stop axone-node

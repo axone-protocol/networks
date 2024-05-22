@@ -6,6 +6,7 @@
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/{{ "⏰" | urlquery }}%20genesis%20time-{{ (datasource "genesis").genesis_time | urlquery | strings.ReplaceAll "-" "--" }}-red?style=for-the-badge)
+![chain-height](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.drunemeton.okp4.network%2Fcosmos%2Fbase%2Ftendermint%2Fv1beta1%2Fblocks%2Flatest&query=%24.block.header.height&style=for-the-badge&label=height&color=%231E2A4E&cacheSeconds=6)
 
 > [!IMPORTANT]
 > This network was originally created under the former `OKP4` brand.

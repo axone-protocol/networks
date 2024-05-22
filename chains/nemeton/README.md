@@ -9,10 +9,10 @@
 ![nb-validators](https://img.shields.io/badge/%F0%9F%A7%91%E2%80%8D%E2%9A%96%EF%B8%8F%20core%20validators-10-brightgreen?style=for-the-badge)
 
 > [!IMPORTANT]
-> This network was originally created under the former `OKP4` brand.
+> This network was discontinued on 30/12/22.
 <!-- -->
 > [!IMPORTANT]
-> This network was discontinued on 30/12/22.
+> This network was originally created under the former `OKP4` brand.
 
 ## Register in the Genesis
 
@@ -96,7 +96,7 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
    <td><pre>Chainlayer</pre></td>
    <td>Secure and reliable validator. TG: https://t.me/chainlayer</td>
    <td>
-     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5bea053297f0462b29a7bc84fbb00905_200_200.jpg"/></p>
+     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/fafc048f4c98e9c6bdfa9120988de705_200_200.jpg"/></p>
      <a href="https://keybase.io/chainlayer">AD3CDBC91802F94A</a></td>
    <td><a href="https://chainlayer.io">https://chainlayer.io</a></tr>
   <tr>

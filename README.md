@@ -14,37 +14,12 @@ For a complete description about nodes and validators, check out the [Axone Docu
 
 ## 🔗 Networks
 
-### [`drunemeton-1`](./chains/drunemeton-1/README.md)
+Below is a list of available networks, organized from the most recent to the oldest:
 
-> :warning: This chain was created under the old `OKP4` brand.
-
-[![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#beta) ![audience](https://img.shields.io/badge/audience-public-white.svg) ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg)
-
-`Drunemeton` is the main OKP4 testnet. Please find more details to join the network [here](chains/drunemeton-1/).
-
-### [`nemeton-1`](./chains/nemeton-1/README.md)
-
-> :warning: This chain was created under the old `OKP4` brand.
-
-[![stability-deprecated](https://img.shields.io/badge/stability-deprecated-922b21.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#deprecated) ![audience](https://img.shields.io/badge/audience-public-white.svg) [![incentivized-💰](https://img.shields.io/badge/incentivized-💰-29220A.svg)](https://nemeton.okp4.network/)
-
-### [`nemeton`](./chains/nemeton/README.md)
-
-> :warning: This chain was created under the old `OKP4` brand.
-
-[![stability-deprecated](https://img.shields.io/badge/stability-deprecated-922b21.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#deprecated) ![audience](https://img.shields.io/badge/audience-public-white.svg) ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg)
-
-This was the first OKP4 `testnet` but it is now discontinued.
-
-We invite all the validators to shutdown their nodes. You can still find more details on the network [here](chains/nemeton/).
-
-### [`devnet-1`](./chains/devnet-1/README.md)
-
-> :warning: This chain was created under the old `OKP4` brand.
-
-[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#experimental) ![audience](https://img.shields.io/badge/audience-restricted-orange.svg) ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg)
-
-The main development network, intended primarily for use by the OKP4 core team. Unstable (the chain can be reinitialized without notice), experimental, with restricted access.
+- [`drunemeton-1`](./chains/drunemeton-1/README.md)
+- [`nemeton-1`](./chains/nemeton-1/README.md)
+- [`nemeton`](./chains/nemeton/README.md)
+- [`devnet-1`](./chains/devnet-1/README.md)
 
 ## 👨‍⚖️ Want to become a validator?
 

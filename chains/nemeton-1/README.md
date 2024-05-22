@@ -7,6 +7,9 @@
 [![incentivized-💰](https://img.shields.io/badge/incentivized-💰-29220A.svg?style=for-the-badge)](https://nemeton.okp4.network/)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2022--12--14T15%3A00%3A00Z-red?style=for-the-badge)
 
+> [!IMPORTANT]
+> This network was originally created under the former `OKP4` brand.
+
 ## Register in the Genesis
 
 > ℹ️ **Registration is only open for Druids 🧙‍♂️**. See [Nemeton program](https://nemeton.okp4.network/).

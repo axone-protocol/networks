@@ -7,6 +7,9 @@
 ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/{{ "⏰" | urlquery }}%20genesis%20time-{{ (datasource "genesis").genesis_time | urlquery | strings.ReplaceAll "-" "--" }}-red?style=for-the-badge)
 
+> [!IMPORTANT]
+> This network was originally created under the former `OKP4` brand.
+
 The main development network, intended primarily for use by the OKP4 core team. This `devnet` functions as a "playground" for those looking to experiment with the protocol as a blockchain user, token holder, application developer or network validator.
 
 This network is very unstable, and the whole blockchain can be reset, deleting all blocks.

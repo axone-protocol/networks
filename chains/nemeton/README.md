@@ -8,7 +8,11 @@
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2022--10--17T13%3A00%3A00Z-red?style=for-the-badge)
 ![nb-validators](https://img.shields.io/badge/%F0%9F%A7%91%E2%80%8D%E2%9A%96%EF%B8%8F%20core%20validators-10-brightgreen?style=for-the-badge)
 
-> :warning: **This chain was stopped on 30/12/22**. The active testnet is: [nemeton-1](../nemeton-1/README.md).
+> [!IMPORTANT]
+> This network was originally created under the former `OKP4` brand.
+<!-- -->
+> [!IMPORTANT]
+> This network was discontinued on 30/12/22.
 
 ## Register in the Genesis
 

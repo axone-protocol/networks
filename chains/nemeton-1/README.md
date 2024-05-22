@@ -169,7 +169,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Inter Blockchain Services</pre></td>
     <td>Inter Blockchain Services Dpos validator and Relayer of COSMOS ecosystem 🤗 #IBCGANG</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/369a9b563db44c8f42abfda63e701f05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2a5f072f13e48c6172eaf62f64abe205_200_200.jpg"/></p>
       <a href="https://keybase.io/ibsdotteam">27FD74457A21B020</a></td>
     <td><a href="https://ibs.team">https://ibs.team</a></tr>
   <tr>
@@ -209,7 +209,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Chainlayer</pre></td>
     <td>Secure and reliable validator. TG: https://t.me/chainlayer</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5bea053297f0462b29a7bc84fbb00905_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/fafc048f4c98e9c6bdfa9120988de705_200_200.jpg"/></p>
       <a href="https://keybase.io/chainlayer">AD3CDBC91802F94A</a></td>
     <td><a href="https://chainlayer.io">https://chainlayer.io</a></tr>
   <tr>
@@ -385,7 +385,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>𝐫𝐨𝐦𝐚𝐧✔︎𝟏𝟖𝟏𝟐</pre></td>
     <td>Individual staking service</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/3a0501ed7c5bfb2779caed068a2a3705_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/602a1f897a9b06063c3b3f0e6ddfac05_200_200.jpg"/></p>
       <a href="https://keybase.io/romanv1812">12151B2C705E9865</a></td>
     <td><a href="https://github.com/romanv1812">https://github.com/romanv1812</a></tr>
   <tr>
@@ -492,7 +492,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre> AutoStake 🛡️ Slash Protected</pre></td>
     <td>Earn higher Yields with AutoStake.net 🛡️ 100% Refund on ALL forms of slashing backed by a SAFU fund 🛡️ IBC Relayer: ibc.autostake.net &amp; 💸Auto-REStake: wallet.autostake.net/evmos 💸 &amp; twitter.com/AutoStake_ &amp; telegram.me/AutoStake_net</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/051cdbd6d051d3cafcdb45377c6b5c05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2fe4767915f79a22b1a3c4a0f2ffe505_200_200.jpg"/></p>
       <a href="https://keybase.io/autostake">4D3303E20A4D2C32</a></td>
     <td></tr>
   <tr>
@@ -570,7 +570,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>CroutonDigital</pre></td>
     <td>CroutonDigital</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/17e6b64da0509eeb4dca8d00c4922a05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7b282adb3049558dba41acaf0e5c7f05_200_200.jpg"/></p>
       <a href="https://keybase.io/croutonnodes">47B453B80ECFA342</a></td>
     <td><a href="https://t.me/croutoncrypto">https://t.me/croutoncrypto</a></tr>
   <tr>
@@ -663,9 +663,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>P2P.ORG Validator</pre></td>
     <td>One of the winners of Cosmos Game of Stakes. We provide a simple, secure and intelligent staking service to help you generate rewards on your blockchain assets across 9+ networks within a single interface. Let&#39;s stake together - p2p.org.</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0e54d989cbe0b1eed716e222bf2cdd05_200_200.jpg"/></p>
-      <a href="https://keybase.io/p2p_org_">E12F4695036D8072</a></td>
+    <td></td>
     <td><a href="https://p2p.org">https://p2p.org</a></tr>
   <tr>
     <td><pre>BwareLabs</pre></td>
@@ -816,9 +814,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Oni</pre></td>
     <td>The Oni Protectorate ⚛️ Validator for the Cosmos. Friend to the Cosmonaut.</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a0696b953ceca5ca4fa36f3b00e91705_200_200.jpg"/></p>
-      <a href="https://keybase.io/onivalidator">5A8AB49CF5CAAF3C</a></td>
+    <td></td>
     <td><a href="https://onivalidator.com">https://onivalidator.com</a></tr>
   <tr>
     <td><pre>fuckermaker</pre></td>

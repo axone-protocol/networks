@@ -3,9 +3,8 @@ name: Update peers
 on:
   workflow_dispatch:
 
-  # Disable for now.
-  # schedule:
-  #   - cron: "0 0 * * MON"
+  schedule:
+    - cron: "0 0 * * MON"
 
 concurrency:
   group: update-peers-${{ github.ref }}
@@ -17,8 +16,8 @@ jobs:
     strategy:
       matrix:
         target:
-          - node: "http://rpc.okp.ppnv.space:36657"
-            chain: "nemeton-1"
+          - node: "https://rpc-t.okp4.nodestake.org"
+            chain: "drunemeton-1"
     steps:
       - name: Checkout
         uses: actions/checkout@v4

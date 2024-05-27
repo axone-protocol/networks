@@ -40,7 +40,7 @@ jobs:
         run: |
           pip install requests
 
-      - name: Display the path
+      - name: Retrieve peers
         shell: python
         run: |
           import requests
@@ -63,8 +63,13 @@ jobs:
 
           def get_peer_address(peer):
               peerId = peer['node_info']['id']
-              _, _, listen_addr, listen_port, _ = re.split("(.+:\/\/)?(.+):(\d+)", peer['node_info']['listen_addr'])
               remoteIp = peer['remote_ip']
+              listen_address = peer['node_info']['listen_addr']
+              match = re.match(r"(?:.+:\/\/)?(?:.+):(\d+)", listen_address)
+              if match:
+                  listen_port = match.group(1)
+              else:
+                  raise ValueError("Invalid listen address: {}".format(listen_address))
 
               match ip_class(remoteIp):
                   case IPClass.IPv4:
@@ -72,19 +77,18 @@ jobs:
                   case IPClass.IPv6:
                       return f"{peerId}[@{remoteIp}]:{listen_port}"
                   case _:
-                      raise ValueError
+                      raise ValueError("Invalid IP address: {}".format(remoteIp))
 
           response = requests.get('${{ matrix.target.node }}/net_info?')
+          response.raise_for_status()
+
           json_response = json.loads(response.text)
-          peers = map(
-              get_peer_address,
-              json_response['result']['peers'])
+          peers = map(get_peer_address, json_response['result']['peers'])
 
           os.makedirs(os.path.dirname("./chains/${{ matrix.target.chain }}/"), exist_ok=True)
           with open("./chains/${{ matrix.target.chain }}/peers.txt", 'w') as f:
               for value in peers:
-                  f.write(value)
-                  f.write('\n')
+                  f.write(f"{value}\n")
 
       - name: Add & Commit changes
         uses: EndBug/add-and-commit@v9

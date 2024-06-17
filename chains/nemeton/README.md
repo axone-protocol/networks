@@ -110,7 +110,7 @@ okp4d --home mynode gentx your-key-name 1000000uknow \
    <td><pre>Imperator.co</pre></td>
    <td>100% refund on downtime slashing -- Professional Delegated Proof-of-Stake Network Validator</td>
    <td>
-     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/1855362ac6629cbc7158012eb363e405_200_200.jpg"/></p>
+     <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/ae8b8c16b080122b38d51c77b11e8105_200_200.jpg"/></p>
      <a href="https://keybase.io/ximperator">0878BA6BE556C132</a></td>
    <td><a href="https://imperator.co/">https://imperator.co/</a></tr>
   <tr>

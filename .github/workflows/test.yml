@@ -77,12 +77,12 @@ jobs:
           sudo cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/gentx/*  ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/gentx
 
           docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axoneprotocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
-              genesis add-genesis-account validator 1000000000uknow \
+              genesis add-genesis-account validator 1000000000uaxone \
               --home /.axoned \
               --keyring-backend test
 
           docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axoneprotocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
-              genesis gentx validator 1000000uknow \
+              genesis gentx validator 1000000uaxone \
               --home /.axoned \
               --chain-id=axone-${{ matrix.context.network }} \
               --keyring-backend test

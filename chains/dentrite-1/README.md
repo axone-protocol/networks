@@ -64,4 +64,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/53b008f12f37e3ffa0dec3676d375a05_200_200.jpg"/></p>
       <a href="https://keybase.io/highstakes">2CB281A714F6133B</a></td>
     <td><a href="https://highstakes.ch">https://highstakes.ch</a></tr>
+  <tr>
+    <td><pre> Lavender.Five Nodes 🐝</pre></td>
+    <td>Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/c5f0e5c3c88a6194da5277d3eb297805_200_200.jpg"/></p>
+      <a href="https://keybase.io/lavenderfive">F87ADDB700C0CC94</a></td>
+    <td><a href="https://www.lavenderfive.com/">https://www.lavenderfive.com/</a></tr>
 </table>

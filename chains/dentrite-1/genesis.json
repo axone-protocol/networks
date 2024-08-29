@@ -29,6 +29,13 @@
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "axone18e6a52ld4mvq9qurj2k3hc2am92al4jmep2e5j",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
         }
       ]
     },
@@ -41,6 +48,15 @@
         "default_send_enabled": true
       },
       "balances": [
+        {
+          "address": "axone18e6a52ld4mvq9qurj2k3hc2am92al4jmep2e5j",
+          "coins": [
+            {
+              "denom": "uaxone",
+              "amount": "1000000200000"
+            }
+          ]
+        },
         {
           "address": "axone14pjwgekpxtuwfkpr0nvj8eek49llfy607ckgjt",
           "coins": [
@@ -63,7 +79,7 @@
       "supply": [
         {
           "denom": "uaxone",
-          "amount": "476000000200000"
+          "amount": "477000000400000"
         }
       ],
       "denom_metadata": [],
@@ -178,6 +194,68 @@
           },
           "signatures": [
             "/bVqhNmlG1XIiArNJ9BEG6URU6GqkPum2Vrblz0BvEdhUFV4w3ifUUyPMjb2Cn41mHc565eVcyemDZgaKgMInw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "HSS",
+                  "identity": "2CB281A714F6133B",
+                  "website": "https://highstakes.ch",
+                  "security_contact": "contact@highstakes.ch",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "axonevaloper18e6a52ld4mvq9qurj2k3hc2am92al4jmf5xtws",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "5R4b4Y29QcK+3hDZqMRLzkm5DE9k8XsexiLXyMF/AOE="
+                },
+                "value": {
+                  "denom": "uaxone",
+                  "amount": "1000000000000"
+                }
+              }
+            ],
+            "memo": "de69f351fa1c9e00a4f00425e359e42c0e3c9d95@95.216.248.222:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A0OxEEqptohQCgZvPEAbWr0OfTD0PItV3A0oNvBk6aOn"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "ADrNn981knw5/0131jPUcnXJkDGWE+FhE3I2ygfUer1vwIhm0pjTflupl/3ZMCVkHNCiqzVqVZ99kEpBLhRWDg=="
           ]
         }
       ]

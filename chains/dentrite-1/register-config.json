@@ -1,0 +1,8 @@
+{
+  "start-date": "2024-08-28 00:00:00Z",
+  "end-date": "2024-09-07 00:00:00Z",
+  "delegation": {
+    "amount": "1000000000000",
+    "denom": "uaxone"
+  }
+}

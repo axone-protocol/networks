@@ -66,7 +66,7 @@ jobs:
       - name: Initialize blockchain
         run: |
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axoneprotocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               keys add validator \
               --home /.axoned \
               --keyring-backend test
@@ -76,24 +76,24 @@ jobs:
           sudo mkdir -p ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/gentx
           sudo cp ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/gentx/*  ${GITHUB_WORKSPACE}/${{ matrix.context.path }}/config/gentx
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axoneprotocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               genesis add-genesis-account validator 1000000000uknow \
               --home /.axoned \
               --keyring-backend test
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axoneprotocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               genesis gentx validator 1000000uknow \
               --home /.axoned \
               --chain-id=axone-${{ matrix.context.network }} \
               --keyring-backend test
 
-          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --rm -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axoneprotocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               genesis collect-gentxs \
               --home /.axoned
 
       - name: Start the blockchain
         run: |
-          docker run --network host --rm --name axone-node -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axone-protocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
+          docker run --network host --rm --name axone-node -v ${GITHUB_WORKSPACE}/${{ matrix.context.path }}:/.axoned axoneprotocol/axoned:`cat ./chains/${{ matrix.context.network }}/version.txt` \
               start \
               --home /.axoned \
               --moniker axone-node &

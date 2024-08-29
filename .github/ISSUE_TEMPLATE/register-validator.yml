@@ -15,7 +15,7 @@ body:
       description: Choose the Axone network you want to join
       multiple: false
       options:
-        - drunemeton-1
+        - dentrite-1
     validations:
       required: true
   - type: textarea

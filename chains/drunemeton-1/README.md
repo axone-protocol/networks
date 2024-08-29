@@ -191,7 +191,7 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
     <td><pre>Stakin</pre></td>
     <td>Reliable and Secure Staking Services Trusted by Institutions. ISO27001 certified, Cosmos ecosystem contributor, IBC relayer provider. Visit our website to know more about Stakin and for T&amp;Cs.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/132ec63525222ec6c6c289eea10f9805_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/1c7c29dec05c920a99b42e114e732705_200_200.jpg"/></p>
       <a href="https://keybase.io/stakin">83D300CB42D06962</a></td>
     <td><a href="https://stakin.com">https://stakin.com</a></tr>
   <tr>
@@ -231,7 +231,7 @@ okp4d --home mynode genesis gentx your-key-name 10000000000uknow \
     <td><pre>Saxon</pre></td>
     <td>Saxon is a technology-driven advisory and investment firm that serves start-ups and institutions that operate within the Web3 &amp; cryptocurrency ecosystem</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a39fb82dc80c1f3bca19c7b3e49c8005_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/25b3916cb3f187f0dc80035d8ff50b05_200_200.jpg"/></p>
       <a href="https://keybase.io/saxonxyz">d358f6bf2e1b525d</a></td>
     <td><a href="https://saxon.xyz/">https://saxon.xyz/</a></tr>
   <tr>

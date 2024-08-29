@@ -71,4 +71,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/c5f0e5c3c88a6194da5277d3eb297805_200_200.jpg"/></p>
       <a href="https://keybase.io/lavenderfive">F87ADDB700C0CC94</a></td>
     <td><a href="https://www.lavenderfive.com/">https://www.lavenderfive.com/</a></tr>
+  <tr>
+    <td><pre>AKNodes</pre></td>
+    <td>At AKNodes, we are more than just a PoS validator; we are your trusted partner in navigating the exciting world of Proof-of-Stake blockchain networks</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/111162c2171635295e75ed493ce00f05_200_200.jpg"/></p>
+      <a href="https://keybase.io/appieasahbie">A7E4FBD93B7705E0</a></td>
+    <td><a href="https://aknodes.com">https://aknodes.com</a></tr>
 </table>

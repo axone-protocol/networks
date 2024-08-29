@@ -16,6 +16,7 @@ For a complete description about nodes and validators, check out the [Axone Docu
 
 Below is a list of available networks, organized from the most recent to the oldest:
 
+- [`dentrite-1`](./chains/dentrite-1/README.md)
 - [`drunemeton-1`](./chains/drunemeton-1/README.md)
 - [`nemeton-1`](./chains/nemeton-1/README.md)
 - [`nemeton`](./chains/nemeton/README.md)

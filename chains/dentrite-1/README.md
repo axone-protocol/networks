@@ -120,4 +120,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8506223c573a1bee45e9182de7684805_200_200.jpg"/></p>
       <a href="https://keybase.io/nodejumper">FFB0AA51A2DF5954</a></td>
     <td><a href="https://nodejumper.io">https://nodejumper.io</a></tr>
+  <tr>
+    <td><pre>Easy2Stake</pre></td>
+    <td>Easy.Stake.Trust</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/64e2ff0c8b5bc90725be9acb11564705_200_200.jpg"/></p>
+      <a href="https://keybase.io/easy2stake">2C877AC873132C91</a></td>
+    <td><a href="https://www.easy2stake.com/">https://www.easy2stake.com/</a></tr>
 </table>

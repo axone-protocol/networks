@@ -99,4 +99,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/0a30469c4d49aa836b58cab6a59b9005_200_200.jpg"/></p>
       <a href="https://keybase.io/hashkeycloud">CB79CF86DBD56A19</a></td>
     <td><a href="https://www.hashkey.cloud/">https://www.hashkey.cloud/</a></tr>
+  <tr>
+    <td><pre>Mike</pre></td>
+    <td>MA_Kupriianov</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a42b13f570317e45d6e6a58252bdac05_200_200.jpg"/></p>
+      <a href="https://keybase.io/ma_kupriianov">8D8E37C00E16A546</a></td>
+    <td><a href="https://github.com/88Mikhail88">https://github.com/88Mikhail88</a></tr>
 </table>

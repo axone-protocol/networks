@@ -127,4 +127,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/64e2ff0c8b5bc90725be9acb11564705_200_200.jpg"/></p>
       <a href="https://keybase.io/easy2stake">2C877AC873132C91</a></td>
     <td><a href="https://www.easy2stake.com/">https://www.easy2stake.com/</a></tr>
+  <tr>
+    <td><pre>Saxon</pre></td>
+    <td>Saxon is a technology-driven advisory and investment firm that serves start-ups and institutions that operate within the Web3 &amp; cryptocurrency ecosystem</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/25b3916cb3f187f0dc80035d8ff50b05_200_200.jpg"/></p>
+      <a href="https://keybase.io/saxonxyz">d358f6bf2e1b525d</a></td>
+    <td><a href="https://saxon.xyz/">https://saxon.xyz/</a></tr>
 </table>

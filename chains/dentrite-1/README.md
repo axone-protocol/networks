@@ -85,4 +85,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/d56ce0bdda17f73d4aa895d1626e2505_200_200.jpg"/></p>
       <a href="https://keybase.io/polkachu">0A6AF02D1557E5B4</a></td>
     <td><a href="https://polkachu.com">https://polkachu.com</a></tr>
+  <tr>
+    <td><pre>Nodeist</pre></td>
+    <td>Nodeist is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@nodeist.net</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e16ba5abb8e81fe864c1809c0f8e6c05_200_200.jpg"/></p>
+      <a href="https://keybase.io/nodeistt">A2E180C6914F7F87</a></td>
+    <td><a href="https://nodeist.net">https://nodeist.net</a></tr>
 </table>

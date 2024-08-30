@@ -106,4 +106,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a42b13f570317e45d6e6a58252bdac05_200_200.jpg"/></p>
       <a href="https://keybase.io/ma_kupriianov">8D8E37C00E16A546</a></td>
     <td><a href="https://github.com/88Mikhail88">https://github.com/88Mikhail88</a></tr>
+  <tr>
+    <td><pre>jayjay</pre></td>
+    <td>community driven validator</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/273625e88af0407ae3a1134eca418a05_200_200.jpg"/></p>
+      <a href="https://keybase.io/jayjayone">34589DAF06970635</a></td>
+    <td><a href="https://twitter.com/javalry1">https://twitter.com/javalry1</a></tr>
 </table>

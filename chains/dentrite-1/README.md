@@ -113,4 +113,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/273625e88af0407ae3a1134eca418a05_200_200.jpg"/></p>
       <a href="https://keybase.io/jayjayone">34589DAF06970635</a></td>
     <td><a href="https://twitter.com/javalry1">https://twitter.com/javalry1</a></tr>
+  <tr>
+    <td><pre>NODEJUMPER</pre></td>
+    <td>Professional POS Validator services, Cosmos contributors and supporters, Restake.app compatible. Making the blockchain world a better place.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8506223c573a1bee45e9182de7684805_200_200.jpg"/></p>
+      <a href="https://keybase.io/nodejumper">FFB0AA51A2DF5954</a></td>
+    <td><a href="https://nodejumper.io">https://nodejumper.io</a></tr>
 </table>

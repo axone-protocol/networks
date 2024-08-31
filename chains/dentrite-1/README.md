@@ -134,4 +134,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/25b3916cb3f187f0dc80035d8ff50b05_200_200.jpg"/></p>
       <a href="https://keybase.io/saxonxyz">d358f6bf2e1b525d</a></td>
     <td><a href="https://saxon.xyz/">https://saxon.xyz/</a></tr>
+  <tr>
+    <td><pre>MELLIFERA</pre></td>
+    <td>Empowering blockchain security and contributing to cosmos ecosystem with technical expertise</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e86fec4890dc435ba14cb684ab658e05_200_200.jpg"/></p>
+      <a href="https://keybase.io/ruslanglaznyov">8F3D842B29B89CC5</a></td>
+    <td><a href="https://mellifera.network">https://mellifera.network</a></tr>
 </table>

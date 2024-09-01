@@ -127,6 +127,13 @@
           "pub_key": null,
           "account_number": "15",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "axone1fsw3sqjm07jn5y6vdmx3ctzv7rsksn6q5mxwt6",
+          "pub_key": null,
+          "account_number": "16",
+          "sequence": "0"
         }
       ]
     },
@@ -177,6 +184,15 @@
         },
         {
           "address": "axone18e6a52ld4mvq9qurj2k3hc2am92al4jmep2e5j",
+          "coins": [
+            {
+              "denom": "uaxone",
+              "amount": "1000000200000"
+            }
+          ]
+        },
+        {
+          "address": "axone1fsw3sqjm07jn5y6vdmx3ctzv7rsksn6q5mxwt6",
           "coins": [
             {
               "denom": "uaxone",
@@ -287,7 +303,7 @@
       "supply": [
         {
           "denom": "uaxone",
-          "amount": "490000003000000"
+          "amount": "491000003200000"
         }
       ],
       "denom_metadata": [],
@@ -1270,6 +1286,68 @@
           },
           "signatures": [
             "MKX12fJu4j2NvcPajF+Wf4UkLq+MAlmoWOCGFuTGaU9s6yHXgzf/wjsNTIY87uAZ+GO0A++ep42IxmFvc/+Yrw=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Dmitry",
+                  "identity": "",
+                  "website": "https://github.com/dmi3yK",
+                  "security_contact": "88tradingview88@gmail.com",
+                  "details": "Top"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "axonevaloper1fsw3sqjm07jn5y6vdmx3ctzv7rsksn6qyw2u3c",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "8W+DOiDk6wZ9Wyx7zCQ8dkbRetqPHGE8K6HWc4dI+9Q="
+                },
+                "value": {
+                  "denom": "uaxone",
+                  "amount": "1000000000000"
+                }
+              }
+            ],
+            "memo": "fb85c62250eecdc74e50259bf899e3323863efda@37.27.94.66:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AslD6UFZ/q+172613/qnTBUljyJ5tFLfspQ6/Q+NfqnO"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "+r9Pi+7gpuI0WrmTPyWuYwakPMEAqFfB/fK1cK760DZAfqsw9uVSfP5BMvF6GQxTYZBCAi++PC8KP5IMOndBpA=="
           ]
         }
       ]

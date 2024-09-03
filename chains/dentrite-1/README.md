@@ -190,4 +190,16 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/cb1991a04b12a85b7988cad86c351e05_200_200.jpg"/></p>
       <a href="https://keybase.io/berkcan1">C5337EB8B55DFA0C</a></td>
     <td><a href="https://bccnodes.com">https://bccnodes.com</a></tr>
+  <tr>
+    <td><pre>Nodes.Guru</pre></td>
+    <td>Guru of non-custodial staking. Professional node running, low fees, best uptime and 24/7 customer support.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/25738b36b7972b94112bc8dc0df13b05_200_200.jpg"/></p>
+      <a href="https://keybase.io/nodesguru">28B672FCE6BBD562</a></td>
+    <td><a href="https://nodes.guru">https://nodes.guru</a></tr>
+  <tr>
+    <td><pre>P2P.ORG</pre></td>
+    <td>P2P Validator (P2P.org) - an early contributor &amp; long-time Cosmos Ecosystem participant. Stake with us for a secure, reliable and simple service</td>
+    <td></td>
+    <td><a href="https://p2p.org">https://p2p.org</a></tr>
 </table>

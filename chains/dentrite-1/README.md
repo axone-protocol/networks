@@ -162,4 +162,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/08f241f3c09d71c638192088e1a22605_200_200.jpg"/></p>
       <a href="https://keybase.io/1infinity1">F2F91999ECCC092F</a></td>
     <td><a href="https://stavr-team.gitbook.io/">https://stavr-team.gitbook.io/</a></tr>
+  <tr>
+    <td><pre>2pilot</pre></td>
+    <td>Your trusted staking co-pilot</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5eaec55e16538f2ecf801b402a02e405_200_200.jpg"/></p>
+      <a href="https://keybase.io/stanisla">8E102EA8D78D6769</a></td>
+    <td><a href="https://2pilot.dev/">https://2pilot.dev/</a></tr>
 </table>

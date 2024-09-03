@@ -169,4 +169,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5eaec55e16538f2ecf801b402a02e405_200_200.jpg"/></p>
       <a href="https://keybase.io/stanisla">8E102EA8D78D6769</a></td>
     <td><a href="https://2pilot.dev/">https://2pilot.dev/</a></tr>
+  <tr>
+    <td><pre>CroutonDigital</pre></td>
+    <td>Your everyday crypto partner</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7b282adb3049558dba41acaf0e5c7f05_200_200.jpg"/></p>
+      <a href="https://keybase.io/croutonnodes">47B453B80ECFA342</a></td>
+    <td><a href="https:/crouton.digital">https:/crouton.digital</a></tr>
 </table>

@@ -155,4 +155,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e80234970f6332b2099a29d0b9fa3705_200_200.jpg"/></p>
       <a href="https://keybase.io/kolot">F606B3E4C51A1634</a></td>
     <td><a href="https://twitter.com/Kolot86692580">https://twitter.com/Kolot86692580</a></tr>
+  <tr>
+    <td><pre>STAVR</pre></td>
+    <td>A team of professional and reliable validators.Safety first.Stake with us and profit with the mark of quality. Monitoring and Support 24\7</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/08f241f3c09d71c638192088e1a22605_200_200.jpg"/></p>
+      <a href="https://keybase.io/1infinity1">F2F91999ECCC092F</a></td>
+    <td><a href="https://stavr-team.gitbook.io/">https://stavr-team.gitbook.io/</a></tr>
 </table>

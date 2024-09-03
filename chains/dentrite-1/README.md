@@ -202,4 +202,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
     <td>P2P Validator (P2P.org) - an early contributor &amp; long-time Cosmos Ecosystem participant. Stake with us for a secure, reliable and simple service</td>
     <td></td>
     <td><a href="https://p2p.org">https://p2p.org</a></tr>
+  <tr>
+    <td><pre>Citadel.one</pre></td>
+    <td>Citadel.one is a multi-asset non-custodial staking platform that lets anyone become a part of decentralized infrastructure and earn passive income. Stake with our nodes or any other validator across multiple networks in a few clicks</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2826e38259411adafb416505fb948c05_200_200.jpg"/></p>
+      <a href="https://keybase.io/citadeldao">EBB03EB4BB4CFCA7</a></td>
+    <td><a href="https://citadel.one">https://citadel.one</a></tr>
 </table>

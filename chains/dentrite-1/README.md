@@ -203,6 +203,13 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
     <td></td>
     <td><a href="https://p2p.org">https://p2p.org</a></tr>
   <tr>
+    <td><pre>lesnik | UTSA</pre></td>
+    <td>Trustworthy and high performance validator</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/20b05f5939d197b253a005b43d3c0105_200_200.jpg"/></p>
+      <a href="https://keybase.io/lesnik_utsa">A0B5FF00B5460153</a></td>
+    <td><a href="https://teletype.in/@lesnik13utsa">https://teletype.in/@lesnik13utsa</a></tr>
+  <tr>
     <td><pre>Citadel.one</pre></td>
     <td>Citadel.one is a multi-asset non-custodial staking platform that lets anyone become a part of decentralized infrastructure and earn passive income. Stake with our nodes or any other validator across multiple networks in a few clicks</td>
     <td>

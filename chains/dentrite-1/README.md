@@ -223,4 +223,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/521c38ac16cf63f7cd1f6506398dd005_200_200.jpg"/></p>
       <a href="https://keybase.io/cumulo">77158D6796D16CD0</a></td>
     <td><a href="http://cumulo.pro">http://cumulo.pro</a></tr>
+  <tr>
+    <td><pre>nysa.network</pre></td>
+    <td>Safe and secure interchain validator</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2d9056551af97b92f6c759c6af125905_200_200.jpg"/></p>
+      <a href="https://keybase.io/nysa_network">F7E5A47BC1D9F95B</a></td>
+    <td><a href="https://nysa.network">https://nysa.network</a></tr>
 </table>

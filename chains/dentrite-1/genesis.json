@@ -197,6 +197,13 @@
           "pub_key": null,
           "account_number": "25",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "axone1nfhdk2h8tutq38pa5r5j33j8m78kgfycl4xdd8",
+          "pub_key": null,
+          "account_number": "26",
+          "sequence": "0"
         }
       ]
     },
@@ -345,6 +352,15 @@
           ]
         },
         {
+          "address": "axone1nfhdk2h8tutq38pa5r5j33j8m78kgfycl4xdd8",
+          "coins": [
+            {
+              "denom": "uaxone",
+              "amount": "1000000200000"
+            }
+          ]
+        },
+        {
           "address": "axone14qekdkj2nmmwea4ufg9n002a3pud23y8xyvu9d",
           "coins": [
             {
@@ -447,7 +463,7 @@
       "supply": [
         {
           "denom": "uaxone",
-          "amount": "500000005000000"
+          "amount": "501000005200000"
         }
       ],
       "denom_metadata": [],
@@ -2050,6 +2066,68 @@
           },
           "signatures": [
             "wyVh6bluw0hn/1mtIylglwhUyYphC3ilztFW428sVtE8WHOFC42aqyuykhMeJxS4fhZca9TOpo23kR6qhK/MyQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Smart Stake",
+                  "identity": "DD06F013A474ACA3",
+                  "website": "smartstake.io",
+                  "security_contact": "info@smartstake.io",
+                  "details": "Your hub for validator, network, and decentralization analytics. Support @ t.me/SmartStake. Like our services? Delegate on any of the networks @ smartstake.io"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "axonevaloper1nfhdk2h8tutq38pa5r5j33j8m78kgfyc0q2lh9",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "twHmwzMqZ24zzp1453Y7Quy29FVH6ni+qw+6i+ASvxw="
+                },
+                "value": {
+                  "denom": "uaxone",
+                  "amount": "1000000000000"
+                }
+              }
+            ],
+            "memo": "1ef56d1624dad72537e4abf9d66c2707c5fc575b@65.109.225.25:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "Ai/u1ROFuFpWG5H0wJWgfeLgOypE/ruNEWMZslKnhdL0"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "fRpEz1OGaYQ8gn3lDB1KWt1r1pXyZJX67L7tnzlV9TscSnyTSsRu8CfURneujla/2IhRgBukUVKiLOfBaYLkhA=="
           ]
         }
       ]

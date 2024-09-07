@@ -231,6 +231,13 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <a href="https://keybase.io/cumulo">77158D6796D16CD0</a></td>
     <td><a href="http://cumulo.pro">http://cumulo.pro</a></tr>
   <tr>
+    <td><pre>silent</pre></td>
+    <td>Silent Validator leverages robust infrastructure and deep expertise to provide highly reliable validation services, enriches the community and furthers the growth of the ecosystem.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e2c9828ccea11ee1b7e3af66ac132905_200_200.jpg"/></p>
+      <a href="https://keybase.io/silentnoname">A47522A5527DB39F</a></td>
+    <td><a href="https://silentvalidator.com">https://silentvalidator.com</a></tr>
+  <tr>
     <td><pre>nysa.network</pre></td>
     <td>Safe and secure interchain validator</td>
     <td>

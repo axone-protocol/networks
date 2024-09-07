@@ -238,6 +238,13 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <a href="https://keybase.io/silentnoname">A47522A5527DB39F</a></td>
     <td><a href="https://silentvalidator.com">https://silentvalidator.com</a></tr>
   <tr>
+    <td><pre>cryptobtcbuyer</pre></td>
+    <td>Independent PoS Validator. 24/7 support: https://t.me/cryptobtcbuyer</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/57fd19d729b232edb776d1f1511e4305_200_200.jpg"/></p>
+      <a href="https://keybase.io/cryptobtcbuyer">E1A5712F01E07357</a></td>
+    <td><a href="https://github.com/cryptobtcbuyer">https://github.com/cryptobtcbuyer</a></tr>
+  <tr>
     <td><pre>nysa.network</pre></td>
     <td>Safe and secure interchain validator</td>
     <td>

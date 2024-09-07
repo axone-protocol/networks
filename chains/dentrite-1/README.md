@@ -163,6 +163,13 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <a href="https://keybase.io/1infinity1">F2F91999ECCC092F</a></td>
     <td><a href="https://stavr-team.gitbook.io/">https://stavr-team.gitbook.io/</a></tr>
   <tr>
+    <td><pre>StakeUp</pre></td>
+    <td>Non-custodial staking provider. High service, good support.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/dffbf1c49bdbf83e0e6576137e1fb505_200_200.jpg"/></p>
+      <a href="https://keybase.io/landeros">9DE3A32AD7EB00B3</a></td>
+    <td><a href="https://stakeup.tech">https://stakeup.tech</a></tr>
+  <tr>
     <td><pre>2pilot</pre></td>
     <td>Your trusted staking co-pilot</td>
     <td>

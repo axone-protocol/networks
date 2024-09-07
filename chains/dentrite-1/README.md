@@ -230,4 +230,11 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
       <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2d9056551af97b92f6c759c6af125905_200_200.jpg"/></p>
       <a href="https://keybase.io/nysa_network">F7E5A47BC1D9F95B</a></td>
     <td><a href="https://nysa.network">https://nysa.network</a></tr>
+  <tr>
+    <td><pre>AVIAONE 🟢</pre></td>
+    <td>AviaOne 🟢 is a Trusted Professional Validator on 20+ chains since 2021. ✨ Security: Tokens 100% secured on Best Servers, ensuring Yield &amp; High Security. 🔐 No Transfer Needed: Your Assets stays in your wallet.</td>
+    <td>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/26cb2814f06d1832f49787f5ecb3d605_200_200.jpg"/></p>
+      <a href="https://keybase.io/aviaone">DCD3D6C0BF61C200</a></td>
+    <td><a href="https://aviaone.com">https://aviaone.com</a></tr>
 </table>

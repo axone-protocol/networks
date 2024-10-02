@@ -328,7 +328,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>punq</pre></td>
     <td>Lets Rock - 7/24 non-stop staking service</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/cc5852e8b1824bd018227982a06f8405_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/f2ed96326fc4a86dd6a4e5fcd13fc005_200_200.jpg"/></p>
       <a href="https://keybase.io/punq0">7CB303A615C2AC8F</a></td>
     <td><a href="https://www.punq.info">https://www.punq.info</a></tr>
   <tr>

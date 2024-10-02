@@ -9,7 +9,7 @@
 ![nb-validators](https://img.shields.io/badge/{{ "🧑‍⚖️" | urlquery }}%20core%20validators-{{ (datasource "genesis") | jsonpath "$..messages[?(@.min_self_delegation)]" | len }}-brightgreen?style=for-the-badge)
 
 > [!IMPORTANT]
-> This network was discontinued on 30/12/22.
+> This network was discontinued on 2022-12-30.
 <!-- -->
 > [!IMPORTANT]
 > This network was originally created under the former `OKP4` brand.

@@ -2,12 +2,15 @@
 # 🔗 `okp4-drunemeton-1`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-okp4--drunemeton--1-blue?style=for-the-badge)
-[![stability-beta](https://img.shields.io/badge/stability-beta-33bbff.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#beta)
+[![stability-deprecated](https://img.shields.io/badge/stability-deprecated-922b21.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#deprecated)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2024--02--06T15%3A00%3A00Z-red?style=for-the-badge)
 ![chain-height](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.drunemeton.okp4.network%2Fcosmos%2Fbase%2Ftendermint%2Fv1beta1%2Fblocks%2Flatest&query=%24.block.header.height&style=for-the-badge&label=height&color=%231E2A4E&cacheSeconds=6)
 
+> [!IMPORTANT]
+> This network was discontinued on 2024-09-30.
+<!-- -->
 > [!IMPORTANT]
 > This network was originally created under the former `OKP4` brand.
 

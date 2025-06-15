@@ -2,7 +2,7 @@ name: Register validator
 
 on:
   issues:
-    types: [ labeled, unlabeled ]
+    types: [labeled, unlabeled]
 
 concurrency:
   group: register-validator-${{ github.event.issue.number }}
@@ -38,7 +38,6 @@ jobs:
           # GENTX_MD needs some sorcery as it is not well extracted from the form issue.
           GENTX_MD: ${{ fromJson(steps.parse-issue.outputs.jsonString).gentx }}
         run: |
-          set -eo pipefail
           gentx=$(echo "$GENTX_MD" | tail -n +2 | sed '$d' | jq -c '.')
           moniker=$(echo "$gentx" | jq -r '.body.messages[0].description.moniker')
           echo "moniker=${moniker}" >> $GITHUB_OUTPUT
@@ -47,7 +46,6 @@ jobs:
       - name: Get network register config
         id: register-config
         run: |
-          set -eo pipefail
           config=$(cat chains/${{ fromJson(steps.parse-issue.outputs.jsonString).network }}/register-config.json | jq -c '.')
           echo "config=${config}" >> $GITHUB_OUTPUT
 
@@ -175,7 +173,7 @@ jobs:
           author: ${{ vars.BOT_GIT_AUTHOR_NAME }} <${{ vars.BOT_GIT_AUTHOR_EMAIL }}>
           token: ${{ secrets.OPS_TOKEN }}
           branch: feat/${{ github.event.issue.number }}-register-${{ needs.resolve-context.outputs.network }}
-          title: '⚖️ Register `${{ needs.resolve-context.outputs.moniker }}` Validator'
+          title: "⚖️ Register `${{ needs.resolve-context.outputs.moniker }}` Validator"
           body: |
             Register [new validator](${{ github.event.issue.html_url }}) gentx on the ${{ needs.resolve-context.outputs.network }} network.
           labels: "register-validator,chain: ⛓️ ${{ needs.resolve-context.outputs.network }}"

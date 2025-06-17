@@ -89,7 +89,7 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
     <td><pre>Nodeist</pre></td>
     <td>Nodeist is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@nodeist.net</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e16ba5abb8e81fe864c1809c0f8e6c05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/862b033306a565710210409bcf2c7105_200_200.jpg"/></p>
       <a href="https://keybase.io/nodeistt">A2E180C6914F7F87</a></td>
     <td><a href="https://nodeist.net">https://nodeist.net</a></tr>
   <tr>
@@ -173,7 +173,7 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
     <td><pre>StakeUp</pre></td>
     <td>Non-custodial staking provider. High service, good support.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/dffbf1c49bdbf83e0e6576137e1fb505_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/ad9182b387748999b2b3de76e2825a05_200_200.jpg"/></p>
       <a href="https://keybase.io/landeros">9DE3A32AD7EB00B3</a></td>
     <td><a href="https://stakeup.tech">https://stakeup.tech</a></tr>
   <tr>

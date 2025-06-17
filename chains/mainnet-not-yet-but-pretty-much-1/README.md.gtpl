@@ -51,21 +51,25 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
     <th>Site</th>
   </tr>
 {{- $txs := (datasource "genesis") | jsonpath "$..messages[?(@.min_self_delegation)]" -}}
-{{- range $key, $value := $txs }}
-{{- $url := "" -}}
-{{- if $value.description.website | strings.HasPrefix "http" -}}
-{{- $url = $value.description.website -}}
-{{- else if $value.description.website -}}
-{{- $url = printf "%s%s" "https://" $value.description.website -}}
-{{- end -}}
-{{- $userInfo := $value.description.identity | index (datasource "usersInfo") }}
-  <tr>
-    <td><pre>{{ $value.description.moniker | html }}</pre></td>
-    <td>{{ $value.description.details | html }}</td>
-    <td>{{ if (and $value.description.identity $userInfo) }}
-      <p align="center"><img width="80px" src="{{ $userInfo.keybase.picture_url }}"/></p>
-      <a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
-    <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end -}}
-  </tr>
+{{- if $txs }}
+  {{- range $key, $value := $txs }}
+    {{- $url := "" -}}
+    {{- if $value.description.website | strings.HasPrefix "http" -}}
+      {{- $url = $value.description.website -}}
+    {{- else if $value.description.website -}}
+      {{- $url = printf "%s%s" "https://" $value.description.website -}}
+    {{- end -}}
+    {{- $userInfo := $value.description.identity | index (datasource "usersInfo") }}
+    <tr>
+      <td><pre>{{ $value.description.moniker | html }}</pre></td>
+      <td>{{ $value.description.details | html }}</td>
+      <td>{{ if (and $value.description.identity $userInfo) }}
+        <p align="center"><img width="80px" src="{{ $userInfo.keybase.picture_url }}"/></p>
+        <a href="https://keybase.io/{{ $userInfo.keybase.username }}">{{ $value.description.identity }}</a>{{ end }}</td>
+      <td>{{ if $url }}<a href="{{ $url }}">{{ $url }}</a>{{ end -}}
+    </tr>
+  {{- end }}
+{{- else }}
+  <tr><td colspan="4"><em>No validator messages found in genesis (yet).</em></td></tr>
 {{- end }}
 </table>

@@ -189,9 +189,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Army IDs</pre></td>
     <td>A Professional Validator of Various Blockchain Networks</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/79347343cf219ec11bb200b3855d7b05_200_200.jpg"/></p>
-      <a href="https://keybase.io/armyids">ABE093F03831CBBA</a></td>
+    <td></td>
     <td><a href="https://armyids.com">https://armyids.com</a></tr>
   <tr>
     <td><pre>soragNode</pre></td>
@@ -249,7 +247,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Nodeist</pre></td>
     <td>Professional node running, best uptime, low fees. Discord: Nodeist#3299</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/e16ba5abb8e81fe864c1809c0f8e6c05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/862b033306a565710210409bcf2c7105_200_200.jpg"/></p>
       <a href="https://keybase.io/nodeistt">A2E180C6914F7F87</a></td>
     <td><a href="https://nodeist.net">https://nodeist.net</a></tr>
   <tr>
@@ -492,15 +490,13 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre> AutoStake 🛡️ Slash Protected</pre></td>
     <td>Earn higher Yields with AutoStake.net 🛡️ 100% Refund on ALL forms of slashing backed by a SAFU fund 🛡️ IBC Relayer: ibc.autostake.net &amp; 💸Auto-REStake: wallet.autostake.net/evmos 💸 &amp; twitter.com/AutoStake_ &amp; telegram.me/AutoStake_net</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2fe4767915f79a22b1a3c4a0f2ffe505_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7b8399e8fb07089eb1a26d5d89d03d05_200_200.jpg"/></p>
       <a href="https://keybase.io/autostake">4D3303E20A4D2C32</a></td>
     <td></tr>
   <tr>
     <td><pre>Swiss Staking</pre></td>
     <td>Never jailed. Perfect uptime. Airdrop eligibility. IBC relayer. Community contributor. Backing p-chains. High security approach.</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/ff6f58998b7612c5ff3c808aed1af005_200_200.jpg"/></p>
-      <a href="https://keybase.io/swissstaking">165F85FC0194320D</a></td>
+    <td></td>
     <td><a href="https://swiss-staking.ch">https://swiss-staking.ch</a></tr>
   <tr>
     <td><pre>Selachi</pre></td>
@@ -518,7 +514,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>Enigma</pre></td>
     <td>Proof of Stake Validator on different projects -- Passionate about Data Science and Technology</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/b2bfc1afcfa172367bb858b2e50e6b05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2c2e5a59694817aaa8f8e1290518e505_200_200.jpg"/></p>
       <a href="https://keybase.io/enigmastaking">6223697ACA24A4FF</a></td>
     <td><a href="https://enigma-validator.com/">https://enigma-validator.com/</a></tr>
   <tr>

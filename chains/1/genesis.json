@@ -1,8 +1,8 @@
 {
   "app_name": "axoned",
   "app_version": "11.0.0",
-  "genesis_time": "2025-07-01T12:00:00.00Z",
-  "chain_id": "axone-mainnet-not-yet-but-pretty-much-1",
+  "genesis_time": "2025-07-08T18:20:00.00Z",
+  "chain_id": "axone-1",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {

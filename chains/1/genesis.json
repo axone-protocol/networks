@@ -1,6 +1,6 @@
 {
   "app_name": "axoned",
-  "app_version": "11.0.0",
+  "app_version": "12.0.0",
   "genesis_time": "2025-07-08T18:20:00.00Z",
   "chain_id": "axone-1",
   "initial_height": 1,
@@ -30,10 +30,6 @@
       "denom_metadata": [],
       "send_enabled": []
     },
-    "capability": {
-      "index": "1",
-      "owners": []
-    },
     "circuit": {
       "account_permissions": [],
       "disabled_type_urls": []
@@ -41,7 +37,7 @@
     "consensus": null,
     "crisis": {
       "constant_fee": {
-        "denom": "stake",
+        "denom": "uaxone",
         "amount": "1000"
       }
     },
@@ -70,13 +66,6 @@
     "feegrant": {
       "allowances": []
     },
-    "feeibc": {
-      "identified_fees": [],
-      "fee_enabled_channels": [],
-      "registered_payees": [],
-      "registered_counterparty_payees": [],
-      "forward_relayers": []
-    },
     "genutil": {
       "gen_txs": []
     },
@@ -92,11 +81,11 @@
         "min_deposit": [
           {
             "denom": "uaxone",
-            "amount": "10000000"
+            "amount": "50000000000"
           }
         ],
-        "max_deposit_period": "172800s",
-        "voting_period": "172800s",
+        "max_deposit_period": "604800s",
+        "voting_period": "518400s",
         "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
         "veto_threshold": "0.334000000000000000",
@@ -108,7 +97,7 @@
         "expedited_min_deposit": [
           {
             "denom": "uaxone",
-            "amount": "50000000"
+            "amount": "1000000000000"
           }
         ],
         "burn_vote_quorum": false,
@@ -128,68 +117,6 @@
       "proposals": [],
       "votes": []
     },
-    "ibc": {
-      "client_genesis": {
-        "clients": [],
-        "clients_consensus": [],
-        "clients_metadata": [],
-        "params": {
-          "allowed_clients": [
-            "*"
-          ]
-        },
-        "create_localhost": false,
-        "next_client_sequence": "0"
-      },
-      "connection_genesis": {
-        "connections": [],
-        "client_connection_paths": [],
-        "next_connection_sequence": "0",
-        "params": {
-          "max_expected_time_per_block": "30000000000"
-        }
-      },
-      "channel_genesis": {
-        "channels": [],
-        "acknowledgements": [],
-        "commitments": [],
-        "receipts": [],
-        "send_sequences": [],
-        "recv_sequences": [],
-        "ack_sequences": [],
-        "next_channel_sequence": "0",
-        "params": {
-          "upgrade_timeout": {
-            "height": {
-              "revision_number": "0",
-              "revision_height": "0"
-            },
-            "timestamp": "600000000000"
-          }
-        }
-      }
-    },
-    "interchainaccounts": {
-      "controller_genesis_state": {
-        "active_channels": [],
-        "interchain_accounts": [],
-        "ports": [],
-        "params": {
-          "controller_enabled": true
-        }
-      },
-      "host_genesis_state": {
-        "active_channels": [],
-        "interchain_accounts": [],
-        "port": "icahost",
-        "params": {
-          "host_enabled": true,
-          "allow_messages": [
-            "*"
-          ]
-        }
-      }
-    },
     "logic": {
       "params": {
         "interpreter": {
@@ -206,12 +133,12 @@
         "limits": {
           "max_size": "5000",
           "max_result_count": "3",
-          "max_user_output_size": null,
+          "max_user_output_size": 0,
           "max_variables": "100000"
         },
         "gas_policy": {
-          "weighting_factor": null,
-          "default_predicate_cost": null,
+          "weighting_factor": "1",
+          "default_predicate_cost": "1",
           "predicate_costs": []
         }
       }
@@ -225,26 +152,26 @@
         "mint_denom": "uaxone",
         "inflation_coef": "0.030000000000000000",
         "blocks_per_year": "6311520",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": null
+        "inflation_max": "0.050000000000000000",
+        "inflation_min": "0.020000000000000000"
       }
     },
     "params": null,
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
+        "signed_blocks_window": "10000",
         "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600s",
+        "downtime_jail_duration": "60s",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
+        "slash_fraction_downtime": "0.000100000000000000"
       },
       "signing_infos": [],
       "missed_blocks": []
     },
     "staking": {
       "params": {
-        "unbonding_time": "172800s",
-        "max_validators": 35,
+        "unbonding_time": "1814400s",
+        "max_validators": 50,
         "max_entries": 7,
         "historical_entries": 10000,
         "bond_denom": "uaxone",
@@ -258,15 +185,6 @@
       "redelegations": [],
       "exported": false
     },
-    "transfer": {
-      "port_id": "transfer",
-      "denom_traces": [],
-      "params": {
-        "send_enabled": true,
-        "receive_enabled": true
-      },
-      "total_escrowed": []
-    },
     "upgrade": {},
     "vesting": {},
     "wasm": {
@@ -274,7 +192,7 @@
         "code_upload_access": {
           "permission": "AnyOfAddresses",
           "addresses": [
-            "axone14pjwgekpxtuwfkpr0nvj8eek49llfy607ckgjt"
+            "axone1x3e5zvel40agzqsjfylc0ves40va99z2t3llje"
           ]
         },
         "instantiate_default_permission": "Everybody"

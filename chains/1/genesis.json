@@ -29,6 +29,13 @@
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "axone10u37uva8wrds7rtnnuljs9xj96ckrveta66293",
+          "pub_key": null,
+          "account_number": "2",
+          "sequence": "0"
         }
       ]
     },
@@ -51,6 +58,15 @@
           ]
         },
         {
+          "address": "axone10u37uva8wrds7rtnnuljs9xj96ckrveta66293",
+          "coins": [
+            {
+              "denom": "uaxone",
+              "amount": "50000000000"
+            }
+          ]
+        },
+        {
           "address": "axone170kv28cvt5c74j20av40tdmvagzgvp74358ey2",
           "coins": [
             {
@@ -63,7 +79,7 @@
       "supply": [
         {
           "denom": "uaxone",
-          "amount": "100000000000"
+          "amount": "150000000000"
         }
       ],
       "denom_metadata": [],
@@ -229,6 +245,68 @@
           },
           "signatures": [
             "q/RUo16eKQiTGsDUDLnf4qyrcnpXzhXRK7sBe7jKzMo3iawsr+H1O0Q7NP+rgGKXDLVugjWDGiV+ZC+bUAdiyQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "AKNodes",
+                  "identity": "A7E4FBD93B7705E0",
+                  "website": "https://aknodes.com",
+                  "security_contact": "aknodes@gmail.com",
+                  "details": "At AKNodes, we are more than just a PoS validator; we are your trusted partner in navigating the exciting world of Proof-of-Stake blockchain networks."
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "axonevaloper10u37uva8wrds7rtnnuljs9xj96ckrvetd0kcln",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "fD0x3vM4weBrWgFs8ycKGL04Xi3WYkr8hMd/tobWhIU="
+                },
+                "value": {
+                  "denom": "uaxone",
+                  "amount": "50000000000"
+                }
+              }
+            ],
+            "memo": "ea1d3b5b70ac85d553a645561fbfd95577afee4c@148.113.153.62:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A3gMIpWbjbnz7wrehsMPBT4iGfqiaKkgOxxyVjfh5rb7"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "dllC/QkB3tKcR3iKCjV16ZO9Hga+Oc5HbHhkmS1uf/kXTVFF0r4SoL4rVgI7ihYQ3EvlE+/H4qR34+HVzcpKgA=="
           ]
         }
       ]

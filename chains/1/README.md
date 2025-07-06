@@ -2,7 +2,7 @@
 # 🔗 `axone-1`
 
 ![chain-id](https://img.shields.io/badge/chain%20id-axone--1-blue?style=for-the-badge)
-[![stability-release-candidate](https://img.shields.io/badge/stability-pre--release-48c9b0.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#release-candidate)
+[![stability-mature](https://img.shields.io/badge/stability-mature-008000.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#mature)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg?style=for-the-badge)
 ![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--07--08T18%3A20%3A00Z-red?style=for-the-badge)

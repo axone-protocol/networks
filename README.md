@@ -14,9 +14,15 @@ For a complete description about nodes and validators, check out the [Axone Docu
 
 ## 🔗 Networks
 
-Below is a list of available networks, organized from the most recent to the oldest:
+Below is the list of networks, grouped by status.
 
-- [`dentrite-1`](./chains/dentrite-1/README.md)
+### 🟢 Active
+
+- [`mainnet`](./chains/1/README.md) — The official Axone production network.
+- [`dentrite-1`](./chains/dentrite-1/README.md) — The latest public testnet for experimentation and validator onboarding.
+
+### 💤 Deprecated / Inactive
+
 - [`drunemeton-1`](./chains/drunemeton-1/README.md)
 - [`nemeton-1`](./chains/nemeton-1/README.md)
 - [`nemeton`](./chains/nemeton/README.md)

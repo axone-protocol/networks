@@ -18,8 +18,8 @@ Below is the list of networks, grouped by status.
 
 ### 🟢 Active
 
-- [`mainnet`](./chains/1/README.md) — The official Axone production network.
-- [`dentrite-1`](./chains/dentrite-1/README.md) — The latest public testnet for experimentation and validator onboarding.
+- [![axone mainnet](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=steelblue&color=lightcyan&label=🟢%20axone%20mainnet&query=%24.block.header.height&url=https%3A%2F%2Faxone-api.highstakes.ch%2Fcosmos%2Fbase%2Ftendermint%2Fv1beta1%2Fblocks%2Flatest)](./chains/1/README.md)
+- [![axone-dentrite testnet](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=teal&color=lightcyan&label=🟢%20axone-dentrite%20testnet&query=%24.block.header.height&url=https%3A%2F%2Faxone-api.jayjayinfra.space%2Fcosmos%2Fbase%2Ftendermint%2Fv1beta1%2Fblocks%2Flatest)](./chains/dentrite-1/README.md)
 
 ### 💤 Deprecated / Inactive
 

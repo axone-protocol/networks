@@ -23,7 +23,7 @@ jobs:
       register-config: ${{ steps.register-config.outputs.config }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Parse issue form content
         id: parse-issue
@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup jq
         run: |
@@ -114,7 +114,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v6

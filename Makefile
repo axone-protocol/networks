@@ -10,6 +10,9 @@ COLOR_RESET  = $(shell tput -Txterm sgr0)
 # Images
 DOCKER_IMAGE_MARKDOWNLINT_CLI = thegeeklab/markdownlint-cli:0.32.2
 
+.PHONY: all
+all: help
+
 ## Lint:
 .PHONY: lint
 lint: lint-markdown ## Lint with all available linters

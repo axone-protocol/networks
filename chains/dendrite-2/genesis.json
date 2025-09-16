@@ -213,7 +213,7 @@
       "params": {
         "code_upload_access": {
           "permission": "AnyOfAddresses",
-          "addresses": ["axone1x3e5zvel40agzqsjfylc0ves40va99z2t3llje"]
+          "addresses": ["axone1gel7g6wzjyt9zpz6r3ea3uewlfljl0uyel84c5"]
         },
         "instantiate_default_permission": "Everybody"
       },

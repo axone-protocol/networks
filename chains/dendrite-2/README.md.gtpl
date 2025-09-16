@@ -11,7 +11,7 @@
 
 To register your validator node in the `genesis.json` you just need to provide a signed `gentx` with an initial delegation of `1000000000000uaxone` in a [⚖️ Register Validator issue](https://github.com/axone-protocol/networks/issues).
 
-The gentx generation can be done as follow (this is an example script, adapt it to your needs) with the [axoned](https://github.com/axone-protocol/axoned/releases) binary matching the [network's version](/chains/dentrite-1/version.txt):
+The gentx generation can be done as follows (this is an example script; adapt it to your needs) with the [axoned](https://github.com/axone-protocol/axoned/releases) binary matching the [network's version](/chains/{{- (datasource "genesis").chain_id | regexp.Replace "^[^-]+-" "" -}}/version.txt):
 
 ```sh
 # Init node

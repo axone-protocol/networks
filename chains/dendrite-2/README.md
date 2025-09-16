@@ -5,13 +5,13 @@
 [![stability-mature](https://img.shields.io/badge/stability-mature-008000.svg?style=for-the-badge)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#mature)
 ![audience](https://img.shields.io/badge/audience-public-white.svg?style=for-the-badge)
 ![incentivized-✖️](https://img.shields.io/badge/incentivized-✖️-29220A.svg?style=for-the-badge)
-![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--09--18T18%3A20%3A00.00Z-red?style=for-the-badge)
+![genesis-time](https://img.shields.io/badge/%E2%8F%B0%20genesis%20time-2025--09--21T13%3A37%3A00Z-red?style=for-the-badge)
 
 ## Register in the Genesis
 
 To register your validator node in the `genesis.json` you just need to provide a signed `gentx` with an initial delegation of `1000000000000uaxone` in a [⚖️ Register Validator issue](https://github.com/axone-protocol/networks/issues).
 
-The gentx generation can be done as follow (this is an example script, adapt it to your needs) with the [axoned](https://github.com/axone-protocol/axoned/releases) binary matching the [network's version](/chains/dentrite-1/version.txt):
+The gentx generation can be done as follows (this is an example script; adapt it to your needs) with the [axoned](https://github.com/axone-protocol/axoned/releases) binary matching the [network's version](/chains/dendrite-2/version.txt):
 
 ```sh
 # Init node

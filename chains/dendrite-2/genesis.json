@@ -38,7 +38,7 @@
           "coins": [
             {
               "denom": "uaxone",
-              "amount": "499000000000000"
+              "amount": "497000000000000"
             }
           ]
         }
@@ -46,7 +46,7 @@
       "supply": [
         {
           "denom": "uaxone",
-          "amount": "499000000000000"
+          "amount": "497000000000000"
         }
       ],
       "denom_metadata": [],

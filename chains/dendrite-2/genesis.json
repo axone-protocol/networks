@@ -1,7 +1,7 @@
 {
   "app_name": "axoned",
   "app_version": "12.0.0",
-  "genesis_time": "2025-09-18T18:20:00Z",
+  "genesis_time": "2025-09-21T13:37:00Z",
   "chain_id": "axone-dendrite-2",
   "initial_height": 1,
   "app_hash": null,

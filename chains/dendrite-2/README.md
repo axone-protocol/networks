@@ -50,5 +50,25 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
     <th>Identity</th>
     <th>Site</th>
   </tr>
-  <tr><td colspan="4"><em>No gentx transactions found in genesis (yet).</em></td></tr>
+    <tr>
+      <td><pre>HSS</pre></td>
+      <td></td>
+      <td>
+        <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/53b008f12f37e3ffa0dec3676d375a05_200_200.jpg"/></p>
+        <a href="https://keybase.io/highstakes">2CB281A714F6133B</a></td>
+      <td><a href="https://highstakes.ch">https://highstakes.ch</a></tr>
+    <tr>
+      <td><pre>Cumulo</pre></td>
+      <td>Cumulo is a leading trusted validator and a valuable asset to the blockchain ecosystem bringing security, quality and growth to the network. Boost your token staking earnings with Cumulo. Grow with us.</td>
+      <td>
+        <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/521c38ac16cf63f7cd1f6506398dd005_200_200.jpg"/></p>
+        <a href="https://keybase.io/cumulo">77158D6796D16CD0</a></td>
+      <td><a href="http://cumulo.pro">http://cumulo.pro</a></tr>
+    <tr>
+      <td><pre>jayjay</pre></td>
+      <td>community driven validator</td>
+      <td>
+        <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/273625e88af0407ae3a1134eca418a05_200_200.jpg"/></p>
+        <a href="https://keybase.io/jayjayone">34589DAF06970635</a></td>
+      <td><a href="https://twitter.com/javalry1">https://twitter.com/javalry1</a></tr>
 </table>

@@ -72,9 +72,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>kjnodes</pre></td>
     <td>Providing professional staking services with high performance and availability.</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/d6f1e63ac25d855dad5d1d5915988205_200_200.jpg"/></p>
-      <a href="https://keybase.io/kjnodes">1C5ACD2EEF363C3A</a></td>
+    <td></td>
     <td><a href="http://kjnodes.com">http://kjnodes.com</a></tr>
   <tr>
     <td><pre>👋 79anvi 🍀</pre></td>

@@ -100,7 +100,7 @@ jobs:
 
       - name: Add failure comment
         if: ${{ failure() }}
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.OPS_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
@@ -181,7 +181,7 @@ jobs:
           reviewers: amimart,ccamel,tpelliet
 
       - name: Link PR
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.OPS_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
@@ -197,7 +197,7 @@ jobs:
 
       - name: Add failure comment
         if: ${{ failure() }}
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.OPS_TOKEN }}
           issue-number: ${{ github.event.issue.number }}

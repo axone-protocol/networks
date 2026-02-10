@@ -93,9 +93,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Noderunners</pre></td>
     <td>Noderunners is a professional validator in POS networks.</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/cdad8b374bb99bfb2824e6aed9d5e105_200_200.jpg"/></p>
-      <a href="https://keybase.io/noderunners">812E82D12FEA3493</a></td>
+    <td></td>
     <td><a href="http://noderunners.biz">http://noderunners.biz</a></tr>
   <tr>
     <td><pre>OnThePluto</pre></td>
@@ -477,9 +475,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>moodman</pre></td>
     <td>up</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/786272c2dbcc4885e33639a924a65c05_200_200.jpg"/></p>
-      <a href="https://keybase.io/bobito25">AF0380BF5D4DE417</a></td>
+    <td></td>
     <td><a href="https://twitter.com/BorysLifeee">https://twitter.com/BorysLifeee</a></tr>
   <tr>
     <td><pre>PPNV</pre></td>

@@ -89,7 +89,7 @@ jobs:
           gomplate -d genesis="$genesis" -d usersInfo="$usersInfo" -f "$path/README.md.gtpl" -o "$path/README.md"
 
       - name: Add & Commit changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           message: "docs(networks): update documentation (according to genesis)"
           author_name: ${{ vars.BOT_GIT_AUTHOR_NAME }}

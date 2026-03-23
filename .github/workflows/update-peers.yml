@@ -91,7 +91,7 @@ jobs:
                   f.write(f"{value}\n")
 
       - name: Add & Commit changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           message: "feat(networks): update peers list"
           author_name: ${{ vars.BOT_GIT_AUTHOR_NAME }}

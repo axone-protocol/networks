@@ -152,9 +152,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Validator.run</pre></td>
     <td>Validator.run provides trusted stake service with 100% refund on downtime slashing. Enterprise grade infrastructure. High end security and 24/7 monitoring.</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/81013bebd3eb4c403a55488012c67e05_200_200.jpg"/></p>
-      <a href="https://keybase.io/ardapda">2CC4D67B2136C051</a></td>
+    <td></td>
     <td><a href="https://www.validator.run">https://www.validator.run</a></tr>
   <tr>
     <td><pre>bonded.zone ⚡</pre></td>
@@ -720,7 +718,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
     <td><pre>NodeStake</pre></td>
     <td>NodeStake is the professional Validator and IBC Relayer.⚛️7*24h | https://twitter.com/Nodestake_top</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5912a329316356b98611c807d0c11e05_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/15af543ded9df64667fd67dae70dd905_200_200.jpg"/></p>
       <a href="https://keybase.io/nodestake">94EFE192B2C52424</a></td>
     <td><a href="https://nodestake.top">https://nodestake.top</a></tr>
   <tr>

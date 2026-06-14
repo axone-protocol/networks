@@ -1,4 +1,4 @@
-[![axone github banner](https://raw.githubusercontent.com/axone-protocol/.github/main/profile/static/axone-banner.png)](https://axone.xyz)
+[![axone github banner](https://raw.githubusercontent.com/axone-protocol/.github/main/profile/static/axone-banner.jpg)](https://axone.xyz)
 
 # 🌐 Axone Networks
 

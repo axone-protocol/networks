@@ -117,7 +117,7 @@ axoned --home mynode genesis gentx your-key-name 1000000000000uaxone \
     <td><pre>NODEJUMPER</pre></td>
     <td>Professional POS Validator services, Cosmos contributors and supporters, Restake.app compatible. Making the blockchain world a better place.</td>
     <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8506223c573a1bee45e9182de7684805_200_200.jpg"/></p>
+      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5024a6dc3166695203ebdea9a1543f05_200_200.jpg"/></p>
       <a href="https://keybase.io/nodejumper">FFB0AA51A2DF5954</a></td>
     <td><a href="https://nodejumper.io">https://nodejumper.io</a></tr>
   <tr>

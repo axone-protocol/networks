@@ -19,7 +19,7 @@ Below is the list of networks, grouped by status.
 ### 🟢 Active
 
 - [![axone-1 mainnet](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=steelblue&color=lightcyan&label=🟢%20axone%20mainnet&query=%24.block.header.height&url=https%3A%2F%2Faxone-api.highstakes.ch%2Fcosmos%2Fbase%2Ftendermint%2Fv1beta1%2Fblocks%2Flatest)](./chains/1/README.md)
-- [![axone-dendrite-2 testnet](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=teal&color=lightcyan&label=🟢%20axone-dendrite-2-%20testnet&query=%24.block.header.height&url=https%3A%2F%2Faxone-test.api.cumulo.com.es%2Fcosmos%2Fbase%2Ftendermint%2Fv1beta1%2Fblocks%2Flatest)](./chains/dendrite-2/README.md)
+- [![axone-dendrite-2 testnet](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=teal&color=lightcyan&label=🟢%20axone-dendrite-2%20testnet&query=%24.block.header.height&url=https%3A%2F%2Faxone-test.api.cumulo.com.es%2Fcosmos%2Fbase%2Ftendermint%2Fv1beta1%2Fblocks%2Flatest)](./chains/dendrite-2/README.md)
 
 ### 💤 Deprecated / Inactive
 

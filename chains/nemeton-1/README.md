@@ -79,9 +79,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>👋 79anvi 🍀</pre></td>
     <td>kind validator</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/483d642a7ebb1891a60f98cbd4820f05_200_200.jpg"/></p>
-      <a href="https://keybase.io/79anvi">542DBC35E8363484</a></td>
+    <td></td>
     <td><a href="https://79anvi.com">https://79anvi.com</a></tr>
   <tr>
     <td><pre>High Stakes 🇨🇭</pre></td>
@@ -157,9 +155,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>bonded.zone ⚡</pre></td>
     <td>In Chain We Trust! ⛓️</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/455462872a43ab3cb70d8df26cb5d005_200_200.jpg"/></p>
-      <a href="https://keybase.io/kosjakoff">FAB7A1AFA2DD6977</a></td>
+    <td></td>
     <td><a href="https://info.bonded.zone/">https://info.bonded.zone/</a></tr>
   <tr>
     <td><pre>Inter Blockchain Services</pre></td>
@@ -178,9 +174,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Nodes Squad</pre></td>
     <td>Validator by Nodes Squad Team</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/5f3e892877baaa2f1996c60408515905_200_200.jpg"/></p>
-      <a href="https://keybase.io/id577">2CBCDC74B2FF41C7</a></td>
+    <td></td>
     <td><a href="https://nodessquad.com">https://nodessquad.com</a></tr>
   <tr>
     <td><pre>Army IDs</pre></td>
@@ -223,9 +217,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>stakingcabin</pre></td>
     <td>StakingCabin</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/8640a01e358b50a04de28f41f4707f05_200_200.jpg"/></p>
-      <a href="https://keybase.io/stakingcabin">C0522DF992B0C407</a></td>
+    <td></td>
     <td><a href="https://stakingcabin.com">https://stakingcabin.com</a></tr>
   <tr>
     <td><pre>longship-staking</pre></td>
@@ -273,9 +265,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>StingRay</pre></td>
     <td>Reliable Proof-of-Stake Validator</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/ebeae97c33cd4b83ccf857043fb7bd05_200_200.jpg"/></p>
-      <a href="https://keybase.io/mikhailr">D1A8193AF3905AAC</a></td>
+    <td></td>
     <td><a href="https://github.com/MikhailRadusha">https://github.com/MikhailRadusha</a></tr>
   <tr>
     <td><pre>oxes</pre></td>
@@ -371,16 +361,12 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>AlxVoy</pre></td>
     <td>Cosmos one Love</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/a1654dda5b9cb96128bc5fe53ea18f05_200_200.jpg"/></p>
-      <a href="https://keybase.io/alexvoy">ABE84D0AB09AB589</a></td>
+    <td></td>
     <td><a href="https://voynitskiy.com">https://voynitskiy.com</a></tr>
   <tr>
     <td><pre>𝐫𝐨𝐦𝐚𝐧✔︎𝟏𝟖𝟏𝟐</pre></td>
     <td>Individual staking service</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/602a1f897a9b06063c3b3f0e6ddfac05_200_200.jpg"/></p>
-      <a href="https://keybase.io/romanv1812">12151B2C705E9865</a></td>
+    <td></td>
     <td><a href="https://github.com/romanv1812">https://github.com/romanv1812</a></tr>
   <tr>
     <td><pre>Bibbes21</pre></td>
@@ -466,9 +452,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>BartestneT</pre></td>
     <td>YOU - stake on my validator, I - provide High Availability, Reliability, Disaster Recovery and of course timely Rewards</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/35a1374f136d70c14d2667419c75b405_200_200.jpg"/></p>
-      <a href="https://keybase.io/bartosianet">7A5898F2CC077781</a></td>
+    <td></td>
     <td></tr>
   <tr>
     <td><pre>moodman</pre></td>
@@ -507,9 +491,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Enigma</pre></td>
     <td>Proof of Stake Validator on different projects -- Passionate about Data Science and Technology</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/2c2e5a59694817aaa8f8e1290518e505_200_200.jpg"/></p>
-      <a href="https://keybase.io/enigmastaking">6223697ACA24A4FF</a></td>
+    <td></td>
     <td><a href="https://enigma-validator.com/">https://enigma-validator.com/</a></tr>
   <tr>
     <td><pre>[NODERS]TEAM</pre></td>
@@ -684,9 +666,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>kallen</pre></td>
     <td>I��m Binance Angel and former software engineer with a focus on analytics</td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/7aed74c3f026858df81aa2d4d9fc5c05_200_200.jpg"/></p>
-      <a href="https://keybase.io/kallenn">CBDB7BD6F3C7A207</a></td>
+    <td></td>
     <td><a href="https://kallen.cc/">https://kallen.cc/</a></tr>
   <tr>
     <td><pre>polkachu.com</pre></td>
@@ -774,9 +754,7 @@ okp4d --home mynode gentx your-key-name 10000000000uknow \
   <tr>
     <td><pre>Stake-Take</pre></td>
     <td> Trustworthy and high performance validators. Stake with us and Take profit 🚀 </td>
-    <td>
-      <p align="center"><img width="80px" src="https://s3.amazonaws.com/keybase_processed_uploads/312f94d44d65bcffafe0d5f2c71a2d05_200_200.jpg"/></p>
-      <a href="https://keybase.io/aleksandr7794">4A1DED53D477793B</a></td>
+    <td></td>
     <td><a href="https://stake-take.com/">https://stake-take.com/</a></tr>
   <tr>
     <td><pre>Huginn</pre></td>
